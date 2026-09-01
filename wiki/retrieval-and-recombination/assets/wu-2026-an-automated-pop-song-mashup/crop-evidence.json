@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "source_pdf": "papers/wu-2026-an-automated-pop-song-mashup.pdf",
+  "source_sha256": "771daaeeec623de9af1b10dab64816119b8553b5a7d90b7688938ce692723501",
+  "dpi": 180,
+  "coordinate_system": "normalized top-left [left, top, right, bottom]",
+  "visual_verification": "all 12 crops visually checked against the rendered PDF on 2026-09-02",
+  "crops": [
+    {
+      "id": "fig-1-1-pipeline",
+      "figure": "Figure 1.1",
+      "pdf_page": 23,
+      "printed_page": 7,
+      "bbox_normalized": [0.145, 0.13, 0.855, 0.75],
+      "output": "wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-1-1-pipeline.png",
+      "evidence_role": "Distinguishes proposed, pretrained, and evaluation components across the three-stage pipeline."
+    },
+    {
+      "id": "fig-2-1-main-beat-pattern",
+      "figure": "Figure 2.1",
+      "pdf_page": 27,
+      "printed_page": 11,
+      "bbox_normalized": [0.215, 0.52, 0.79, 0.665],
+      "output": "wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-2-1-main-beat-pattern.png",
+      "evidence_role": "Shows the kick-snare pairing and cross-correlation rule used to choose the rhythmic backbone."
+    },
+    {
+      "id": "fig-2-5-learning-to-rank",
+      "figure": "Figure 2.5",
+      "pdf_page": 38,
+      "printed_page": 22,
+      "bbox_normalized": [0.155, 0.34, 0.845, 0.78],
+      "output": "wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-2-5-learning-to-rank.png",
+      "evidence_role": "Traces listening-test comparisons through OpenL3 session blocks and a Bradley-Terry utility ranker."
+    },
+    {
+      "id": "fig-2-6-ranker-behavior",
+      "figure": "Figure 2.6",
+      "pdf_page": 42,
+      "printed_page": 26,
+      "bbox_normalized": [0.125, 0.17, 0.88, 0.60],
+      "output": "wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-2-6-ranker-behavior.png",
+      "evidence_role": "Supports discrimination, calibration, preference-strength, and cross-context ranking claims."
+    },
+    {
+      "id": "fig-3-2-reordering-architecture",
+      "figure": "Figure 3.2",
+      "pdf_page": 49,
+      "printed_page": 33,
+      "bbox_normalized": [0.18, 0.085, 0.82, 0.565],
+      "output": "wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-3-2-reordering-architecture.png",
+      "evidence_role": "Makes the asymmetric positional-information design and Sinkhorn assignment explicit."
+    },
+    {
+      "id": "fig-3-4-section-scan",
+      "figure": "Figure 3.4",
+      "pdf_page": 59,
+      "printed_page": 43,
+      "bbox_normalized": [0.185, 0.10, 0.82, 0.45],
+      "output": "wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-3-4-section-scan.png",
+      "evidence_role": "Shows how frozen 8-second encoders rank accompaniment windows against a vocal anchor."
+    },
+    {
+      "id": "fig-3-5-compatibility-sweep",
+      "figure": "Figure 3.5",
+      "pdf_page": 59,
+      "printed_page": 43,
+      "bbox_normalized": [0.16, 0.59, 0.89, 0.79],
+      "output": "wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-3-5-compatibility-sweep.png",
+      "evidence_role": "Exposes the interpretable window-level score and the selected 145-second accompaniment window."
+    },
+    {
+      "id": "fig-3-7-assignment-confidence",
+      "figure": "Figure 3.7",
+      "pdf_page": 63,
+      "printed_page": 47,
+      "bbox_normalized": [0.18, 0.12, 0.83, 0.355],
+      "output": "wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-3-7-assignment-confidence.png",
+      "evidence_role": "Contrasts a near-permutation assignment with a diffuse one and motivates confidence as an audit signal."
+    },
+    {
+      "id": "fig-3-8-listening-ratings",
+      "figure": "Figure 3.8",
+      "pdf_page": 65,
+      "printed_page": 49,
+      "bbox_normalized": [0.265, 0.11, 0.75, 0.45],
+      "output": "wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-3-8-listening-ratings.png",
+      "evidence_role": "Visualizes the subjective gap between the baseline, rearrangement model, and original recordings."
+    },
+    {
+      "id": "fig-4-6-tonal-balance-control",
+      "figure": "Figure 4.6",
+      "pdf_page": 81,
+      "printed_page": 65,
+      "bbox_normalized": [0.18, 0.195, 0.86, 0.40],
+      "output": "wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-4-6-tonal-balance-control.png",
+      "evidence_role": "Visualizes the 31-band, vocal-relative tone-and-level target used as the model's semantic control."
+    },
+    {
+      "id": "fig-4-8-restoration-results",
+      "figure": "Figure 4.8",
+      "pdf_page": 87,
+      "printed_page": 71,
+      "bbox_normalized": [0.20, 0.09, 0.84, 0.29],
+      "output": "wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-4-8-restoration-results.png",
+      "evidence_role": "Summarizes SI-SDR gains across clean, EQ-corrupted, and volume-only conditions."
+    },
+    {
+      "id": "fig-4-9-restoration-example",
+      "figure": "Figure 4.9",
+      "pdf_page": 88,
+      "printed_page": 72,
+      "bbox_normalized": [0.145, 0.11, 0.87, 0.285],
+      "output": "wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-4-9-restoration-example.png",
+      "evidence_role": "Provides an out-of-domain spectrogram and tonal-balance example for the restoration claim."
+    }
+  ]
+}
