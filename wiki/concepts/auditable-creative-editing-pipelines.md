@@ -31,7 +31,11 @@ Three stronger levels should be distinguished:
 - **Decision auditability:** inputs, alternatives, scores, constraints, and transformations can be reconstructed.
 - **Faithful semantic explanation:** the stated musical reasons are causally connected to the decision and validated for human understanding and correction.
 
-## Evidence From Wu 2026
+## Evidence Across Mashup Systems
+
+[[retrieval-and-recombination/davies-2014-automashupper-automatic-creation-of-multi]] demonstrates formula-level auditability in principle. For every input phrase, AutoMashUpper computes a selected source, beat offset, harmonic/rhythmic/spectral components, tempo condition, transposition, beat map, gain change, and ranked alternatives. Its interface exposes source assignments, parameter ranges and weights, ranked song names, and local replacement controls, but the paper does not show the complete internal decision path surfaced or logged. [PDF pp. 3–7 / article pp. 1728–1732]
+
+The listener evidence also marks the boundary of that transparency. The fixed score separates its highest-ranked condition from the middle condition but not middle from bottom; its correlation with enjoyment is moderate and drops when vocals overlap. The trace faithfully reconstructs the formula, yet the formula omits several musical causes of success or failure. [PDF pp. 9–11 / article pp. 1734–1736]
 
 [[retrieval-and-recombination/wu-2026-an-automated-pop-song-mashup]] is a concrete example of the first two levels. Its downbeat grid, compatibility sweep, Sinkhorn assignment, candidate utilities, and tonal-balance condition expose useful editing state. The mix-conditioning ablation is particularly valuable: malformed partial conditions cause output failures matching their literal semantics, showing that the complete control is load-bearing. [PDF pp. 22–24, 59–63, 80–89 / thesis pp. 6–8, 43–47, 64–73]
 
@@ -53,6 +57,7 @@ The crucial test is counterfactual: if the stated reason changes while irrelevan
 
 ## Related Pages
 
+- [[retrieval-and-recombination/davies-2014-automashupper-automatic-creation-of-multi]] — explicit feature, transformation, provenance, and editing traces.
 - [[retrieval-and-recombination/wu-2026-an-automated-pop-song-mashup]] — primary evidence anchor.
 - [[overviews/automated-music-mashup-systems]] — application-level system map.
 - [[questions/when-do-interpretable-music-editing-traces-become-faithful-explanations]] — open research question and tentative validation criteria.

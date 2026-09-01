@@ -194,7 +194,7 @@ This is a research agenda rather than a demonstrated system. Confidence-triggere
 
 *Verified from Table 2.3, PDF p. 40 / thesis p. 24. Other ablations lie within the reported fold-to-fold noise.*
 
-The utility ranker beats the Mashability heuristic for all four swapping strategies: mean `ρ = 0.738` versus `−0.047`, with per-strategy ranker values 0.798 vocal, 0.799 other, 0.639 drum, and 0.717 bass. This rejects that short-stem implementation as a ranking proxy in this setup; it does not reject explicit harmonic knowledge in general. [PDF p. 41 / thesis p. 25]
+The utility ranker beats the AutoMashUpper-lineage Mashability heuristic for all four swapping strategies: mean `ρ = 0.738` versus `−0.047`, with per-strategy ranker values 0.798 vocal, 0.799 other, 0.639 drum, and 0.717 bass. This rejects that short-stem implementation as a ranking proxy in this setup; it does not reject explicit harmonic knowledge in general. See [[retrieval-and-recombination/davies-2014-automashupper-automatic-creation-of-multi]] for the original transform-aware score and its own listener evidence. [PDF p. 41 / thesis p. 25]
 
 ![Out-of-context ranker behavior](../wiki/retrieval-and-recombination/assets/wu-2026-an-automated-pop-song-mashup/fig-2-6-ranker-behavior.png)
 
@@ -329,6 +329,7 @@ The thesis lists five resulting publications, but they are not separately ingest
 
 Within the wiki, use these synthesis routes:
 
+- [[retrieval-and-recombination/davies-2014-automashupper-automatic-creation-of-multi]] — the explicit Mashability system used as the historical handcrafted baseline.
 - [[overviews/automated-music-mashup-systems]] — system-level map of alignment, compatibility, reconstruction, mixing, and evaluation.
 - [[concepts/auditable-creative-editing-pipelines]] — distinction between inspectable editing traces and faithful semantic explanations.
 - [[questions/when-do-interpretable-music-editing-traces-become-faithful-explanations]] — open validation question for transparent music AI.
@@ -343,7 +344,7 @@ Within the wiki, use these synthesis routes:
 - **Complementary song:** The source supplying swapped, selected, or rearranged accompaniment material.
 - **Compatibility sweep:** Sliding-window cosine scores between a fixed vocal section and accompaniment windows in another song.
 - **Downbeat grid:** The target metrical timeline to which detected source downbeats are mapped.
-- **Mashability:** A handcrafted harmonic/spectral similarity heuristic used as a baseline; it should not be treated as a complete definition of listener preference.
+- **Mashability:** The AutoMashUpper-lineage handcrafted compatibility score used as a baseline; it should not be treated as a complete definition of listener preference.
 - **OpenL3:** A pretrained audio embedding extractor used by the thesis’s preference ranker.
 - **Phase reuse:** Reconstructing the predicted magnitude with phase already present in the broken instrumental, valid because the simulated corruption changes magnitude only.
 - **Sinkhorn normalization:** Alternating row and column normalization that creates a differentiable approximation to a permutation matrix.

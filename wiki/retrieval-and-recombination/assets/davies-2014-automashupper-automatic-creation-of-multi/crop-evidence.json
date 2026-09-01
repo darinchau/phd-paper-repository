@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "source_pdf": "papers/davies-2014-automashupper-automatic-creation-of-multi.pdf",
+  "source_sha256": "37da41dbe01bbd015900dc68e170ba87ba2120d929446dee7fdb0153323d619b",
+  "dpi": 180,
+  "coordinate_system": "normalized top-left [left, top, right, bottom]",
+  "visual_verification": "all 8 crops visually checked against the rendered PDF on 2026-09-02",
+  "crops": [
+    {
+      "id": "fig-1-phrase-segmentation",
+      "figure": "Figure 1",
+      "pdf_page": 3,
+      "printed_page": 1728,
+      "bbox_normalized": [0.51, 0.075, 0.96, 0.415],
+      "output": "wiki/retrieval-and-recombination/assets/davies-2014-automashupper-automatic-creation-of-multi/fig-1-phrase-segmentation.png",
+      "evidence_role": "Shows the beat-to-downbeat representation, self-similarity matrix, and novelty peaks behind phrase-boundary detection."
+    },
+    {
+      "id": "fig-3-harmonic-matching",
+      "figure": "Figure 3",
+      "pdf_page": 5,
+      "printed_page": 1730,
+      "bbox_normalized": [0.055, 0.075, 0.505, 0.525],
+      "output": "wiki/retrieval-and-recombination/assets/davies-2014-automashupper-automatic-creation-of-multi/fig-3-harmonic-matching.png",
+      "evidence_role": "Traces transform-aware harmonic retrieval across candidate time, pitch-class rotation, and the selected transposition."
+    },
+    {
+      "id": "fig-4-rhythmic-matching",
+      "figure": "Figure 4",
+      "pdf_page": 5,
+      "printed_page": 1730,
+      "bbox_normalized": [0.51, 0.075, 0.955, 0.525],
+      "output": "wiki/retrieval-and-recombination/assets/davies-2014-automashupper-automatic-creation-of-multi/fig-4-rhythmic-matching.png",
+      "evidence_role": "Shows the 12-subdivision kick-and-snare representation and its beat-shift similarity curve."
+    },
+    {
+      "id": "fig-6-mashability-components",
+      "figure": "Figure 6",
+      "pdf_page": 6,
+      "printed_page": 1731,
+      "bbox_normalized": [0.505, 0.07, 0.955, 0.31],
+      "output": "wiki/retrieval-and-recombination/assets/davies-2014-automashupper-automatic-creation-of-multi/fig-6-mashability-components.png",
+      "evidence_role": "Makes the three score components and the dominance of the manually weighted harmonic term visible."
+    },
+    {
+      "id": "fig-7-user-interface",
+      "figure": "Figure 7",
+      "pdf_page": 7,
+      "printed_page": 1732,
+      "bbox_normalized": [0.10, 0.06, 0.90, 0.36],
+      "output": "wiki/retrieval-and-recombination/assets/davies-2014-automashupper-automatic-creation-of-multi/fig-7-user-interface.png",
+      "evidence_role": "Shows the user-adjustable key, tempo, component weights, candidate list, section provenance, and local editing controls."
+    },
+    {
+      "id": "fig-8-segmentation-performance",
+      "figure": "Figure 8",
+      "pdf_page": 8,
+      "printed_page": 1733,
+      "bbox_normalized": [0.515, 0.06, 0.945, 0.26],
+      "output": "wiki/retrieval-and-recombination/assets/davies-2014-automashupper-automatic-creation-of-multi/fig-8-segmentation-performance.png",
+      "evidence_role": "Supports the narrow claim that the segmentation favors precise boundary localization while losing at wider tolerance windows."
+    },
+    {
+      "id": "fig-9-listener-rankings",
+      "figure": "Figure 9",
+      "pdf_page": 9,
+      "printed_page": 1734,
+      "bbox_normalized": [0.51, 0.06, 0.95, 0.225],
+      "output": "wiki/retrieval-and-recombination/assets/davies-2014-automashupper-automatic-creation-of-multi/fig-9-listener-rankings.png",
+      "evidence_role": "Displays enjoyment ratings for the highest, middle, and lowest Mashability selections across all 12 excerpts."
+    },
+    {
+      "id": "fig-10-mashability-correlations",
+      "figure": "Figure 10",
+      "pdf_page": 10,
+      "printed_page": 1735,
+      "bbox_normalized": [0.055, 0.065, 0.95, 0.305],
+      "output": "wiki/retrieval-and-recombination/assets/davies-2014-automashupper-automatic-creation-of-multi/fig-10-mashability-correlations.png",
+      "evidence_role": "Shows the moderate overall score-enjoyment relationship and its weakening when vocals overlap."
+    }
+  ]
+}
