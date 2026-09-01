@@ -84,7 +84,7 @@ The curve is a meaningful production control. The ablation shows it causally aff
 ### Preference ranking
 
 - Full utility model: pairwise accuracy **0.807**, mean per-context Spearman `ρ = 0.738` over 40 folds. [PDF p. 40 / thesis p. 24]
-- Mashability heuristic versus ranker: mean `ρ = −0.047` versus **0.738**; the ranker wins for all four strategies. [PDF p. 41 / thesis p. 25]
+- The AutoMashUpper-lineage Mashability heuristic versus ranker: mean `ρ = −0.047` versus **0.738**; the ranker wins for all four strategies. [PDF p. 41 / thesis p. 25]
 - Figure 2.6: AUC **0.89** overall, **0.93** on gap-filtered pairs, and **0.64** on excluded adjacent pairs; all context correlations are positive, minimum 0.27 and mean 0.74. [PDF p. 42 / thesis p. 26]
 
 ![Ranker behavior](assets/wu-2026-an-automated-pop-song-mashup/fig-2-6-ranker-behavior.png)
@@ -95,7 +95,7 @@ The evidence is in-domain: the same ten songs recur across contexts. Visual cali
 
 Same-song unshuffling accuracy is **89.24%** at 1 s, **93.94%** at 4 s, and **91.91%** at 8 s, against a 12.5% random baseline. These results demonstrate correspondence learning, not cross-song mashup quality. [PDF pp. 54–55 / thesis pp. 38–39]
 
-In the 30-participant cross-song listening test, the proposed method scores 3.51 rhythm, 3.31 harmony, 3.24 creativity, and 3.38 overall, versus 2.67, 2.74, 2.73, and 2.63 for Mashability. Originals score 4.06, 3.89, 3.62, and 3.93. [PDF pp. 64–65 / thesis pp. 48–49]
+In the 30-participant cross-song listening test, the proposed method scores 3.51 rhythm, 3.31 harmony, 3.24 creativity, and 3.38 overall, versus 2.67, 2.74, 2.73, and 2.63 for the Davies-style Mashability baseline. Originals score 4.06, 3.89, 3.62, and 3.93. [PDF pp. 64–65 / thesis pp. 48–49]
 
 ![Subjective ratings](assets/wu-2026-an-automated-pop-song-mashup/fig-3-8-listening-ratings.png)
 
@@ -124,6 +124,7 @@ The evaluation is out-of-domain in song content but uses the same synthetic, inv
 
 ## Related Papers
 
+- [[retrieval-and-recombination/davies-2014-automashupper-automatic-creation-of-multi]] — establishes the explicit transform-aware Mashability lineage used as a handcrafted baseline here.
 - [[overviews/automated-music-mashup-systems]] — places the three-stage design, evidence, and remaining gaps in a system-level map.
 - [[concepts/auditable-creative-editing-pipelines]] — uses this thesis to distinguish workflow auditability from faithful semantic explanation.
 - [[questions/when-do-interpretable-music-editing-traces-become-faithful-explanations]] — frames the validation needed before an assignment, score, or condition can count as an explanation.

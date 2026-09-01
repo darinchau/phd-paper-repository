@@ -19,6 +19,15 @@ What combination of causal tests, musical semantics, uncertainty calibration, an
 
 ## What the Knowledge Base Holds
 
+[[retrieval-and-recombination/davies-2014-automashupper-automatic-creation-of-multi]] specifies a handcrafted decision that is reconstructable in principle:
+
+- harmonic, kick/snare rhythmic, spectral-balance, and tempo terms;
+- user-selected weights and transform ranges;
+- internally computed winning source passage, key shift, beat mapping, and gain change;
+- user-visible source assignments, parameter controls, ranked song names, and local replacement controls. [PDF pp. 3–7 / article pp. 1728–1732]
+
+The paper does not show every internal quantity surfaced to the user or persistently logged. Nevertheless, the specified computation explains **how the formula produced the ranking** in principle. Its listening study shows why that is not yet a complete musical explanation: middle and bottom conditions are not distinguished, the overall score–enjoyment correlation is only `r = .49`, and vocal overlap, bass interaction, off-downbeat chord changes, and familiarity create failures outside the feature vocabulary. [PDF pp. 9–11 / article pp. 1734–1736]
+
 [[retrieval-and-recombination/wu-2026-an-automated-pop-song-mashup]] exposes several kinds of intermediate state:
 
 - deterministic downbeat anchors and timemaps;
@@ -41,10 +50,11 @@ A music-editing trace should count as a faithful explanation only when all four 
 3. **Calibrated scope:** confidence and failure boundaries are measured on held-out music representative of intended use.
 4. **Demonstrated utility:** musicians use the explanation to detect errors, choose alternatives, or repair outputs more effectively, with trust calibrated to actual reliability.
 
-Wu satisfies parts of causal sensitivity and workflow visibility, especially for the complete tonal-balance condition. It does not yet satisfy the full set for compatibility, alignment, or agent planning. The appropriate label is therefore **auditable creative editing**, not fully validated explainable AI.
+Davies satisfies formula-level reconstruction and workflow visibility but shows that an explicit score can omit important causes of listener judgment. Wu satisfies parts of causal sensitivity and workflow visibility, especially for the complete tonal-balance condition. Neither satisfies the full set for compatibility, alignment, or agent planning. The appropriate label is therefore **auditable creative editing**, not fully validated explainable AI.
 
 ## Related Pages
 
 - [[concepts/auditable-creative-editing-pipelines]] — terminology and design criteria.
 - [[overviews/automated-music-mashup-systems]] — system context.
+- [[retrieval-and-recombination/davies-2014-automashupper-automatic-creation-of-multi]] — explicit Mashability and transform traces.
 - [[retrieval-and-recombination/wu-2026-an-automated-pop-song-mashup]] — primary paper evidence.

@@ -1,4 +1,4 @@
-# 2026-09-02 — Xinyang Wu Dissertation Ingestion
+# 2026-09-02 — Paper Ingestions
 
 ## Scope and Denominator
 
@@ -73,3 +73,61 @@ The manifest at `wiki/retrieval-and-recombination/assets/wu-2026-an-automated-po
 - No LaTeX source was supplied.
 - No exact PDFs for the five listed thesis-related publications were supplied, so they were not ingested as separate papers.
 - Corpus licensing and third-party PDF redistribution remain unresolved.
+
+## AutoMashUpper Journal Article Ingestion
+
+### Scope and Denominator
+
+- Requested artifacts: **1**.
+- Exact PDFs located and inspected: **1/1**.
+- Physical PDF pages read: **12/12**; printed article pages 1726–1737.
+- Papers admitted with canonical PDF, source digest, domain page, and synthesis links: **1/1**.
+- Figure-only evidence crops rendered and visually checked: **8/8**.
+
+### Source and Verification
+
+- Supplied file: `AutoMashUpper_Automatic_Creation_of_Multi-Song_Music_Mashups.pdf`.
+- Canonical file: `papers/davies-2014-automashupper-automatic-creation-of-multi.pdf`.
+- SHA-256: `37da41dbe01bbd015900dc68e170ba87ba2120d929446dee7fdb0153323d619b` for both files.
+- Citra inspection reports 12 digital-text pages and no OCR requirement. Rendered pages were used to recover equations, p-values, correlations, legends, and graph directions lost by text extraction.
+- The PDF metadata embeds IEEE article ID `6876193` and DOI `10.1109/TASLP.2014.2347135`. The citation was cross-checked against the author-hosted version-of-record PDF and AIST publication list because IEEE Xplore presented a JavaScript verification screen.
+
+### Classification and Knowledge-Layer Changes
+
+Primary category: `retrieval-and-recombination`.
+
+AutoMashUpper performs phrase-local retrieval and source-preserving transformation of existing recordings. Its principal contribution is transform-aware Mashability: it searches candidate passages under explicit tempo and key changes. The source, score components, and required edits are reconstructable from the specified algorithm, but the paper does not show a complete surfaced or persistent trace.
+
+- Added the complete source digest and concise domain page.
+- Added reciprocal links with [[overviews/automated-music-mashup-systems]].
+- Extended [[concepts/auditable-creative-editing-pipelines]] with formula-level score and transformation traces.
+- Extended [[questions/when-do-interpretable-music-editing-traces-become-faithful-explanations]] with the distinction between explaining a formula and explaining musical success.
+- Linked the Davies paper directly to the later Wu dissertation and identified the AutoMashUpper lineage behind its Mashability baseline.
+
+### Claim Delta and Supersede Check
+
+- **Strengthens:** explicit transform-aware retrieval can make source identity, candidate location, score decomposition, and required edits reconstructable in principle within a mixed-initiative workflow; this paper does not demonstrate a complete user-visible or persistent provenance log.
+- **Narrows:** the fixed score is evidence for surfacing a promising candidate, not a solved or calibrated definition of listener preference. Highest-ranked examples beat the middle condition, but middle does not beat bottom; overall score–enjoyment correlation is `r = .49`.
+- **Narrows:** segmentation superiority is confined to precise narrow-tolerance boundary localization on regular RWC pop; other systems lead at wider tolerances.
+- **Extends the historical map:** Davies 2014 is now the explicit handcrafted anchor, while Wu 2026 is the learned ranking/rearrangement/restoration extension.
+- No existing claim is contradicted or replaced, so there is no `supersede` entry.
+
+### Evidence Boundaries Preserved
+
+- The paper evaluates phrase sections rather than complete automatic multi-song mashups.
+- The central interactive workflow receives no usability, agency, or creative-outcome study.
+- Default weights and thresholds come from informal testing; no listening ablation isolates score components.
+- The 15-participant study reports no effect sizes, confidence intervals, participant/item model, power analysis, or reproducible corpus description.
+- Chroma, kick/snare patterns, and three spectral bands omit vocal interaction, bass conflict, harmonic function, voice leading, cadence, transformation artifacts, transitions, and whole-song form.
+- The post-hoc vocal-overlap split is exploratory because subset sizes and subgroup significance are not reported.
+
+### Visual Evidence
+
+The manifest at `wiki/retrieval-and-recombination/assets/davies-2014-automashupper-automatic-creation-of-multi/crop-evidence.json` records the source checksum, physical and printed page numbers, normalized crop boxes, evidence roles, and deterministic output paths for Figures 1, 3, 4, 6, 7, 8, 9, and 10. The crops contain diagrams, plots, or the software interface only; prose and equations are summarized in the digest.
+
+### Rights and Gaps
+
+- The IEEE footer permits personal use and academic text/data mining but requires permission for republication or redistribution. The canonical PDF is retained locally and must not be pushed until repository visibility and rights are resolved.
+- No author- or AIST-hosted source-code release was located. A public third-party repository says it is merely based on the paper and is not treated as official implementation evidence.
+- The historical example-video URL now redirects to an unavailable host.
+- The supplied root PDF remains unchanged because the paper-library contract prohibits moving or deleting user files; a conflicting unregistered local helper note suggested removal after copying.

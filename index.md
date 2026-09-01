@@ -4,10 +4,10 @@ Catalog generated on 2026-09-02 from repository content.
 
 ## Coverage
 
-- Canonical PDFs: **1**
-- Source digests: **1**
-- Domain paper pages: **1**
-- Papers linked to an overview or concept: **1/1**
+- Canonical PDFs: **2**
+- Source digests: **2**
+- Domain paper pages: **2**
+- Papers linked to an overview or concept: **2/2**
 - Overviews: **1**
 - Concepts: **1**
 - Questions: **1**
@@ -20,12 +20,13 @@ Catalog generated on 2026-09-02 from repository content.
 | `generation-and-planning` | 0 | — |
 | `theory-and-constraints` | 0 | — |
 | `explainability-and-auditability` | 0 | — |
-| `retrieval-and-recombination` | 1 | [open](indexes/retrieval-and-recombination.md) |
+| `retrieval-and-recombination` | 2 | [open](indexes/retrieval-and-recombination.md) |
 | `interaction-and-evaluation` | 0 | — |
 | `other` | 0 | — |
 
 ## Papers
 
+- [AutoMashUpper: Automatic Creation of Multi-Song Music Mashups](wiki/retrieval-and-recombination/davies-2014-automashupper-automatic-creation-of-multi.md) — Matthew E. P. Davies, Philippe Hamel, Kazuyoshi Yoshii, and Masataka Goto (2014)
 - [An Automated Pop Song Mashup System](wiki/retrieval-and-recombination/wu-2026-an-automated-pop-song-mashup.md) — Xinyang Wu (2026)
 
 ## Synthesis
