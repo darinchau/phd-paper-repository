@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "source_pdf": "papers/guo-2025-moonbeam-a-midi-foundation-model.pdf",
+  "source_sha256": "88d90533b1da810eba59dd0009d4e702e5ec7ba0a4ea7d86326389e488d93592",
+  "dpi": 180,
+  "coordinate_system": "normalized top-left [left, top, right, bottom]",
+  "visual_verification": "all 8 crops visually checked against the rendered PDF on 2026-09-02",
+  "crops": [
+    {
+      "id": "fig-1-model-architecture",
+      "figure": "Figure 1",
+      "pdf_page": 3,
+      "printed_page": 3,
+      "bbox_normalized": [0.17, 0.07, 0.85, 0.455],
+      "output": "wiki/generation-and-planning/assets/guo-2025-moonbeam-a-midi-foundation-model/fig-1-model-architecture.png",
+      "evidence_role": "Shows the semantically factorized event embedding, grouped multidimensional rotations, LLaMA-style transformer block, and sequential GRU attribute decoder."
+    },
+    {
+      "id": "fig-2-finetuning-architectures",
+      "figure": "Figure 2",
+      "pdf_page": 6,
+      "printed_page": 6,
+      "bbox_normalized": [0.16, 0.065, 0.86, 0.365],
+      "output": "wiki/generation-and-planning/assets/guo-2025-moonbeam-a-midi-foundation-model/fig-2-finetuning-architectures.png",
+      "evidence_role": "Contrasts the classification head with the anticipatory conditional-generation and infilling conditioning path."
+    },
+    {
+      "id": "table-1-pretraining-ablation",
+      "figure": "Table 1",
+      "pdf_page": 8,
+      "printed_page": 8,
+      "bbox_normalized": [0.21, 0.075, 0.80, 0.205],
+      "output": "wiki/generation-and-planning/assets/guo-2025-moonbeam-a-midi-foundation-model/table-1-pretraining-ablation.png",
+      "evidence_role": "Reports the perplexity effects of the FME, MRA, and GRU ablations on Moonbeam Small."
+    },
+    {
+      "id": "table-2-classification-results",
+      "figure": "Table 2",
+      "pdf_page": 9,
+      "printed_page": 9,
+      "bbox_normalized": [0.17, 0.075, 0.84, 0.225],
+      "output": "wiki/generation-and-planning/assets/guo-2025-moonbeam-a-midi-foundation-model/table-2-classification-results.png",
+      "evidence_role": "Supports the four-dataset accuracy and macro-F1 comparison with CLaMP 2, M3, and MusicBERT."
+    },
+    {
+      "id": "table-3-generation-objectives",
+      "figure": "Table 3",
+      "pdf_page": 9,
+      "printed_page": 9,
+      "bbox_normalized": [0.17, 0.225, 0.84, 0.405],
+      "output": "wiki/generation-and-planning/assets/guo-2025-moonbeam-a-midi-foundation-model/table-3-generation-objectives.png",
+      "evidence_role": "Separates perplexity from objective pitch, velocity, and end-time control, including the stronger baseline control scores."
+    },
+    {
+      "id": "table-4-human-evaluation",
+      "figure": "Table 4",
+      "pdf_page": 9,
+      "printed_page": 9,
+      "bbox_normalized": [0.15, 0.815, 0.86, 0.925],
+      "output": "wiki/generation-and-planning/assets/guo-2025-moonbeam-a-midi-foundation-model/table-4-human-evaluation.png",
+      "evidence_role": "Reports expert ratings and Wilcoxon p-values for chord fit, metadata fit, coherence, and overall enjoyment."
+    },
+    {
+      "id": "table-5-pretraining-corpora",
+      "figure": "Table 5",
+      "pdf_page": 14,
+      "printed_page": 14,
+      "bbox_normalized": [0.155, 0.07, 0.86, 0.385],
+      "output": "wiki/generation-and-planning/assets/guo-2025-moonbeam-a-midi-foundation-model/table-5-pretraining-corpora.png",
+      "evidence_role": "Provides dataset-level hours, token counts, and heterogeneous license labels for the 81.58K-hour pretraining collection."
+    },
+    {
+      "id": "fig-3-gpm30-split-discrepancy",
+      "figure": "Figure 3",
+      "pdf_page": 18,
+      "printed_page": 18,
+      "bbox_normalized": [0.22, 0.215, 0.81, 0.62],
+      "output": "wiki/generation-and-planning/assets/guo-2025-moonbeam-a-midi-foundation-model/fig-3-gpm30-split-discrepancy.png",
+      "evidence_role": "Preserves the apparent train-test legend reversal relative to the stated 90-percent training and 10-percent test split."
+    }
+  ]
+}
