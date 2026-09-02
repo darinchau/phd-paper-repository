@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "source_pdf": "papers/wang-2025-notagen-advancing-musicality-in-symbolic.pdf",
+  "source_sha256": "b10f17fd4e0a5914f50a491b5c7a473d8cf6c755691521e8573197f4e6bf1431",
+  "dpi": 180,
+  "coordinate_system": "normalized top-left [left, top, right, bottom]",
+  "visual_verification": "all 7 crops visually checked against the rendered PDF on 2026-09-02",
+  "crops": [
+    {
+      "id": "fig-1-training-paradigms",
+      "figure": "Figure 1",
+      "pdf_page": 1,
+      "printed_page": null,
+      "bbox_normalized": [0.50, 0.30, 0.955, 0.64],
+      "output": "wiki/generation-and-planning/assets/wang-2025-notagen-advancing-musicality-in-symbolic/fig-1-training-paradigms.png",
+      "evidence_role": "Shows the three-stage pre-training, fine-tuning, and CLaMP-DPO loop, including the use of CLaMP 2 and reference compositions to select preference pairs."
+    },
+    {
+      "id": "fig-2-representation-and-architecture",
+      "figure": "Figure 2",
+      "pdf_page": 3,
+      "printed_page": null,
+      "bbox_normalized": [0.065, 0.035, 0.94, 0.365],
+      "output": "wiki/generation-and-planning/assets/wang-2025-notagen-advancing-musicality-in-symbolic/fig-2-representation-and-architecture.png",
+      "evidence_role": "Connects interleaved ABC, bar countdown annotations, bar-stream patches, and the hierarchical patch-level and character-level decoders."
+    },
+    {
+      "id": "table-1-finetuning-sources",
+      "figure": "Table 1",
+      "pdf_page": 4,
+      "printed_page": null,
+      "bbox_normalized": [0.105, 0.04, 0.47, 0.208],
+      "output": "wiki/generation-and-planning/assets/wang-2025-notagen-advancing-musicality-in-symbolic/table-1-finetuning-sources.png",
+      "evidence_role": "Verifies the six fine-tuning data-source counts and the total of 8,948 sheets, including the dominant internal-source share."
+    },
+    {
+      "id": "algorithm-1-iterative-clamp-dpo",
+      "figure": "Algorithm 1",
+      "pdf_page": 5,
+      "printed_page": null,
+      "bbox_normalized": [0.065, 0.035, 0.50, 0.585],
+      "output": "wiki/generation-and-planning/assets/wang-2025-notagen-advancing-musicality-in-symbolic/algorithm-1-iterative-clamp-dpo.png",
+      "evidence_role": "Records the iterative construction of CLaMP-scored chosen/rejected sets, the moving frozen reference policy, and DPOP optimization."
+    },
+    {
+      "id": "table-2-objective-results",
+      "figure": "Table 2",
+      "pdf_page": 6,
+      "printed_page": null,
+      "bbox_normalized": [0.51, 0.04, 0.96, 0.365],
+      "output": "wiki/generation-and-planning/assets/wang-2025-notagen-advancing-musicality-in-symbolic/table-2-objective-results.png",
+      "evidence_role": "Verifies ACS, label accuracy, bar-alignment error, and perplexity across three CLaMP-DPO iterations for NotaGen, MuPT, and MET."
+    },
+    {
+      "id": "fig-3-before-after-clamp-dpo",
+      "figure": "Figure 3",
+      "pdf_page": 6,
+      "printed_page": null,
+      "bbox_normalized": [0.51, 0.36, 0.96, 0.665],
+      "output": "wiki/generation-and-planning/assets/wang-2025-notagen-advancing-musicality-in-symbolic/fig-3-before-after-clamp-dpo.png",
+      "evidence_role": "Shows that post-CLaMP-DPO outputs receive more A/B votes than pre-optimization outputs for all three architectures, without uncertainty intervals."
+    },
+    {
+      "id": "fig-4-model-versus-ground-truth",
+      "figure": "Figure 4",
+      "pdf_page": 7,
+      "printed_page": null,
+      "bbox_normalized": [0.505, 0.04, 0.96, 0.345],
+      "output": "wiki/generation-and-planning/assets/wang-2025-notagen-advancing-musicality-in-symbolic/fig-4-model-versus-ground-truth.png",
+      "evidence_role": "Shows NotaGen leading MuPT and MET against human references while still losing its own comparison to ground truth, 41.7% to 50.0%."
+    }
+  ]
+}

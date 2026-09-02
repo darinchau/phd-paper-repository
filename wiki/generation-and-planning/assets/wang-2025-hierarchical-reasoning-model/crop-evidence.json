@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "source_pdf": "papers/wang-2025-hierarchical-reasoning-model.pdf",
+  "source_sha256": "81b05b03ebd92748b1bc0e59d4b6e0d8271e1e56b84d1d589a03430db79b6e25",
+  "dpi": 180,
+  "coordinate_system": "normalized top-left [left, top, right, bottom]",
+  "visual_verification": "all 7 crops visually checked against the rendered PDF on 2026-09-02",
+  "crops": [
+    {
+      "id": "fig-1-architecture-and-benchmarks",
+      "figure": "Figure 1",
+      "pdf_page": 1,
+      "printed_page": 1,
+      "bbox_normalized": [0.09, 0.58, 0.91, 0.74],
+      "output": "wiki/generation-and-planning/assets/wang-2025-hierarchical-reasoning-model/fig-1-architecture-and-benchmarks.png",
+      "evidence_role": "Shows the slow/fast recurrent-module abstraction and the exact small-sample benchmark bars reported for ARC-AGI, Sudoku-Extreme, and Maze-Hard."
+    },
+    {
+      "id": "fig-2-depth-scaling",
+      "figure": "Figure 2",
+      "pdf_page": 3,
+      "printed_page": 3,
+      "bbox_normalized": [0.15, 0.035, 0.90, 0.25],
+      "output": "wiki/generation-and-planning/assets/wang-2025-hierarchical-reasoning-model/fig-2-depth-scaling.png",
+      "evidence_role": "Supports the paper's claim that depth, rather than width alone, improves Sudoku-Extreme-Full accuracy and that HRM benefits most from additional recurrent compute."
+    },
+    {
+      "id": "fig-3-hierarchical-convergence",
+      "figure": "Figure 3",
+      "pdf_page": 5,
+      "printed_page": 5,
+      "bbox_normalized": [0.10, 0.035, 0.93, 0.35],
+      "output": "wiki/generation-and-planning/assets/wang-2025-hierarchical-reasoning-model/fig-3-hierarchical-convergence.png",
+      "evidence_role": "Visualizes the claimed repeated low-level convergence and reset pattern, contrasted with an ordinary recurrent network and a deep feed-forward network."
+    },
+    {
+      "id": "fig-4-one-step-gradient",
+      "figure": "Figure 4",
+      "pdf_page": 6,
+      "printed_page": 6,
+      "bbox_normalized": [0.575, 0.265, 0.90, 0.615],
+      "output": "wiki/generation-and-planning/assets/wang-2025-hierarchical-reasoning-model/fig-4-one-step-gradient.png",
+      "evidence_role": "Shows which final H/L updates retain gradients and gives the paper's pseudocode for detached deep-supervision segments."
+    },
+    {
+      "id": "fig-5-adaptive-compute",
+      "figure": "Figure 5",
+      "pdf_page": 9,
+      "printed_page": 9,
+      "bbox_normalized": [0.10, 0.03, 0.96, 0.205],
+      "output": "wiki/generation-and-planning/assets/wang-2025-hierarchical-reasoning-model/fig-5-adaptive-compute.png",
+      "evidence_role": "Shows ACT compute use, its accuracy tradeoff, and the direction of inference-time scaling on Sudoku-Extreme-Full."
+    },
+    {
+      "id": "fig-7-intermediate-predictions",
+      "figure": "Figure 7",
+      "pdf_page": 13,
+      "printed_page": 13,
+      "bbox_normalized": [0.065, 0.055, 0.96, 0.435],
+      "output": "wiki/generation-and-planning/assets/wang-2025-hierarchical-reasoning-model/fig-7-intermediate-predictions.png",
+      "evidence_role": "Provides selected decoded trajectories for Maze, Sudoku, and ARC, which motivate but do not validate the paper's search-strategy interpretations."
+    },
+    {
+      "id": "fig-8-participation-ratio",
+      "figure": "Figure 8",
+      "pdf_page": 14,
+      "printed_page": 14,
+      "bbox_normalized": [0.09, 0.10, 0.96, 0.44],
+      "output": "wiki/generation-and-planning/assets/wang-2025-hierarchical-reasoning-model/fig-8-participation-ratio.png",
+      "evidence_role": "Shows the trained-versus-untrained participation-ratio comparison behind the claimed emergent dimensionality hierarchy."
+    }
+  ]
+}
