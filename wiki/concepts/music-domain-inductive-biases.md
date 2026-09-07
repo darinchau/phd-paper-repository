@@ -23,6 +23,8 @@ These choices are musically motivated, but their roles are not isolated. The pap
 
 Moonbeam's complete design reaches perplexity `2.423`, versus `2.512` with standard attention and `2.512` with a rotation that mixes all attributes in every head. This whole-module ablation supports the usefulness of the selected design on one split. It does not show that each head group uses its assigned dimension causally, that the representation is equivariant under musical transformations, or that attention explains a generated event. [Moonbeam PDF pp. 7–8]
 
+[[explainability-and-auditability/wei-2024-do-music-generation-models-encode|Wei et al.'s SynTheory study]] adds a distinct diagnostic: train probes to recover elementary music-theory labels from frozen audio-model representations, rather than infer knowledge from semantically named architecture alone. It reports strong Jukebox/MusicGen scores, but inspected code uses validation-dependent normalization, overlaps two tempo values between training and holdout, and does not demonstrate independent test scoring. These discrepancies may affect the numerical results; their effect is unmeasured. Even a clean probing result would establish recoverability, not causal use or faithful explanation. [[concepts/music-theory-probing]] develops this boundary. [Wei et al. PDF pp. 4–6 and inspected implementation recorded on its paper page]
+
 ## Four Levels That Should Not Be Collapsed
 
 1. **Music-shaped representation:** notes, voices, bars, onset, duration, pitch, instrument, and velocity are explicit rather than hidden inside arbitrary tokens.
@@ -47,6 +49,8 @@ For classical symbolic generation, the next step is not to replace learned biase
 
 ## Related Pages
 
+- [[explainability-and-auditability/wei-2024-do-music-generation-models-encode]] — concept probing with explicit result-validity caveats.
+- [[concepts/music-theory-probing]] — evaluates recoverability separately from causal use and explanation utility.
 - [[overviews/symbolic-music-foundation-models]] — comparative evidence across the two ingested symbolic pretraining systems.
 - [[generation-and-planning/wang-2025-notagen-advancing-musicality-in-symbolic]] — interleaved ABC, bar-count planning, hierarchical patches, and learned-evaluator feedback.
 - [[generation-and-planning/guo-2025-moonbeam-a-midi-foundation-model]] — continuous attribute embeddings and dimension-specific relative attention.
