@@ -1,0 +1,40 @@
+{
+  "source_pdf": "papers/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of.pdf",
+  "source_sha256": "cab2798b3b26dd73bb3bd4d6896dc22148925dfcb0b18c7e26cfac414fd9bee1",
+  "dpi": 144,
+  "crops": [
+    {
+      "id": "fig-5-tuned-lens",
+      "pdf_page": 8,
+      "bbox_normalized": [
+        0.22,
+        0.57,
+        0.8,
+        0.83
+      ],
+      "output": "wiki/explainability-and-auditability/assets/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of/fig-5-tuned-lens.png"
+    },
+    {
+      "id": "fig-6-patching",
+      "pdf_page": 9,
+      "bbox_normalized": [
+        0.25,
+        0.3,
+        0.75,
+        0.54
+      ],
+      "output": "wiki/explainability-and-auditability/assets/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of/fig-6-patching.png"
+    },
+    {
+      "id": "table-7-steering",
+      "pdf_page": 11,
+      "bbox_normalized": [
+        0.11,
+        0.15,
+        0.89,
+        0.36
+      ],
+      "output": "wiki/explainability-and-auditability/assets/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of/table-7-steering.png"
+    }
+  ]
+}

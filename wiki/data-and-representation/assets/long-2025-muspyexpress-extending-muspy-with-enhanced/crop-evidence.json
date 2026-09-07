@@ -1,0 +1,29 @@
+{
+  "source_pdf": "papers/long-2025-muspyexpress-extending-muspy-with-enhanced.pdf",
+  "source_sha256": "d93f107e2190216d08964667bd70479fe5096b2e1841ce4e8eb8e1ddc5dd62ad",
+  "dpi": 144,
+  "crops": [
+    {
+      "id": "fig-1-annotations",
+      "pdf_page": 2,
+      "bbox_normalized": [
+        0.18,
+        0.085,
+        0.82,
+        0.255
+      ],
+      "output": "wiki/data-and-representation/assets/long-2025-muspyexpress-extending-muspy-with-enhanced/fig-1-annotations.png"
+    },
+    {
+      "id": "table-1-generation",
+      "pdf_page": 3,
+      "bbox_normalized": [
+        0.19,
+        0.59,
+        0.81,
+        0.77
+      ],
+      "output": "wiki/data-and-representation/assets/long-2025-muspyexpress-extending-muspy-with-enhanced/table-1-generation.png"
+    }
+  ]
+}

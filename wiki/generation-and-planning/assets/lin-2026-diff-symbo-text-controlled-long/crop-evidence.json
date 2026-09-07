@@ -1,0 +1,29 @@
+{
+  "source_pdf": "papers/lin-2026-diff-symbo-text-controlled-long.pdf",
+  "source_sha256": "af4db5a1690baca922a3d1a2560b8929b3f2f9ef0e27c68dbffcb82f2bc0d53f",
+  "dpi": 144,
+  "crops": [
+    {
+      "id": "fig-3-architecture",
+      "pdf_page": 5,
+      "bbox_normalized": [
+        0.09,
+        0.06,
+        0.91,
+        0.29
+      ],
+      "output": "wiki/generation-and-planning/assets/lin-2026-diff-symbo-text-controlled-long/fig-3-architecture.png"
+    },
+    {
+      "id": "tables-2-3-results",
+      "pdf_page": 7,
+      "bbox_normalized": [
+        0.08,
+        0.065,
+        0.92,
+        0.285
+      ],
+      "output": "wiki/generation-and-planning/assets/lin-2026-diff-symbo-text-controlled-long/tables-2-3-results.png"
+    }
+  ]
+}

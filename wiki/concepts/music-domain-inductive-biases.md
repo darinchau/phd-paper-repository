@@ -25,6 +25,14 @@ Moonbeam's complete design reaches perplexity `2.423`, versus `2.512` with stand
 
 [[explainability-and-auditability/wei-2024-do-music-generation-models-encode|Wei et al.'s SynTheory study]] adds a distinct diagnostic: train probes to recover elementary music-theory labels from frozen audio-model representations, rather than infer knowledge from semantically named architecture alone. It reports strong Jukebox/MusicGen scores, but inspected code uses validation-dependent normalization, overlaps two tempo values between training and holdout, and does not demonstrate independent test scoring. These discrepancies may affect the numerical results; their effect is unmeasured. Even a clean probing result would establish recoverability, not causal use or faithful explanation. [[concepts/music-theory-probing]] develops this boundary. [Wei et al. PDF pp. 4–6 and inspected implementation recorded on its paper page]
 
+[[data-and-representation/long-2025-muspyexpress-extending-muspy-with-enhanced|MusPyExpress]] expands the representation level with typed expression annotations, score/track scope, and explicit spans. Its joint-prefix metrical model reduces note perplexity from 2.80 to 2.64 while moving pitch-class entropy farther from the reference. This strengthens the case for preserving written instructions but narrows the claim that a richer representation or better likelihood automatically improves musical quality. The annotation-count denominator and released timing/rendering caveats remain unresolved. [[concepts/expression-aware-symbolic-representations]] separates source instruction, model token, realized performance, and predicted annotation. [MusPyExpress PDF pp. 2–4, 7–10 and inspected artifact]
+
+[[theory-and-constraints/wang-2026-beyond-frequency-dissonance-spectrum-for|Dissonance Spectrum]] contributes an explicit rational pitch-relation transform and binwise spectral attribution, rather than inferring musical meaning from architecture labels. Its auxiliary branch improves reported mean QA/emotion endpoints over a matched CQT branch, but perceptual rankings are largely theory-derived, corrected exact sign tests yield .09375, and no code archive was available for inspection. The result strengthens the usefulness of a scoped relational prior without making it a complete consonance model or faithful neural explanation. [[concepts/dissonance-spectrum]] records the mechanism. [DS PDF pp. 3–7, 10–19]
+
+[[generation-and-planning/lin-2026-diff-symbo-text-controlled-long|Diff-Symbo]] adds learned attribute queries and previous-segment latent conditioning. It reports better control and continuation, but higher classifier-free guidance improves attribute accuracy while reducing listener quality. Local segment consistency is not an explicit plan for musical form. [Diff-Symbo PDF pp. 3–7]
+
+[[explainability-and-auditability/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of|MI-MIDI]] provides complementary causal intervention tests in two symbolic generators. Register and polyphony respond bidirectionally, while the apparent architecture effect remains confounded by tokenizer, scale, and training differences. This strengthens the counterfactual validation route below without establishing musician-facing explanation utility. [MI-MIDI PDF pp. 9–12]
+
 ## Four Levels That Should Not Be Collapsed
 
 1. **Music-shaped representation:** notes, voices, bars, onset, duration, pitch, instrument, and velocity are explicit rather than hidden inside arbitrary tokens.
@@ -48,6 +56,13 @@ A proposed music-domain bias should be tested at the level of the claim it makes
 For classical symbolic generation, the next step is not to replace learned biases with brittle universal rules. It is to keep representation, learned preference, explicit constraints, legitimate stylistic exceptions, and human overrides separate enough that their contributions and failures can be inspected.
 
 ## Related Pages
+
+- [[data-and-representation/long-2025-muspyexpress-extending-muspy-with-enhanced]] — typed expression representation with separate realization semantics.
+- [[theory-and-constraints/wang-2026-beyond-frequency-dissonance-spectrum-for]] — explicit pitch-relation prior and matched auxiliary-branch comparisons.
+- [[generation-and-planning/lin-2026-diff-symbo-text-controlled-long]] — attribute-query and segment-context conditioning.
+- [[explainability-and-auditability/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of]] — causal steering evidence and its limits.
+- [[concepts/expression-aware-symbolic-representations]] — annotation provenance and interpretation.
+- [[concepts/dissonance-spectrum]] — deterministic spectral attribution under a scoped theory model.
 
 - [[explainability-and-auditability/wei-2024-do-music-generation-models-encode]] — concept probing with explicit result-validity caveats.
 - [[concepts/music-theory-probing]] — evaluates recoverability separately from causal use and explanation utility.
