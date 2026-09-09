@@ -1,0 +1,46 @@
+{
+  "source_pdf": "papers/wei-2024-do-music-generation-models-encode.pdf",
+  "source_sha256": "9f25a57800d48876f6f801561387771906ffe6480e983e3966fd35ae37b8ce05",
+  "dpi": 150,
+  "crops": [
+    {
+      "id": "fig-1-probing-pipeline",
+      "pdf_page": 2,
+      "printed_page": null,
+      "bbox_normalized": [
+        0.09,
+        0.05,
+        0.915,
+        0.195
+      ],
+      "evidence_role": "Frozen representation-to-probe pipeline",
+      "output": "wiki/explainability-and-auditability/assets/wei-2024-do-music-generation-models-encode/fig-1-probing-pipeline.png"
+    },
+    {
+      "id": "fig-2-layer-probing",
+      "pdf_page": 5,
+      "printed_page": null,
+      "bbox_normalized": [
+        0.54,
+        0.068,
+        0.902,
+        0.233
+      ],
+      "evidence_role": "Layer-normalized probing curves and legend",
+      "output": "wiki/explainability-and-auditability/assets/wei-2024-do-music-generation-models-encode/fig-2-layer-probing.png"
+    },
+    {
+      "id": "table-2-probing-results",
+      "pdf_page": 6,
+      "printed_page": null,
+      "bbox_normalized": [
+        0.09,
+        0.058,
+        0.912,
+        0.238
+      ],
+      "evidence_role": "Complete reported metric table",
+      "output": "wiki/explainability-and-auditability/assets/wei-2024-do-music-generation-models-encode/table-2-probing-results.png"
+    }
+  ]
+}

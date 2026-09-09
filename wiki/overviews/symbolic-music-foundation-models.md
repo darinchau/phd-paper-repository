@@ -57,6 +57,14 @@ Together, the papers support four bounded conclusions:
 
 They do not establish held-out composer/work generation, long-form formal coherence, explicit common-practice rule satisfaction, memorization safety, independent reward validity, calibrated control confidence, or explanation utility.
 
+## Complementary Generation and Representation Evidence
+
+[[generation-and-planning/lin-2026-diff-symbo-text-controlled-long|Diff-Symbo]] adds a complementary text-controlled generation architecture rather than another model on a shared foundation-model leaderboard. A learned attribute-query encoder conditions diffusion over eight-bar VAE latents; a fine-tuned contextual denoiser extends music using the previous segment. The measured long-duration task is 32 bars. Eight-bar attribute accuracy rises to 83.15%, and to 86.69% with stronger classifier-free guidance, while quality MOS falls from 3.54 to 3.40 under that guidance. This strengthens the case for combining diffusion and segment context while reinforcing the existing distinction between control accuracy, musical quality, and explicit formal planning. [Diff-Symbo PDF pp. 3–7]
+
+Its 224,928 source MIDIs become hundreds of thousands of filtered segments, with a reported 96/2/2 split that does not establish work-disjointness. The demo provides examples rather than a verified training release. The absence of an explicit musical-form objective or a multi-minute scaling evaluation means that local continuation quality should not be reported as validated long-form structure. [Diff-Symbo PDF pp. 6–7 and inspected demo]
+
+[[data-and-representation/long-2025-muspyexpress-extending-muspy-with-enhanced|MusPyExpress]] offers a complementary representation: typed expression instructions and spans from MusicXML, beyond performed note time and velocity alone. Its small single-track models illustrate the same metric trade-off: better note perplexity can coexist with poorer pitch-class-distribution agreement. It is a library and representation study, not a directly comparable foundation model. [[concepts/expression-aware-symbolic-representations]] records the representation and provenance implications. [MusPyExpress PDF pp. 2–4, 7–10]
+
 ## Research Direction
 
 A theory-grounded successor could combine the strongest inspectable elements from both systems while adding evidence neither paper provides:
@@ -80,6 +88,10 @@ Moonbeam **strengthens** the case for continuous, semantically factorized music 
 Neither paper contradicts or replaces the repository's existing mashup claims; they establish a new symbolic-generation synthesis route.
 
 ## Related Pages
+
+- [[generation-and-planning/lin-2026-diff-symbo-text-controlled-long]] — text-conditioned latent diffusion and segmentwise continuation.
+- [[data-and-representation/long-2025-muspyexpress-extending-muspy-with-enhanced]] — expression-aware representation and small-model baselines.
+- [[concepts/expression-aware-symbolic-representations]] — score instructions, realization, and annotation provenance.
 
 - [[generation-and-planning/wang-2025-notagen-advancing-musicality-in-symbolic]] — ABC generation, classical fine-tuning, CLaMP-DPO, and human-reference comparison.
 - [[generation-and-planning/guo-2025-moonbeam-a-midi-foundation-model]] — expressive MIDI representation, MRA, downstream adaptation, and expert evaluation.
