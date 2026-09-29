@@ -31,6 +31,8 @@ Moonbeam's complete design reaches perplexity `2.423`, versus `2.512` with stand
 
 [[generation-and-planning/lin-2026-diff-symbo-text-controlled-long|Diff-Symbo]] adds learned attribute queries and previous-segment latent conditioning. It reports better control and continuation, but higher classifier-free guidance improves attribute accuracy while reducing listener quality. Local segment consistency is not an explicit plan for musical form. [Diff-Symbo PDF pp. 3–7]
 
+[[generation-and-planning/wang-2023-remast-real-time-emotion-based|REMAST]] makes the previous generated segment's recognized valence-arousal state an explicit condition for the next arrangement segment, alongside Harmonic Color, Rhythm Pattern, Contour Factor, and Form Factor. Its ablations support the usefulness of these descriptors for the reported coherence and similarity metrics, but the paper does not establish that the descriptors are faithful explanations, hard constraints, or sufficient measures of source identity. [REMAST PDF, Sections III–V]
+
 [[explainability-and-auditability/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of|MI-MIDI]] provides complementary causal intervention tests in two symbolic generators. Register and polyphony respond bidirectionally, while the apparent architecture effect remains confounded by tokenizer, scale, and training differences. This strengthens the counterfactual validation route below without establishing musician-facing explanation utility. [MI-MIDI PDF pp. 9–12]
 
 ## Four Levels That Should Not Be Collapsed
@@ -69,4 +71,5 @@ For classical symbolic generation, the next step is not to replace learned biase
 - [[overviews/symbolic-music-foundation-models]] — comparative evidence across the two ingested symbolic pretraining systems.
 - [[generation-and-planning/wang-2025-notagen-advancing-musicality-in-symbolic]] — interleaved ABC, bar-count planning, hierarchical patches, and learned-evaluator feedback.
 - [[generation-and-planning/guo-2025-moonbeam-a-midi-foundation-model]] — continuous attribute embeddings and dimension-specific relative attention.
+- [[generation-and-planning/wang-2023-remast-real-time-emotion-based]] — feedback-conditioned emotion arrangement and explicit theory-derived features.
 - [[concepts/auditable-creative-editing-pipelines]] — separates inspectable workflow state from faithful semantic explanation.

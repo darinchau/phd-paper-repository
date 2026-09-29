@@ -1,13 +1,13 @@
 # PhD Paper Repository Index
 
-Catalog generated on 2026-09-07 from repository content.
+Catalog generated on 2026-09-29 from repository content.
 
 ## Coverage
 
-- Canonical PDFs: **10**
-- Source digests: **10**
-- Domain paper pages: **10**
-- Papers linked to an overview or concept: **10/10**
+- Canonical PDFs: **12**
+- Source digests: **11**
+- Domain paper pages: **11**
+- Papers linked to an overview or concept: **11/11**
 - Overviews: **2**
 - Concepts: **6**
 - Questions: **1**
@@ -17,7 +17,7 @@ Catalog generated on 2026-09-07 from repository content.
 | Category | Papers | Index |
 |---|---:|---|
 | `data-and-representation` | 1 | [open](indexes/data-and-representation.md) |
-| `generation-and-planning` | 4 | [open](indexes/generation-and-planning.md) |
+| `generation-and-planning` | 5 | [open](indexes/generation-and-planning.md) |
 | `theory-and-constraints` | 1 | [open](indexes/theory-and-constraints.md) |
 | `explainability-and-auditability` | 2 | [open](indexes/explainability-and-auditability.md) |
 | `retrieval-and-recombination` | 2 | [open](indexes/retrieval-and-recombination.md) |
@@ -29,6 +29,7 @@ Catalog generated on 2026-09-07 from repository content.
 - [MusPyExpress: Extending MusPy with Enhanced Expression Text Support](wiki/data-and-representation/long-2025-muspyexpress-extending-muspy-with-enhanced.md) — Phillip Long, Hao-Wen Dong, Julian McAuley, and Zachary Novack (2025)
 - [Moonbeam: A MIDI Foundation Model Using Both Absolute and Relative Music Attributes](wiki/generation-and-planning/guo-2025-moonbeam-a-midi-foundation-model.md) — Zixun Guo and Simon Dixon (2025)
 - [Diff-Symbo: Text-Controlled Long-Duration Symbolic Music Generation Using Autoregressive Latent Diffusion Model](wiki/generation-and-planning/lin-2026-diff-symbo-text-controlled-long.md) — Zhiwei Lin, Jun Chen, Boshi Tang, Weihao Wu, Jing Yang, Yaolong Ju, Fan Fan, and Zhiyong Wu (2026)
+- [REMAST: Real-time Emotion-based Music Arrangement with Soft Transition](wiki/generation-and-planning/wang-2023-remast-real-time-emotion-based.md) — Zihao Wang, Le Ma, Chen Zhang, Bo Han, Yunfei Xu, Yikai Wang, Xinyi Chen, Haorong Hong, Wenbo Liu, Xinda Wu, and Kejun Zhang (2023)
 - [Hierarchical Reasoning Model](wiki/generation-and-planning/wang-2025-hierarchical-reasoning-model.md) — Guan Wang, Jin Li, Yuhao Sun, Xing Chen, Changling Liu, Yue Wu, Meng Lu, Sen Song, and Yasin Abbasi Yadkori (2025)
 - [NotaGen: Advancing Musicality in Symbolic Music Generation with Large Language Model Training Paradigms](wiki/generation-and-planning/wang-2025-notagen-advancing-musicality-in-symbolic.md) — Yashan Wang, Shangda Wu, Jianhuai Hu, Xingjian Du, Yueqi Peng, Yongxin Huang, Shuai Fan, Xiaobing Li, Feng Yu, and Maosong Sun (2025)
 - [Beyond Frequency: Dissonance Spectrum for Perceptually Motivated Music Understanding](wiki/theory-and-constraints/wang-2026-beyond-frequency-dissonance-spectrum-for.md) — Tianle Wang, Xinyi Tong, Liangke Zhao, Jishang Chen, Sirui Zhang, Haoxin Zhang, Xin Jin, Duo Xu, Xiaobing Li, and Song-Chun Zhu (2026)
