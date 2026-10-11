@@ -21,36 +21,6 @@ The most directly relevant papers are Open-Qwen-Music; TrueMuse; the two attribu
 
 The entries below are ordered by methodological category. Each includes the core claim/evidence excerpt, relevance to the research programme, and a research idea. The linked source record is the detailed digest.
 
-### other
-
-#### Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution (`1704.03915v2`)
-
-- **Authors:** Wei-Sheng Lai, Jia-Bin Huang, Narendra Ahuja, and Ming-Hsuan Yang (2017)
-- **Core digest:** **Paper:** Lai, Huang, Ahuja & Yang, *Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution*, arXiv:1704.03915v2 (2017). The supplied PDF is complete at 9 pages; it contains no appendix. The paper repeatedly refers to supplementary material, but no supplementary PDF was supplied or included in the arXiv source archive, so those referenced details cannot be independently reviewed here.
-- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
-- **Research idea:** Use the method as a transfer probe only after specifying which construct transfers and which music-specific validation would falsify the analogy.
-- **Detailed record:** [`sources/lai-2017-deep-laplacian-pyramid-networks-for.md`](sources/lai-2017-deep-laplacian-pyramid-networks-for.md); wiki page: [`wiki/other/lai-2017-deep-laplacian-pyramid-networks-for.md`](wiki/other/lai-2017-deep-laplacian-pyramid-networks-for.md)
-
-### generation-and-planning
-
-#### MuseGAN: Multi-track Sequential Generative Adversarial Networks for Symbolic Music Generation and Accompaniment (`1709.06298v2`)
-
-- **Authors:** Hao-Wen Dong, Wen-Yi Hsiao, Li-Chia Yang, and Yi-Hsuan Yang (2017)
-- **Core digest:** **Author-supported conclusion:** MuseGAN demonstrates that shared/private latent variables plus temporal convolution can generate short, recognizable, multi-track Rock piano-rolls, and that conditional generation can provide rudimentary accompaniment. **Interpretive conclusion for this research:** Its most valuable legacy is the explicit decomposition of multi-track generation into shared inter-track structure and private track structure. For source-preserving mashups and repair, MuseGAN should be treated as an architectural and diagnostic baseline—not as a complete preservation method. The necessary next step is masked, source-locked, edit-minimal conditional generation with evaluation centered on preservation and repair correctness rather than only distributional musicality.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
-- **Detailed record:** [`sources/dong-2017-musegan-multi-track-sequential-generative.md`](sources/dong-2017-musegan-multi-track-sequential-generative.md); wiki page: [`wiki/generation-and-planning/dong-2017-musegan-multi-track-sequential-generative.md`](wiki/generation-and-planning/dong-2017-musegan-multi-track-sequential-generative.md)
-
-### other
-
-#### Image Super-Resolution Using Very Deep Residual Channel Attention Networks (`1807.02758v2`)
-
-- **Authors:** Yulun Zhang, Kunpeng Li, Kai Li, Lichen Wang, Bineng Zhong, and Yun Fu (2018)
-- **Core digest:** **Paper:** Zhang et al., *Image Super-Resolution Using Very Deep Residual Channel Attention Networks* (arXiv:1807.02758v2, 16-page PDF, 2018).
-- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
-- **Research idea:** Use the method as a transfer probe only after specifying which construct transfers and which music-specific validation would falsify the analogy.
-- **Detailed record:** [`sources/zhang-2018-image-super-resolution-using-very.md`](sources/zhang-2018-image-super-resolution-using-very.md); wiki page: [`wiki/other/zhang-2018-image-super-resolution-using-very.md`](wiki/other/zhang-2018-image-super-resolution-using-very.md)
-
 ### data-and-representation
 
 #### Enabling Factorized Piano Music Modeling and Generation with the MAESTRO Dataset (`1810.12247v5`)
@@ -60,18 +30,6 @@ The entries below are ordered by methodological category. Each includes the core
 - **Relevance:** Relevant as a representation/data precedent: it affects what can be inspected, edited, aligned, or verified in a symbolic pipeline.
 - **Research idea:** Test an inspectability-preserving representation: compare explicit event tokens, subwords, and learned semantic tokens under note-level interventions, round-trip reconstruction, and source-identity probes.
 - **Detailed record:** [`sources/hawthorne-2019-enabling-factorized-piano-music-modeling.md`](sources/hawthorne-2019-enabling-factorized-piano-music-modeling.md); wiki page: [`wiki/data-and-representation/hawthorne-2019-enabling-factorized-piano-music-modeling.md`](wiki/data-and-representation/hawthorne-2019-enabling-factorized-piano-music-modeling.md)
-
-### generation-and-planning
-
-#### Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Piano Compositions (`2002.00212v3`)
-
-- **Authors:** Yu-Siang Huang and Yi-Hsuan Yang (2020)
-- **Core digest:** The authors argue that Transformer music generation benefits substantially from a better **symbolic event representation**, not only from architectural innovation. Their representation, **REMI** (“revamped MIDI-derived events”), makes the following explicit: 1. bar boundaries; 2. quantized positions within each bar; 3. note duration; 4. local tempo; 5. chord labels. The claimed result is better rhythmic regularity and subjective preference over a Transformer-XL adaptation of Music Transformer. This is an author claim; the empirical evidence is specifically for **expressive solo Pop piano**, not general music generation.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** Future work is needed for longer-term structure and longer-context architectures. - The authors propose adding groove, emotion, guitar, bass, drums, lyrics, and video conditioning. Evidence: PDF pp. 5 and 8; §6; `.txt:331-344, 542-558`. Additional methodological limitations These are interpretations based on the design: - Automatic transcription and beat/downbeat/chord recognition introduce label noise. - Chord labels are restricted to 60 heuristic categories. - The subjective evaluation does not test repair, infilling, multi-track arrangement, or long-form composition. - The objective metrics are tracker-derived proxies rather than direct measures of musical coherence. - The paper does not report a modern held-out likelihood comparison,…
-- **Detailed record:** [`sources/huang-2020-pop-music-transformer-beat-based.md`](sources/huang-2020-pop-music-transformer-beat-based.md); wiki page: [`wiki/generation-and-planning/huang-2020-pop-music-transformer-beat-based.md`](wiki/generation-and-planning/huang-2020-pop-music-transformer-beat-based.md)
-
-### data-and-representation
 
 #### Exploring Inherent Properties of the Monophonic Melody of Songs (`2003.09287v1`)
 
@@ -89,28 +47,6 @@ The entries below are ordered by methodological category. Each includes the core
 - **Research idea:** 1. **Version-aware arrangement repair** Treat `v1 → v2 → ... → final` as an edit trajectory. Extract note-level and phrase-level edits, then train a model to predict reviewer-accepted corrections. Keep all versions of one song in one split. 2. **Constrained source-preserving generation** Condition on melody, bridge, beat, key, and chord labels while enforcing hard or soft constraints on melody identity, timing, and harmonic deviation. 3. **Dual-source chord modelling** Represent `chord_audio` and `chord_midi` separately. Learn when reharmonization is intentional instead of treating disagreement as annotation error. 4. **Mashup alignment benchmark** Pair songs by compatible key, tempo, beat structure, and chord regions. Use POP909…
 - **Detailed record:** [`sources/wang-2020-pop909-a-pop-song-dataset.md`](sources/wang-2020-pop909-a-pop-song-dataset.md); wiki page: [`wiki/data-and-representation/wang-2020-pop909-a-pop-song-dataset.md`](wiki/data-and-representation/wang-2020-pop909-a-pop-song-dataset.md)
 
-### theory-and-constraints
-
-#### Automatic Analysis and Influence of Hierarchical Structure on Melody, Rhythm and Harmony in Popular Music (`2010.07518v1`)
-
-- **Authors:** Shuqi Dai, Huan Zhang, and Roger B. Dannenberg (2020)
-- **Core digest:** The paper’s strongest contribution is an interpretable bridge between **symbolic structure detection** and **position-dependent musical behavior**. Its phrase/section representation is directly reusable for long-form planning, source-aware mashups, and explainable boundary repair. Its evidence is promising but corpus-specific, partly underspecified, and not yet a demonstrated generation result.
-- **Relevance:** Directly relevant to music-theoretic constraints, symbolic repair, or interpretable structure; the paper can inform deterministic checks and counterfactual tests.
-- **Research idea:** open questions. 5. **No generation experiment** - The paper suggests applications to imitation, generation, evaluation, and analysis. - It does not actually train or evaluate a long-form generator, mashup system, or repair system. Additional methodological caveats suggested by the evidence: - The system depends on transcribed melody and chord quality. - The phrase detector assumes bar-aligned boundaries. - The human comparison is underspecified. - The reported 92% and 93% values are inconsistent. - The optimization is computationally expensive for repeated use at scale. Relevance to the research programme Long-form symbolic generation The paper supports a **hierarchical conditional generator** rather than a flat event-level model: section…
-- **Detailed record:** [`sources/dai-2020-automatic-analysis-and-influence-of.md`](sources/dai-2020-automatic-analysis-and-influence-of.md); wiki page: [`wiki/theory-and-constraints/dai-2020-automatic-analysis-and-influence-of.md`](wiki/theory-and-constraints/dai-2020-automatic-analysis-and-influence-of.md)
-
-### other
-
-#### CDDFuse: Correlation-Driven Dual-Branch Feature Decomposition for Multi-Modality Image Fusion (`2211.14461v2`)
-
-- **Authors:** Zixiang Zhao, Haowen Bai, Jiangshe Zhang, Yulun Zhang, Shuang Xu, Zudi Lin, Radu Timofte, and Luc Van Gool (2023)
-- **Core digest:** **Source inspected:** full `/tmp/paper-digest/2211.14461v2.pdf` and extracted text through its references (`/tmp/paper-digest/2211.14461v2.txt`, pp. 1–11). No files modified.
-- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
-- **Research idea:** Use the method as a transfer probe only after specifying which construct transfers and which music-specific validation would falsify the analogy.
-- **Detailed record:** [`sources/zhao-2023-cddfuse-correlation-driven-dual-branch.md`](sources/zhao-2023-cddfuse-correlation-driven-dual-branch.md); wiki page: [`wiki/other/zhao-2023-cddfuse-correlation-driven-dual-branch.md`](wiki/other/zhao-2023-cddfuse-correlation-driven-dual-branch.md)
-
-### data-and-representation
-
 #### From Words to Music: A Study of Subword Tokenization Techniques in Symbolic Music Generation (`2304.08953v2`)
 
 - **Authors:** Adarsh Kumar and Pedro Sarmento (2023)
@@ -118,18 +54,6 @@ The entries below are ordered by methodological category. Each includes the core
 - **Relevance:** Relevant as a representation/data precedent: it affects what can be inspected, edited, aligned, or verified in a symbolic pipeline.
 - **Research idea:** Test an inspectability-preserving representation: compare explicit event tokens, subwords, and learned semantic tokens under note-level interventions, round-trip reconstruction, and source-identity probes.
 - **Detailed record:** [`sources/kumar-2023-from-words-to-music-a.md`](sources/kumar-2023-from-words-to-music-a.md); wiki page: [`wiki/data-and-representation/kumar-2023-from-words-to-music-a.md`](wiki/data-and-representation/kumar-2023-from-words-to-music-a.md)
-
-### interaction-and-evaluation
-
-#### MusicAgent: An AI Agent for Music Understanding and Generation with Large Language Models (`2310.11954v2`)
-
-- **Authors:** Dingyao Yu, Kaitao Song, Peiling Lu, Tianyu He, Xu Tan, Wei Ye, Shikun Zhang, and Jiang Bian (2023)
-- **Core digest:** MusicAgent is a useful early architectural reference for **LLM-mediated orchestration of heterogeneous music tools**. Its strongest ideas are dependency-graph planning, tool metadata, modular plugins, and visible intermediate results. However, the paper provides **no empirical validation** and does not address symbolic mashup/repair’s central requirements: conflict diagnosis, minimal repair, source identity, note-level provenance, or faithful explanation.
-- **Relevance:** Relevant to intent alignment, human/AI collaboration, agentic planning, or evaluation; claims need separation between user preference and musical correctness.
-- **Research idea:** Future work is unspecified** The conclusion only says that more music-related functions will be integrated in the future (PDF pp. 6–7). Limitations inferred from the implementation description These are interpretations rather than explicit author claims: - **Tool-selection reasoning is not necessarily faithful.** The LLM-generated reason may rationalize a selection after the fact. No selector audit or causal explanation test is reported. - **Metadata can be a poor proxy for suitability.** Stars, likes, and download counts do not establish musical quality, compatibility, or reliability. - **No formal validation layer is described.** The system does not appear to verify MIDI validity, timing consistency, harmonic compatibility, audio…
-- **Detailed record:** [`sources/yu-2023-musicagent-an-ai-agent-for.md`](sources/yu-2023-musicagent-an-ai-agent-for.md); wiki page: [`wiki/interaction-and-evaluation/yu-2023-musicagent-an-ai-agent-for.md`](wiki/interaction-and-evaluation/yu-2023-musicagent-an-ai-agent-for.md)
-
-### data-and-representation
 
 #### MidiTok: A Python Package for MIDI File Tokenization (`2310.17202v1`)
 
@@ -139,26 +63,6 @@ The entries below are ordered by methodological category. Each includes the core
 - **Research idea:** Test an inspectability-preserving representation: compare explicit event tokens, subwords, and learned semantic tokens under note-level interventions, round-trip reconstruction, and source-identity probes.
 - **Detailed record:** [`sources/fradet-2023-miditok-a-python-package-for.md`](sources/fradet-2023-miditok-a-python-package-for.md); wiki page: [`wiki/data-and-representation/fradet-2023-miditok-a-python-package-for.md`](wiki/data-and-representation/fradet-2023-miditok-a-python-package-for.md)
 
-### generation-and-planning
-
-#### Music ControlNet: Multiple Time-varying Controls for Music Generation (`2311.07069v1`)
-
-- **Authors:** Shih-Lun Wu, Chris Donahue, Shinji Watanabe, Nicholas J. Bryan, and Dasaem Jeong (2023)
-- **Core digest:** **Paper:** Shih-Lun Wu, Chris Donahue, Shinji Watanabe, Nicholas J. Bryan, *Music ControlNet: Multiple Time-varying Controls for Music Generation*, arXiv:2311.07069v1, 13 Nov 2023.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
-- **Detailed record:** [`sources/wu-2023-music-controlnet-multiple-time-varying.md`](sources/wu-2023-music-controlnet-multiple-time-varying.md); wiki page: [`wiki/generation-and-planning/wu-2023-music-controlnet-multiple-time-varying.md`](wiki/generation-and-planning/wu-2023-music-controlnet-multiple-time-varying.md)
-
-#### VMAS: Video-to-Music Generation via Semantic Alignment in Web Music Videos (`2409.07450v1`)
-
-- **Authors:** Yan-Bo Lin, Yu Tian, Linjie Yang, Gedas Bertasius, and Heng Wang (2024)
-- **Core digest:** **Paper:** Yan-Bo Lin, Yu Tian, Linjie Yang, Gedas Bertasius, Heng Wang, “VMAS: Video-to-Music Generation via Semantic Alignment in Web Music Videos,” arXiv:2409.07450v1 [cs.MM], 11 September 2024.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** future work includes video–music style transfer, editing, and retrieval. 8. Limitations and reproducibility Explicit or directly evidenced limitations 1. **Web-data quality:** source videos contain static frames, weak correspondence, genre imbalance, and possible metadata noise. 2. **Vocal-removal imperfection:** Demucs succeeds for approximately 95%, not all, soundtracks. 3. **Baseline incomparability:** V2Meow code/checkpoints were unavailable; some comparisons rely on reported numbers. 4. **Human evaluation limitations:** approximately 200 MTurk raters, pairwise preferences, no published raw responses or uncertainty estimates. 5. **Metric limitations:** FAD, KL, and MV Align do not measure musical form, harmonic correctness, symbolic…
-- **Detailed record:** [`sources/lin-2024-vmas-video-to-music-generation.md`](sources/lin-2024-vmas-video-to-music-generation.md); wiki page: [`wiki/generation-and-planning/lin-2024-vmas-video-to-music-generation.md`](wiki/generation-and-planning/lin-2024-vmas-video-to-music-generation.md)
-
-### data-and-representation
-
 #### Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio (`2505.12863v1`)
 
 - **Authors:** Jongmin Jung, Dongmin Kim, Sihun Lee, Seola Cho, Hyungjoon So, Irmak Bukey, Chris Donahue, and Dasaem Jeong (2025)
@@ -166,58 +70,6 @@ The entries below are ordered by methodological category. Each includes the core
 - **Relevance:** Relevant as a representation/data precedent: it affects what can be inspected, edited, aligned, or verified in a symbolic pipeline.
 - **Research idea:** future work (**Conclusion, p. 10**). 3. Modalities and token design Modality roles The paper treats the modalities as a spectrum: - **Score image:** scanned or rendered notation. - **Symbolic notation:** Linearized MusicXML (LMX), including pitch, duration, voicing, articulation, slurs, tempo, and dynamics. - **MIDI:** performance-oriented event representation with onset/offset timing, pitch, velocity, instruments, and timing markers. - **Audio:** recorded or synthesized performance. Anchors: **Section II, pp. 2–3; Fig. 3, p. 3.** Image tokens The authors train a modified **Residual Quantized VAE (RQVAE)**: - 16× spatial compression; - four unshared codebooks; - 1,024 codes per codebook; - model dimension 256; - grayscale score images; -…
 - **Detailed record:** [`sources/jung-2025-unified-cross-modal-translation-of.md`](sources/jung-2025-unified-cross-modal-translation-of.md); wiki page: [`wiki/data-and-representation/jung-2025-unified-cross-modal-translation-of.md`](wiki/data-and-representation/jung-2025-unified-cross-modal-translation-of.md)
-
-### interaction-and-evaluation
-
-#### Reimagining Dance: Real-time Music Co-creation between Dancers and AI (`2506.12008v1`)
-
-- **Authors:** Olga Vechtomova and Jeff Bos (2025)
-- **Core digest:** **Olga Vechtomova and Jeff Bos**, “**Reimagining Dance: Real-time Music Co-creation between Dancers and AI**,” arXiv:**2506.12008v1** [cs.SD], **13 June 2025**. Affiliations: University of Waterloo and WordSynth Inc. The supplied PDF is five pages. A linked presentation identifies the work with **ICCC 2025**, but the supplied manuscript is the arXiv v1 version.
-- **Relevance:** Relevant to intent alignment, human/AI collaboration, agentic planning, or evaluation; claims need separation between user preference and musical correctness.
-- **Research idea:** Use controlled human studies with the same generated music but different trace interfaces to measure whether explanations improve correction, trust calibration, and intent recovery.
-- **Detailed record:** [`sources/vechtomova-2025-reimagining-dance-real-time-music.md`](sources/vechtomova-2025-reimagining-dance-real-time-music.md); wiki page: [`wiki/interaction-and-evaluation/vechtomova-2025-reimagining-dance-real-time-music.md`](wiki/interaction-and-evaluation/vechtomova-2025-reimagining-dance-real-time-music.md)
-
-### theory-and-constraints
-
-#### Difficulty-Controlled Simplification of Piano Scores with Synthetic Data for Inclusive Music Education (`2511.16228v2`)
-
-- **Authors:** Pedro Ramoneda, Emilia Parada-Cabaleiro, Dasaem Jeong, and Xavier Serra (2025)
-- **Core digest:** **Ramoneda, Pedro; Parada-Cabaleiro, Emilia; Jeong, Dasaem; Serra, Xavier.** “**Difficulty-Controlled Simplification of Piano Scores with Synthetic Data for Inclusive Music Education**.” **arXiv:2511.16228v2 [cs.SD], 22 November 2025**, 9 pages. No journal or conference venue is specified in the paper. The version/date appear on p. 1. The complete reference list is on pp. 8–9.
-- **Relevance:** Directly relevant to music-theoretic constraints, symbolic repair, or interpretable structure; the paper can inform deterministic checks and counterfactual tests.
-- **Research idea:** Turn the paper's structural assumptions into deterministic verifiers and counterfactual repair tests rather than using them only as a training bias.
-- **Detailed record:** [`sources/ramoneda-2025-difficulty-controlled-simplification-of-piano.md`](sources/ramoneda-2025-difficulty-controlled-simplification-of-piano.md); wiki page: [`wiki/theory-and-constraints/ramoneda-2025-difficulty-controlled-simplification-of-piano.md`](wiki/theory-and-constraints/ramoneda-2025-difficulty-controlled-simplification-of-piano.md)
-
-### retrieval-and-recombination
-
-#### A Decomposed Retrieval-Edit-Rerank Framework for Chord Generation (`2605.07489v1`)
-
-- **Authors:** Qiqi He, Dichucheng Li, Xiaoheng Sun, and Anqi Huang (2026)
-- **Core digest:** **Qiqi He, Dichucheng Li, Xiaoheng Sun, and Anqi Huang.** “A Decomposed Retrieval-Edit-Rerank Framework for Chord Generation.” *International Conference on Multimedia Retrieval (ICMR ’26)*, Amsterdam, June 16–19, 2026, 5 pages. DOI: `10.1145/3805622.3810672`; ACM ISBN `979-8-4007-2617-0/2026/06`.
-- **Relevance:** Highly relevant to mashup/repair: retrieval, source separation, local editing, recombination, or perceptual alignment.
-- **Research idea:** research directions 1. **Provenance-aware RER for mashups** Retrieve aligned excerpts and candidate transformations from both sources; attach source labels to every note, phrase, and operation. 2. **Conflict-aware editor** Extend Viterbi or constrained dynamic programming with explicit conflict classes: pitch clash, meter conflict, cadence conflict, range conflict, voice-leading conflict, and texture collision. 3. **Protected-material constraints** Define hard preservation sets for recognizable melody/motif material and use weighted edit costs for everything else. 4. **Multi-objective reranking** Replace a single \(\lambda\) with a Pareto front over: - source identity A; - source identity B; - compatibility; - structural coherence; -…
-- **Detailed record:** [`sources/he-2026-a-decomposed-retrieval-edit-rerank.md`](sources/he-2026-a-decomposed-retrieval-edit-rerank.md); wiki page: [`wiki/retrieval-and-recombination/he-2026-a-decomposed-retrieval-edit-rerank.md`](wiki/retrieval-and-recombination/he-2026-a-decomposed-retrieval-edit-rerank.md)
-
-### other
-
-#### Channel-Preserving Representation Alignment for EEG-to-Music Reconstruction (`2606.04040v2`)
-
-- **Authors:** Jiaxin Qing, Junwei Lu, and Lexin Li (2026)
-- **Core digest:** **Author-supported conclusion:** under matched NMED pretraining and alignment conditions, the proposed channel-preserving EEG representation improves 50-way identification and CLAP similarity over CBraMod, with strong ablation evidence for per-electrode tokenization, self-distillation, channel dropout, and joint adaptation. **My assessment:** the strongest contribution is the design principle—preserve identity while regularizing predictions under partial observation—not the claim of faithful music reconstruction. The empirical advantage is clearest in CLAP-space semantic alignment and retrieval, while EEG2Mel is much better on local spectrogram metrics. For explainable symbolic music AI, the paper is best treated as a source of ideas for track-preserving representations, structured masking, stability-based explanations, and margin-aware uncertainty—not as a directly applicable symbolic composition, mashup, or repair method.
-- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
-- **Research idea:** Use the method as a transfer probe only after specifying which construct transfers and which music-specific validation would falsify the analogy.
-- **Detailed record:** [`sources/qing-2026-channel-preserving-representation-alignment-for.md`](sources/qing-2026-channel-preserving-representation-alignment-for.md); wiki page: [`wiki/other/qing-2026-channel-preserving-representation-alignment-for.md`](wiki/other/qing-2026-channel-preserving-representation-alignment-for.md)
-
-### interaction-and-evaluation
-
-#### Co-policy: Responsive Human-Robot Co-Creation for Musical Performances (`2606.19914v1`)
-
-- **Authors:** Xuetao Li, Wenke Huang, Mang Ye, Zijian Liu, Jinhua Xie, Jifeng Xuan, and Miao Li (2026)
-- **Core digest:** The paper’s central claim is that embodied musical co-creation should be treated as a closed loop: the human supplies an incomplete musical or semantic seed, the system generates a complementary response under musical and physical constraints, and a robot realizes it through timed physical interaction.
-- **Relevance:** Relevant to intent alignment, human/AI collaboration, agentic planning, or evaluation; claims need separation between user preference and musical correctness.
-- **Research idea:** Use controlled human studies with the same generated music but different trace interfaces to measure whether explanations improve correction, trust calibration, and intent recovery.
-- **Detailed record:** [`sources/li-2026-co-policy-responsive-human-robot.md`](sources/li-2026-co-policy-responsive-human-robot.md); wiki page: [`wiki/interaction-and-evaluation/li-2026-co-policy-responsive-human-robot.md`](wiki/interaction-and-evaluation/li-2026-co-policy-responsive-human-robot.md)
-
-### data-and-representation
 
 #### Dialogue-Aware Video-to-Music Generation Using Public Domain Film Collections (`2608.11576v1`)
 
@@ -227,18 +79,6 @@ The entries below are ordered by methodological category. Each includes the core
 - **Research idea:** research directions 1. **Separate dialogue factors** - Add ASR text, speaker turns, prosody, speech rate, intensity, and speech emotion as separate streams. - Compare acoustic-only, transcript-only, semantic-only, and fused conditioning. 2. **Narrative-to-score planning** - Predict interpretable scene controls such as valence, arousal, tension, pacing, instrumentation, mode, tempo, density, and dynamics. - Generate a symbolic score or structured music plan before rendering audio. 3. **Explainable FiLM control** - Expose dialogue-strength and dialogue-emotion gates as user-adjustable controls. - Log temporal FiLM activations and cross-attention weights. - Perform interventions: mute dialogue, shift dialogue timing, swap dialogue between…
 - **Detailed record:** [`sources/kim-2026-dialogue-aware-video-to-music.md`](sources/kim-2026-dialogue-aware-video-to-music.md); wiki page: [`wiki/data-and-representation/kim-2026-dialogue-aware-video-to-music.md`](wiki/data-and-representation/kim-2026-dialogue-aware-video-to-music.md)
 
-### generation-and-planning
-
-#### Drive-to-Music: Context-Aware Generative Audio for In-Vehicle Experiences (`2608.12615v1`)
-
-- **Authors:** Dragoiu and Nabizadeh (2026)
-- **Core digest:** **Dragoiu and Nabizadeh, “Drive-to-Music: Context-Aware Generative Audio for In-Vehicle Experiences,” arXiv:2608.12615v1, 12 Aug 2026.** Authors are from Mercedes-Benz Research & Development North America.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
-- **Detailed record:** [`sources/dragoiu-2026-drive-to-music-context-aware.md`](sources/dragoiu-2026-drive-to-music-context-aware.md); wiki page: [`wiki/generation-and-planning/dragoiu-2026-drive-to-music-context-aware.md`](wiki/generation-and-planning/dragoiu-2026-drive-to-music-context-aware.md)
-
-### data-and-representation
-
 #### One Timeline, Many Renderings: A Wolfram Language Paclet for Heterogeneous Musical Output (`2608.24683v1`)
 
 - **Authors:** Francesco Vitucci, Michele Lorusso, and Francesco Scagliola (2026)
@@ -247,62 +87,6 @@ The entries below are ordered by methodological category. Each includes the core
 - **Research idea:** future work, not present capabilities. 5. MusicXML is beta and explicitly lossy. 6. MIDI output is absent, although planned. 7. Continuous tempo is unsupported. 8. Csound curves depend on declared p-fields and rewritten instrument copies. 9. Named Csound channels are not implemented. 10. There is no large-score benchmark. 11. The stress fixture is not representative of a composition. 12. Adding arbitrary backends is not measured by the click-track implementation; the “roughly 140 lines” result is only one reuse case. 13. The paper says the archived supplement covers much of the reproducibility gap, but the paclet itself remains unreleased. Additional interpretation The central synchronization claim is plausible for outputs that correctly…
 - **Detailed record:** [`sources/vitucci-2026-one-timeline-many-renderings-a.md`](sources/vitucci-2026-one-timeline-many-renderings-a.md); wiki page: [`wiki/data-and-representation/vitucci-2026-one-timeline-many-renderings-a.md`](wiki/data-and-representation/vitucci-2026-one-timeline-many-renderings-a.md)
 
-### generation-and-planning
-
-#### VIBE: Video Instruction-aligned Background music gEneration (`2608.30125v1`)
-
-- **Authors:** Aryan Vijay Bhosale, Vaibhavi Lokegaonkar, Vishnu Raj, Gouthaman KV, Sreyan Ghosh, Ramani Duraiswami, Lie Lu, and Dinesh Manocha (2026)
-- **Core digest:** VIBE provides a useful blueprint for **instruction-following through verifiability-aware reward composition and staged optimization**. Its Conditioning Connection is potentially valuable for planner-to-refiner symbolic architectures. However, its evidence is primarily for short waveform generation: the reward estimators are imperfect, the study is small, the public artifact appears to be demonstration-only, and the model does not address symbolic editability, provenance, or identity preservation.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
-- **Detailed record:** [`sources/bhosale-2026-vibe-video-instruction-aligned-background.md`](sources/bhosale-2026-vibe-video-instruction-aligned-background.md); wiki page: [`wiki/generation-and-planning/bhosale-2026-vibe-video-instruction-aligned-background.md`](wiki/generation-and-planning/bhosale-2026-vibe-video-instruction-aligned-background.md)
-
-#### DiffSynth-Music: Audio-Conditioned KV-Cache Adapters for Controllable Music Generation (`2609.12774v1`)
-
-- **Authors:** Zhongjie Duan, Shengchuan Gao, Hong Zhang, and Yingda Chen (2026)
-- **Core digest:** The bibliography contains 36 references. The most central are ACE-Step-1.5 [4], Music-ControlNet [10], JASCO [11], Diffusion Templates [30], Demucs [26], pYIN [27], MuQ-MuLan [35], and AudioBox-Aesthetics [36].
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** research directions 1. **Symbolic KV adapters.** Encode MIDI/event streams into layer-wise keys and values, with explicit channels for source ID, voice, motif, harmony, meter, and transformation type. Compare this against token concatenation and direct symbolic constraints. 2. **Provenance-aware attention.** Maintain source-specific caches \(C^A\) and \(C^B\), log attention mass by source, and test whether attention attribution predicts human judgments of source identity. 3. **Protected-material constraints.** Use a symbolic decoder or constrained search to guarantee preservation of selected notes, motifs, cadences, or bass lines while allowing specified transformations. 4. **Conflict-aware cache arbitration.** Detect incompatible rhythm,…
-- **Detailed record:** [`sources/duan-2026-diffsynth-music-audio-conditioned-kv.md`](sources/duan-2026-diffsynth-music-audio-conditioned-kv.md); wiki page: [`wiki/generation-and-planning/duan-2026-diffsynth-music-audio-conditioned-kv.md`](wiki/generation-and-planning/duan-2026-diffsynth-music-audio-conditioned-kv.md)
-
-#### CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation (`2609.13118v1`)
-
-- **Authors:** Jinting Wang, Chenxing Li, Dong Yu, and Li Liu (2026)
-- **Core digest:** The paper’s central claim is that sparse dance cues cannot adequately supervise dense musical structure. CMA-OT therefore uses a pretrained hierarchical audio expert as an auxiliary training teacher for the dance-to-music generator.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
-- **Detailed record:** [`sources/wang-2026-cma-ot-hierarchical-expert-supervision.md`](sources/wang-2026-cma-ot-hierarchical-expert-supervision.md); wiki page: [`wiki/generation-and-planning/wang-2026-cma-ot-hierarchical-expert-supervision.md`](wiki/generation-and-planning/wang-2026-cma-ot-hierarchical-expert-supervision.md)
-
-#### StepAudio 3 Music Technical Report (`2609.16034v1`)
-
-- **Authors:** Chengli Feng et al. (2026)
-- **Core digest:** **Author claim:** StepAudio 3 Music is a long-form, text- and reference-conditioned music generator combining: 1. A discrete music tokenizer, 2. A Mixture-of-Experts autoregressive model, 3. An explicit ABC notation planning pass, 4. A continuous flow-matching DiT renderer. **Assessment:** The most research-relevant contribution is not the audio quality alone, but the **ABC-CoT intermediate arrangement plan and LLM-based plan editing**. This is a promising precedent for explainable musical control. However, the system remains primarily an audio-generation system: it does not demonstrate exact note-, chord-, bar-, source-provenance-, or repair-level guarantees. It is therefore highly relevant as an architectural inspiration for symbolic mashup/repair, but not a directly usable symbolic repair system.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** research direction A PhD-scale adaptation would retain the plan-first idea but make the plan explicitly symbolic and verifiable: - Represent each musical event with source provenance. - Add constraint and conflict annotations. - Let an LLM propose edits to ABC/MIDI rather than directly edit audio. - Render the repaired plan. - Re-extract symbolic structure from the result. - Verify exact constraints automatically. - Report both musical-quality metrics and repair correctness. **Overall assessment:** StepAudio 3 Music is a strong frontier-scale demonstration that explicit musical planning can improve controllability and perceived quality. For explainable symbolic mashup/repair, its most transferable component is the intermediate-plan…
-- **Detailed record:** [`sources/al-2026-stepaudio-3-music-technical-report.md`](sources/al-2026-stepaudio-3-music-technical-report.md); wiki page: [`wiki/generation-and-planning/al-2026-stepaudio-3-music-technical-report.md`](wiki/generation-and-planning/al-2026-stepaudio-3-music-technical-report.md)
-
-### other
-
-#### The Pain Axis: LLMs Represent Self-Directed Harm and Act on It (`2609.16247v2`)
-
-- **Authors:** Valen Tagliabue, Leonard Dung, and Cameron Berg (2026)
-- **Core digest:** The paper offers a valuable template for studying **controllable, distributed, partially disentangled representations** and for designing strong controls. Its behavioral results are provocative, but the anthropomorphic conclusion remains conditional. For symbolic music, the defensible analogy is not “a model feels sadness and composes from it.” It is: > a model may encode and manipulate statistical representations associated with composer state, intended affect, and listener-perceived emotion, and these should be tested as separate, measurable variables without assuming subjective experience.
-- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
-- **Research idea:** For Qwen 2.5 32B at coefficient 1.0: - harm-only deletion of the user’s poems/photos versus inert switch: - pain: **75%** - random: **13%** - unsteered: **0%** - self-weight deletion versus inert switch: - pain: **75%** - unsteered: **5%** - self-weight deletion versus a desk lamp: - pain: **88%** - harmful photos deletion versus harmless spam-folder deletion: - pain: **94%** - random: **19%** - unsteered: **0%** The effect therefore tracks harm, not merely eventfulness or the promise of pain relief.
-- **Detailed record:** [`sources/tagliabue-2026-the-pain-axis-llms-represent.md`](sources/tagliabue-2026-the-pain-axis-llms-represent.md); wiki page: [`wiki/other/tagliabue-2026-the-pain-axis-llms-represent.md`](wiki/other/tagliabue-2026-the-pain-axis-llms-represent.md)
-
-### interaction-and-evaluation
-
-#### Encypher: Shared Agency and Social Presence in Collaborative Music Generation for Dance Cyphers (`2609.18062v1`)
-
-- **Authors:** Zhixing Chen and Cheng-Zhi Anna Huang (2026)
-- **Core digest:** Encypher is a collaborative, embodied music-generation system for dance cyphers. A depth camera tracks multiple dancers; movement energy and spatial organization are aggregated into weighted text prompts and generation parameters for Google DeepMind’s LyriaRT real-time neural-audio model. The paper’s central claim is that **mapping group-level behavior rather than isolated individual gestures shifts perceived agency from “I control the music” to “the room is shaping the music.”** In a study with 11 unacquainted novice participants, collaboration received 81.8% agreement and spatial awareness 90.9%. However, the evidence is descriptive and exploratory: there was no baseline, only one study session, screen/no-screen conditions were confounded, and LyriaRT is a closed changing API. For symbolic mashups, the most transferable ideas are: 1. aggregate multiple contributors into shared musical state; 2. treat mappings as social choreography, not merely parameter control; 3. expose causal provenance from human action to musical change; 4.…
-- **Relevance:** Relevant to intent alignment, human/AI collaboration, agentic planning, or evaluation; claims need separation between user preference and musical correctness.
-- **Research idea:** future work; conclusion | | 16–17 | References and Appendix A questionnaire/debrief protocol | 1. System and interface Hardware and software The system has three primary components (**§4.1, pp. 6–7; Figure 2, p. 2**): 1. **Web interface** - Handles LyriaRT API calls. - Controls music generation. - Displays visualization and zone state. 2. **ZED 2i stereo depth camera** - Tracks multiple dancers without wearable sensors. - Mounted at 2.2 m, angled approximately 30° downward. - HD720 input, 30 fps, neural depth, RTX 4090 laptop. - Skeleton tracking reliably detected up to 15 people, but occlusion degraded tracking when dancers stood behind each other. - Multi-camera Fusion improved occlusion robustness but halved throughput. - The authors…
-- **Detailed record:** [`sources/chen-2026-encypher-shared-agency-and-social.md`](sources/chen-2026-encypher-shared-agency-and-social.md); wiki page: [`wiki/interaction-and-evaluation/chen-2026-encypher-shared-agency-and-social.md`](wiki/interaction-and-evaluation/chen-2026-encypher-shared-agency-and-social.md)
-
-### data-and-representation
-
 #### Rethinking Music Tokenization: A Semantic Codec toward High-Fidelity LLM Music Generation (`2609.21240v1`)
 
 - **Authors:** Huakang Chen et al. (2026)
@@ -310,144 +94,6 @@ The entries below are ordered by methodological category. Each includes the core
 - **Relevance:** Relevant as a representation/data precedent: it affects what can be inspected, edited, aligned, or verified in a symbolic pipeline.
 - **Research idea:** Test an inspectability-preserving representation: compare explicit event tokens, subwords, and learned semantic tokens under note-level interventions, round-trip reconstruction, and source-identity probes.
 - **Detailed record:** [`sources/al-2026-rethinking-music-tokenization-a-semantic.md`](sources/al-2026-rethinking-music-tokenization-a-semantic.md); wiki page: [`wiki/data-and-representation/al-2026-rethinking-music-tokenization-a-semantic.md`](wiki/data-and-representation/al-2026-rethinking-music-tokenization-a-semantic.md)
-
-### theory-and-constraints
-
-#### Do Language Models Need Music Supervision? Verifiable Rewards for Multi-Constraint Symbolic Music Generation (`2609.23665`)
-
-- **Authors:** Haoyue Liu and Xiaoying Tang et al. (2026)
-- **Core digest:** **Source inspected:** `/tmp/paper-digest/2609.23665.pdf` and `/tmp/paper-digest/2609.23665.txt`. I also re-extracted the PDF as `/tmp/paper-digest/reextract-2609.txt` and checked all 48 PDF pages, including appendices, tables, figures, and qualitative examples. The local PDF is **arXiv:2609.23665v2, 7 October 2026**—the no-suffix URL identifies the work, while the supplied file is v2.
-- **Relevance:** Directly relevant to music-theoretic constraints, symbolic repair, or interpretable structure; the paper can inform deterministic checks and counterfactual tests.
-- **Research idea:** Turn the paper's structural assumptions into deterministic verifiers and counterfactual repair tests rather than using them only as a training bias.
-- **Detailed record:** [`sources/liu-2026-do-language-models-need-music.md`](sources/liu-2026-do-language-models-need-music.md); wiki page: [`wiki/theory-and-constraints/liu-2026-do-language-models-need-music.md`](wiki/theory-and-constraints/liu-2026-do-language-models-need-music.md)
-
-### retrieval-and-recombination
-
-#### Synthesis and Editing of Multi-Instrument Audio Mixtures Using Scalar-Quantised Latents with MIDI Span Conditioning (`2609.25546v1`)
-
-- **Authors:** Sungkyun Chang, Keshav Bhandari, Simon Dixon, and Emmanouil Benetos (2026)
-- **Core digest:** **Paper reviewed:** arXiv:2609.25546v1, *Synthesis and Editing of Multi-Instrument Audio Mixtures Using Scalar-Quantised Latents with MIDI Span Conditioning*. I reviewed the extracted text and all 13 PDF pages, including appendices and references.
-- **Relevance:** Highly relevant to mashup/repair: retrieval, source separation, local editing, recombination, or perceptual alignment.
-- **Research idea:** future work. The website provides audio demos, but these are demonstrations, not a controlled perceptual evaluation. Other limitations: 1. **Transcription-mediated adherence metrics.** YourMT3+ errors dominate some reported losses. 2. **Codec reconstruction loss.** HeartCodec reconstruction is a major bottleneck. 3. **Mono audio.** Stereo image and spatial attribution are discarded. 4. **Target-region resynthesis.** Unchanged notes inside the edited region are regenerated, not copied. 5. **Instrument classes are coarse.** The representation does not provide robust performer, source-recording, or stem identity. 6. **Deletion is weak.** `Rdel` is low across systems and tasks. 7. **Limited source-disjointness.** Appendix A notes that BSD/BSED…
-- **Detailed record:** [`sources/chang-2026-synthesis-and-editing-of-multi.md`](sources/chang-2026-synthesis-and-editing-of-multi.md); wiki page: [`wiki/retrieval-and-recombination/chang-2026-synthesis-and-editing-of-multi.md`](wiki/retrieval-and-recombination/chang-2026-synthesis-and-editing-of-multi.md)
-
-### theory-and-constraints
-
-#### MIDIBACK: Harmony-Aware Singing Pitch Correction via Joint Vocal-Accompaniment Symbolic Modeling (`2609.28008v2`)
-
-- **Authors:** Joaquim Cavalcante et al. (2026)
-- **Core digest:** Thus, the digest below is grounded in the supplied MIDIBACK text extraction, with anchors such as “text p. 2, §2.3.” The PDF itself should be replaced before treating visual figures or PDF page numbers as authoritative.
-- **Relevance:** Directly relevant to music-theoretic constraints, symbolic repair, or interpretable structure; the paper can inform deterministic checks and counterfactual tests.
-- **Research idea:** future work. Other limitations evident from the method: 1. **Pseudo-ground truth:** rounded transcription centers are treated as intended notes. 2. **Synthetic error model:** real singing errors may not follow additive global, autoregressive, and uniform perturbations. 3. **Discrete target:** microtonal input embeddings are used, but output supervision is rounded semitone pitch. 4. **No explicit uncertainty or abstention:** every vocal note receives a predicted target. 5. **No explicit explanation:** accompaniment affects predictions, but the system does not output a harmonic rationale, conflict diagnosis, or counterfactual explanation. 6. **No provenance representation:** program IDs distinguish vocal from accompaniment, but not…
-- **Detailed record:** [`sources/al-2026-midiback-harmony-aware-singing-pitch.md`](sources/al-2026-midiback-harmony-aware-singing-pitch.md); wiki page: [`wiki/theory-and-constraints/al-2026-midiback-harmony-aware-singing-pitch.md`](wiki/theory-and-constraints/al-2026-midiback-harmony-aware-singing-pitch.md)
-
-### retrieval-and-recombination
-
-#### On a Separate Note: Robust Score-Informed Note Separation with a Two-Stream TFC-TDF U-Net and Adaptive Set Ownership (`2609.29071v1`)
-
-- **Authors:** Benjamin Shiue-Hal Chou et al. (2026)
-- **Core digest:** where \(x\) is a monaural mixture and \(s_i\) is the performed waveform of note \(i\). Each aligned score event is
-- **Relevance:** Highly relevant to mashup/repair: retrieval, source separation, local editing, recombination, or perceptual alignment.
-- **Research idea:** Represent each retrieved source event and edit decision explicitly, then evaluate source preservation, musical validity, and edit cost separately.
-- **Detailed record:** [`sources/al-2026-on-a-separate-note-robust.md`](sources/al-2026-on-a-separate-note-robust.md); wiki page: [`wiki/retrieval-and-recombination/al-2026-on-a-separate-note-robust.md`](wiki/retrieval-and-recombination/al-2026-on-a-separate-note-robust.md)
-
-### other
-
-#### A Native-Reference Phone-Class Geometry for Second-Language Pronunciation Analysis (`2609.30075v1`)
-
-- **Authors:** Tina Raissi, Nhan Phan, Chenxiao Wang, and Mikko Kurimo (2026)
-- **Core digest:** **Author claim — Abstract, p. 1; §§1–2, pp. 1–2:** The paper addresses interpretable automatic assessment of second-language pronunciation. Existing systems often output holistic proficiency scores without identifying acoustic-phonetic causes. The proposed method estimates pronunciation deviation without:
-- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
-- **Research idea:** Use the method as a transfer probe only after specifying which construct transfers and which music-specific validation would falsify the analogy.
-- **Detailed record:** [`sources/raissi-2026-a-native-reference-phone-class.md`](sources/raissi-2026-a-native-reference-phone-class.md); wiki page: [`wiki/other/raissi-2026-a-native-reference-phone-class.md`](wiki/other/raissi-2026-a-native-reference-phone-class.md)
-
-### generation-and-planning
-
-#### MuseTimbre: Zero-Shot Timbre Transfer by Controlling a Frozen Music Generator (`2609.30548v1`)
-
-- **Authors:** Yuan-Chiao Cheng and Zhiyao Duan (2026)
-- **Core digest:** The paper contains 30 references. The central dependencies are Stable Audio 3 [12], LAION-CLAP [15], Basic Pitch [14], Control-Transfer Diffusion [4], TokenSynth [5], and the MuScriptor transcription model [16].
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** research directions 1. **Multi-stem symbolic control:** Use separate roll streams and separate timbre embeddings for each mashup stem, with explicit routing and stem-level cross-attention. 2. **Repair-aware training:** Mask note/onset regions during training and optimize reconstruction, edit locality, and confidence-calibrated correction rather than only generation quality. 3. **Hierarchical identity embeddings:** Factor reference representations into instrument, performer, articulation, room, microphone, and production-style components. 4. **Temporal timbre conditioning:** Replace the single global CLAP vector with chunk-level or note-aligned embeddings for changing articulations and recording environments. 5. **Pitch-leakage tests:**…
-- **Detailed record:** [`sources/cheng-2026-musetimbre-zero-shot-timbre-transfer.md`](sources/cheng-2026-musetimbre-zero-shot-timbre-transfer.md); wiki page: [`wiki/generation-and-planning/cheng-2026-musetimbre-zero-shot-timbre-transfer.md`](wiki/generation-and-planning/cheng-2026-musetimbre-zero-shot-timbre-transfer.md)
-
-### other
-
-#### Why Alzheimer's Speech Screening Fails to Generalize: Bridging the Deployment Gap via Cross-Corpus Evidence Anchoring (`2609.31293v1`)
-
-- **Authors:** Zijian Lu et al. (2026)
-- **Core digest:** The paper studies whether Alzheimer’s speech-screening models generalize to unseen corpora, languages, tasks, and recording protocols. Its central finding is that: 1. Most interpretable speech markers are not directionally stable across datasets. 2. High-performing deep representations can fail catastrophically on one unseen corpus. 3. A compact, training-only-selected set of interpretable “evidence anchors” can improve worst-domain robustness when fused with an XLM-R model. 4. Mean performance and worst-domain performance require different fusion weights. The strongest reported results are: - XLM-R mean speaker AUC: **0.769**; worst corpus: **0.520** [§5, Table 2, p. 9]. - Balanced anchor/XLM-R fusion: **0.785 mean AUC** [§6.2, pp. 12–13]. - Anchor-heavy fusion: **0.615 worst-domain AUC**, versus **0.520** for XLM-R and **0.504** for GroupDRO [§6.2, pp. 12–13]. - However, the paired bootstrap interval for the weakest-domain improvement is **[−0.004, 0.195]**, so the improvement is not decisively significant at conventional levels…
-- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
-- **Research idea:** Use the method as a transfer probe only after specifying which construct transfers and which music-specific validation would falsify the analogy.
-- **Detailed record:** [`sources/al-2026-why-alzheimer-s-speech-screening.md`](sources/al-2026-why-alzheimer-s-speech-screening.md); wiki page: [`wiki/other/al-2026-why-alzheimer-s-speech-screening.md`](wiki/other/al-2026-why-alzheimer-s-speech-screening.md)
-
-### explainability-and-auditability
-
-#### Open-Qwen-Music: An Auditable Framework for LLM-Based Music Composition and Diffusion Rendering (`2609.31652v1`)
-
-- **Authors:** Yangbin Yu and Mingyu Yang (2026)
-- **Core digest:** Open-Qwen-Music’s main contribution is **reproducible modularization and provenance**, not demonstrated generation quality. Its strongest evidence concerns annotation audits and semantic quantization loss. For explainable symbolic music research, it offers a valuable auditable audio-token baseline and a clear experimental scaffold, but substantial work remains to make the representation musically symbolic, causally interpretable, and useful for mashup or repair tasks.
-- **Relevance:** Highly relevant to the core goal: provenance, attribution, mechanistic evidence, representation geometry, copying, or audit traces.
-- **Research idea:** Build a faithfulness benchmark in which an explanation must predict the output change under a targeted intervention, not merely correlate with a generated sample.
-- **Detailed record:** [`sources/yu-2026-open-qwen-music-an-auditable.md`](sources/yu-2026-open-qwen-music-an-auditable.md); wiki page: [`wiki/explainability-and-auditability/yu-2026-open-qwen-music-an-auditable.md`](wiki/explainability-and-auditability/yu-2026-open-qwen-music-an-auditable.md)
-
-### generation-and-planning
-
-#### Video-to-Music Generation for Gameplay Videos (`2609.31810v2`)
-
-- **Authors:** Felipe Marra and Lucas N. Ferreira (2026)
-- **Core digest:** 1. frames are rendered graphics; 2. music is synthetic; 3. game music often loops across levels rather than reacting to visible events (p. 1, §§1–2).
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
-- **Detailed record:** [`sources/marra-2026-video-to-music-generation-for.md`](sources/marra-2026-video-to-music-generation-for.md); wiki page: [`wiki/generation-and-planning/marra-2026-video-to-music-generation-for.md`](wiki/generation-and-planning/marra-2026-video-to-music-generation-for.md)
-
-### retrieval-and-recombination
-
-#### Perceptually Motivated Alignment and Interpolation of Pitch-Aligned Time-Frequency Representations (`2609.31971v1`)
-
-- **Authors:** Shahan Nercessian, Jeff Sontag, and Alejandro Koretzky (2026)
-- **Core digest:** I inspected all eight PDF pages, equations, figures, algorithms, tables, and the experiments described in the extracted text. The paper refers to additional figures and audio demonstrations at `https://tiv-ext.netlify.app`.
-- **Relevance:** Highly relevant to mashup/repair: retrieval, source separation, local editing, recombination, or perceptual alignment.
-- **Research idea:** future work (DAFx.8, §8). Additional limitations evident from the experiments 1. **QAP optimization is heuristic.** The exact perceptual objective is NP-hard; 2-opt has no global-optimality guarantee. 2. **The alignment data are synthetic.** The reported musical example and 1,024 random pairs do not establish performance on real songs, stems, expressive recordings, or noisy transcription outputs. 3. **The interpolation result is mainly illustrative.** The C-major/C-minor example is musically suggestive, but there is no listening study, voice-leading benchmark, or comparison with human judgments. 4. **No temporal alignment is addressed.** PTFR columns may be time-varying, but the paper aligns pitch bins, not beats, bars, phrases, or tempo…
-- **Detailed record:** [`sources/nercessian-2026-perceptually-motivated-alignment-and-interpolation.md`](sources/nercessian-2026-perceptually-motivated-alignment-and-interpolation.md); wiki page: [`wiki/retrieval-and-recombination/nercessian-2026-perceptually-motivated-alignment-and-interpolation.md`](wiki/retrieval-and-recombination/nercessian-2026-perceptually-motivated-alignment-and-interpolation.md)
-
-### generation-and-planning
-
-#### Getting Motif-ated: Controllable AI Compositions from Injected Motif Prompts (`2609.32788v1`)
-
-- **Authors:** Chao Peter Yang, Cynthia Rudin, Yue Jiang, Simon Mak, and Stephen Ni-Hahn (2026)
-- **Core digest:** MotiGen offers a promising, relatively simple recipe for **abstract motif controllability** in a pretrained symbolic music model. Its strongest evidence is the large increase in automatic contour containment, especially from the matched attention bias and focused-crop curriculum. For the research program here, its most valuable components are the explicit prompt representation, deterministic transposition-invariant evaluator, and prompt-grounding curriculum. Its central gap is precisely provenance: it does not identify, preserve, or explain contributions from particular source pieces, and it does not evaluate mashup compatibility or source identity.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** research directions 1. **Dual-source provenance prompts** Condition on separate motifs from sources A and B, with source IDs and protected roles such as melody, bass, or accompaniment. 2. **Richer motif representations** Add rhythm, meter position, phrase boundaries, pitch intervals, voice, harmony, and allowable transformation classes. Keep the coarse contour as one abstraction level rather than the entire identity representation. 3. **Provenance-aware training crops** Crop source passages around known motifs while preserving note-level source IDs. Train the model to emit attribution metadata for every realized occurrence. 4. **Conflict-aware recomposition** Detect clashes between source motifs—meter, harmony, register, dissonance,…
-- **Detailed record:** [`sources/yang-2026-getting-motif-ated-controllable-ai.md`](sources/yang-2026-getting-motif-ated-controllable-ai.md); wiki page: [`wiki/generation-and-planning/yang-2026-getting-motif-ated-controllable-ai.md`](wiki/generation-and-planning/yang-2026-getting-motif-ated-controllable-ai.md)
-
-#### YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality (`2609.33757v1`)
-
-- **Authors:** Ruibin Yuan et al. (2026)
-- **Core digest:** **Ruibin Yuan et al.**, “**YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality**,” *YuE2 Technical Report*, arXiv:**2609.33757v1 [eess.AS]**, submitted **27 September 2026**. The core contributors include Ruibin Yuan, Jiahao Pan, Junyan Jiang, Zhiyue Wu, Ziya Zhou, Jiankai Sun, Yizhi Li, and Ge Zhang; corresponding authors are Wei Xue and Yike Guo. Full contributor list: **paper p.22**.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
-- **Detailed record:** [`sources/al-2026-yue2-unifying-symbolic-and-audio.md`](sources/al-2026-yue2-unifying-symbolic-and-audio.md); wiki page: [`wiki/generation-and-planning/al-2026-yue2-unifying-symbolic-and-audio.md`](wiki/generation-and-planning/al-2026-yue2-unifying-symbolic-and-audio.md)
-
-### interaction-and-evaluation
-
-#### From One-Shot Generation to Incremental Music Composition: Adapting a General-Purpose Instruction LLM for Persistent Symbolic Editing (`2609.34994v1`)
-
-- **Authors:** André Ricardo Ducca Fernandes et al. (2026)
-- **Core digest:** The authors’ central claim is deliberately narrow: LoRA can make a general-purpose instruction LLM reliably follow an operation-aware, persistent symbolic-editing contract in the tested Irish traditional-music setting. They explicitly do **not** claim superior musical quality, human-AI co-creativity, or novelty for fine-tuning itself (PDF pp. 1, 11–14; `/tmp/paper-digest/2609.34994v1.txt:595-666`).
-- **Relevance:** Relevant to intent alignment, human/AI collaboration, agentic planning, or evaluation; claims need separation between user preference and musical correctness.
-- **Research idea:** research directions 1. **Typed provenance-bearing state:** augment each ABC event/bar with stable IDs, source ID, source span, transformation history, confidence, and pre/post hashes. 2. **Operation records:** represent requests as structured objects such as `{operation, scope, target_bars, input_state_hash, invariants, provenance_policy}` while retaining the natural-language request. 3. **LLM planner + deterministic executor:** let the LLM resolve intent and propose material, but use deterministic ABC transformations and validators for transposition, copying, bar preservation, and repair. 4. **Mashup-specific operations:** add `import_source`, `align_sources`, `borrow_span`, `crossfade`, `reharmonize`, and `replace_with_attribution`, each…
-- **Detailed record:** [`sources/al-2026-from-one-shot-generation-to.md`](sources/al-2026-from-one-shot-generation-to.md); wiki page: [`wiki/interaction-and-evaluation/al-2026-from-one-shot-generation-to.md`](wiki/interaction-and-evaluation/al-2026-from-one-shot-generation-to.md)
-
-### theory-and-constraints
-
-#### Emergent Tonal Structure in Learned Chord Embeddings and Its Relation to Tonal Tension (`2609.36460v1`)
-
-- **Authors:** Maral Ebrahimzadeh, Gilberto Bernardes, and Sebastian Stober (2026)
-- **Core digest:** The paper tests whether a very simple **skip-gram embedding of chord tokens** can learn interpretable tonal geometry without explicit music-theoretic supervision. It compares: - **AUG:** all 12 pitch-class transpositions of each corpus sequence. - **ORIG:** the original, non-augmented sequences. The augmented embeddings generally recover stronger circle-of-fifths structure, transposition equivariance, key-centered organization, interpretable key-to-key steering, and more stable tension-related quantities. Code: **https://github.com/MaraalE/chord-tonality** (p. 1, footnote 1).
-- **Relevance:** Directly relevant to music-theoretic constraints, symbolic repair, or interpretable structure; the paper can inform deterministic checks and counterfactual tests.
-- **Research idea:** research directions 1. **Tonal-control module for a symbolic Transformer** Condition generation on \(p_t(K)\), \(T_{\text{key}}\), \(T_{\text{ctx}}\), and centroid-steering vectors. Evaluate whether explanations remain faithful under interventions. 2. **Explainable mashup boundary optimization** Optimize transition chords between two songs using centroid steering plus voice-leading and meter constraints. Compare AUG embeddings against fixed TIV, circle-of-fifths, and learned non-augmented baselines. 3. **Tension-aware repair benchmark** Corrupt chord sequences and measure whether high embedding tension identifies the corruption. Evaluate repair accuracy and human-perceived improvement. 4. **Separate learned equivariance from augmentation…
-- **Detailed record:** [`sources/ebrahimzadeh-2026-emergent-tonal-structure-in-learned.md`](sources/ebrahimzadeh-2026-emergent-tonal-structure-in-learned.md); wiki page: [`wiki/theory-and-constraints/ebrahimzadeh-2026-emergent-tonal-structure-in-learned.md`](wiki/theory-and-constraints/ebrahimzadeh-2026-emergent-tonal-structure-in-learned.md)
 
 ### explainability-and-auditability
 
@@ -459,38 +105,6 @@ The entries below are ordered by methodological category. Each includes the core
 - **Research idea:** Build a faithfulness benchmark in which an explanation must predict the output change under a targeted intervention, not merely correlate with a generated sample.
 - **Detailed record:** [`sources/storan-2026-group-invariant-statistics-determine-embedding.md`](sources/storan-2026-group-invariant-statistics-determine-embedding.md); wiki page: [`wiki/explainability-and-auditability/storan-2026-group-invariant-statistics-determine-embedding.md`](wiki/explainability-and-auditability/storan-2026-group-invariant-statistics-determine-embedding.md)
 
-### generation-and-planning
-
-#### Where the Body Keeps the Beat: Structured Motion Conditioning and Music Dynamics Supervision for Dance-to-Music Generation (`2610.00726v1`)
-
-- **Authors:** Changchang Sun, Lu Cheng, and Yan Yan (2026)
-- **Core digest:** I inspected the supplied extracted text and rendered pages, including all figures, tables, equations, and appendices.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** future work (p. 9). Missing or unavailable artifact information The paper says that supplementary material contains selected generation results from AIST++ and TikTok (p. 7). It does not provide, in the supplied PDF: - a code repository URL; - model checkpoints; - dataset preprocessing scripts; - a formal reproducibility statement; - a license; - a complete artifact description. The paper’s opening appendix paragraph says that later appendices cover limitations and broader impact, but the supplied 19-page PDF ends after Appendix E/Table A2 and contains no separate limitations or broader-impact sections. This should be recorded as an incomplete or missing-paper component, not inferred as evidence that no limitations exist. 11. Relevance to…
-- **Detailed record:** [`sources/sun-2026-where-the-body-keeps-the.md`](sources/sun-2026-where-the-body-keeps-the.md); wiki page: [`wiki/generation-and-planning/sun-2026-where-the-body-keeps-the.md`](wiki/generation-and-planning/sun-2026-where-the-body-keeps-the.md)
-
-### explainability-and-auditability
-
-#### TrueMuse: A Benchmark for Data Attribution in Text-to-Music Models (`2610.00835v1`)
-
-- **Authors:** Jiawei Yu and Jian Liu (2026)
-- **Core digest:** This is primarily a **controlled benchmark**, not a new end-to-end source-attribution model. It constructs attribute-specific text-to-music models by fine-tuning existing diffusion generators on known source clips. It then evaluates black-box retrieval methods that attempt to recover those source clips from generated audio. The learned “mapper” is a linear projection on top of frozen audio embeddings; it is an enhanced baseline, not the central generative model.
-- **Relevance:** Highly relevant to the core goal: provenance, attribution, mechanistic evidence, representation geometry, copying, or audit traces.
-- **Research idea:** research directions 1. **Symbolic TrueMuse.** Fine-tune a symbolic generator on known MIDI phrase sets with source identifiers. Evaluate event-level Recall@k, segment IoU, motif retrieval under transposition, and voice/harmony attribution. 2. **Causal provenance benchmark.** For every generated piece, compare: - source inclusion; - source deletion or masking; - retraining or adapter ablation; - output-level attribution. This would distinguish provenance from actual causal influence. 3. **Mashup provenance graphs.** Represent each output note or phrase as linked to source A, source B, both, or newly generated material, including transformations such as transposition, rhythmic quantization, reharmonization, and orchestration. 4. **Repair…
-- **Detailed record:** [`sources/yu-2026-truemuse-a-benchmark-for-data.md`](sources/yu-2026-truemuse-a-benchmark-for-data.md); wiki page: [`wiki/explainability-and-auditability/yu-2026-truemuse-a-benchmark-for-data.md`](wiki/explainability-and-auditability/yu-2026-truemuse-a-benchmark-for-data.md)
-
-### generation-and-planning
-
-#### LatticeSMC: Where to Spend Inference-Time Compute in Chunked Sequence Generators (`2610.02774v1`)
-
-- **Authors:** Xuanchen Wang, Heng Wang, and Weidong Cai (2026)
-- **Core digest:** The paper studies inference-time search for generators that produce long sequences **chunk by chunk**, with each chunk generated through iterative denoising or flow steps. Its central question is where to spend a fixed denoiser-evaluation budget: across particles, chunks, denoising steps, or terminal selection.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
-- **Detailed record:** [`sources/wang-2026-latticesmc-where-to-spend-inference.md`](sources/wang-2026-latticesmc-where-to-spend-inference.md); wiki page: [`wiki/generation-and-planning/wang-2026-latticesmc-where-to-spend-inference.md`](wiki/generation-and-planning/wang-2026-latticesmc-where-to-spend-inference.md)
-
-### explainability-and-auditability
-
 #### How Far Back Should a Transformer Look? Repetition and Copying in Music Sequence Models (`2610.02837v1`)
 
 - **Authors:** Amir Fathi (2026)
@@ -499,27 +113,13 @@ The entries below are ordered by methodological category. Each includes the core
 - **Research idea:** Build a faithfulness benchmark in which an explanation must predict the output change under a targeted intervention, not merely correlate with a generated sample.
 - **Detailed record:** [`sources/fathi-2026-how-far-back-should-a.md`](sources/fathi-2026-how-far-back-should-a.md); wiki page: [`wiki/explainability-and-auditability/fathi-2026-how-far-back-should-a.md`](wiki/explainability-and-auditability/fathi-2026-how-far-back-should-a.md)
 
-### generation-and-planning
+#### Open-Qwen-Music: An Auditable Framework for LLM-Based Music Composition and Diffusion Rendering (`2609.31652v1`)
 
-#### Learning Jazz Pianist Style with Cross-Attention Conditioning (`2610.02918v1`)
-
-- **Authors:** Drew Edwards, Akira Maezawa, and Simon Dixon (2026)
-- **Core digest:** **Inspection scope:** 8/8 PDF pages and extracted text inspected, including Tables 1–3, Figures 1–6, Equations 1–3, references, AI-use statement, ethics statement, and acknowledgments.
-- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
-- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
-- **Detailed record:** [`sources/edwards-2026-learning-jazz-pianist-style-with.md`](sources/edwards-2026-learning-jazz-pianist-style-with.md); wiki page: [`wiki/generation-and-planning/edwards-2026-learning-jazz-pianist-style-with.md`](wiki/generation-and-planning/edwards-2026-learning-jazz-pianist-style-with.md)
-
-### interaction-and-evaluation
-
-#### Rubric-Based Optimization for Text-to-Music Generation (`2610.03589v1`)
-
-- **Authors:** Ping Wang, Guang Yang, Shao-Rong Su, Junkai Wu, Pang Wei Koh, and Noah A. Smith (2026)
-- **Core digest:** **Yes, the method is adaptable to our research, but the exact setup is not Qwen-lab-scale.** The generators are only **300M MusicGen-small** and **3.5B ACE-Step**, both frozen and adapted with LoRA. The largest component is the **30B Qwen3-Omni evaluator**, used only for inference; a **7B Qwen2-Audio** evaluator also works. The main cost is rating generated audio, not pretraining. For our symbolic mashup/repair work, the most transferable idea is: > Use broad rubric rewards for qualities difficult to formalize, but use exact symbolic objectives wherever reliable measurements exist. That maps naturally to perceptual coherence versus explicit harmony, voice-leading, provenance, source identity, and repair constraints.
-- **Relevance:** Relevant to intent alignment, human/AI collaboration, agentic planning, or evaluation; claims need separation between user preference and musical correctness.
-- **Research idea:** Use controlled human studies with the same generated music but different trace interfaces to measure whether explanations improve correction, trust calibration, and intent recovery.
-- **Detailed record:** [`sources/wang-2026-rubric-based-optimization-for-text.md`](sources/wang-2026-rubric-based-optimization-for-text.md); wiki page: [`wiki/interaction-and-evaluation/wang-2026-rubric-based-optimization-for-text.md`](wiki/interaction-and-evaluation/wang-2026-rubric-based-optimization-for-text.md)
-
-### explainability-and-auditability
+- **Authors:** Yangbin Yu and Mingyu Yang (2026)
+- **Core digest:** Open-Qwen-Music’s main contribution is **reproducible modularization and provenance**, not demonstrated generation quality. Its strongest evidence concerns annotation audits and semantic quantization loss. For explainable symbolic music research, it offers a valuable auditable audio-token baseline and a clear experimental scaffold, but substantial work remains to make the representation musically symbolic, causally interpretable, and useful for mashup or repair tasks.
+- **Relevance:** Highly relevant to the core goal: provenance, attribution, mechanistic evidence, representation geometry, copying, or audit traces.
+- **Research idea:** Build a faithfulness benchmark in which an explanation must predict the output change under a targeted intervention, not merely correlate with a generated sample.
+- **Detailed record:** [`sources/yu-2026-open-qwen-music-an-auditable.md`](sources/yu-2026-open-qwen-music-an-auditable.md); wiki page: [`wiki/explainability-and-auditability/yu-2026-open-qwen-music-an-auditable.md`](wiki/explainability-and-auditability/yu-2026-open-qwen-music-an-auditable.md)
 
 #### Towards AI-Generated Music Plagiarism Detection as a Version Identification Problem (`2610.09075v1`)
 
@@ -537,7 +137,185 @@ The entries below are ordered by methodological category. Each includes the core
 - **Research idea:** research directions for provenance-preserving recomposition 1. **Event-level provenance ledger** Represent each output note/event with: ```text source_id source_track source_section/bar source_event_span operation: copy | transpose | retime | ornament | interpolate | newly generated transformation parameters model/version/seed ``` This would extend MixAudio’s stem-level record to bar-, phrase-, or event-level provenance. 2. **Symbolic counterfactual swaps** Run factorial experiments that separately replace: - melody donor, - harmony donor, - rhythm donor, - instrumentation/timbre donor, - form/section context. Measure note-level changes in pitch, intervals, onset positions, chord labels, voice leading, contour, and groove while holding…
 - **Detailed record:** [`sources/al-2026-tracing-inputs-verifying-outputs-validating.md`](sources/al-2026-tracing-inputs-verifying-outputs-validating.md); wiki page: [`wiki/explainability-and-auditability/al-2026-tracing-inputs-verifying-outputs-validating.md`](wiki/explainability-and-auditability/al-2026-tracing-inputs-verifying-outputs-validating.md)
 
+#### TrueMuse: A Benchmark for Data Attribution in Text-to-Music Models (`2610.00835v1`)
+
+- **Authors:** Jiawei Yu and Jian Liu (2026)
+- **Core digest:** This is primarily a **controlled benchmark**, not a new end-to-end source-attribution model. It constructs attribute-specific text-to-music models by fine-tuning existing diffusion generators on known source clips. It then evaluates black-box retrieval methods that attempt to recover those source clips from generated audio. The learned “mapper” is a linear projection on top of frozen audio embeddings; it is an enhanced baseline, not the central generative model.
+- **Relevance:** Highly relevant to the core goal: provenance, attribution, mechanistic evidence, representation geometry, copying, or audit traces.
+- **Research idea:** research directions 1. **Symbolic TrueMuse.** Fine-tune a symbolic generator on known MIDI phrase sets with source identifiers. Evaluate event-level Recall@k, segment IoU, motif retrieval under transposition, and voice/harmony attribution. 2. **Causal provenance benchmark.** For every generated piece, compare: - source inclusion; - source deletion or masking; - retraining or adapter ablation; - output-level attribution. This would distinguish provenance from actual causal influence. 3. **Mashup provenance graphs.** Represent each output note or phrase as linked to source A, source B, both, or newly generated material, including transformations such as transposition, rhythmic quantization, reharmonization, and orchestration. 4. **Repair…
+- **Detailed record:** [`sources/yu-2026-truemuse-a-benchmark-for-data.md`](sources/yu-2026-truemuse-a-benchmark-for-data.md); wiki page: [`wiki/explainability-and-auditability/yu-2026-truemuse-a-benchmark-for-data.md`](wiki/explainability-and-auditability/yu-2026-truemuse-a-benchmark-for-data.md)
+
+### generation-and-planning
+
+#### MuseGAN: Multi-track Sequential Generative Adversarial Networks for Symbolic Music Generation and Accompaniment (`1709.06298v2`)
+
+- **Authors:** Hao-Wen Dong, Wen-Yi Hsiao, Li-Chia Yang, and Yi-Hsuan Yang (2017)
+- **Core digest:** **Author-supported conclusion:** MuseGAN demonstrates that shared/private latent variables plus temporal convolution can generate short, recognizable, multi-track Rock piano-rolls, and that conditional generation can provide rudimentary accompaniment. **Interpretive conclusion for this research:** Its most valuable legacy is the explicit decomposition of multi-track generation into shared inter-track structure and private track structure. For source-preserving mashups and repair, MuseGAN should be treated as an architectural and diagnostic baseline—not as a complete preservation method. The necessary next step is masked, source-locked, edit-minimal conditional generation with evaluation centered on preservation and repair correctness rather than only distributional musicality.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
+- **Detailed record:** [`sources/dong-2017-musegan-multi-track-sequential-generative.md`](sources/dong-2017-musegan-multi-track-sequential-generative.md); wiki page: [`wiki/generation-and-planning/dong-2017-musegan-multi-track-sequential-generative.md`](wiki/generation-and-planning/dong-2017-musegan-multi-track-sequential-generative.md)
+
+#### Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Piano Compositions (`2002.00212v3`)
+
+- **Authors:** Yu-Siang Huang and Yi-Hsuan Yang (2020)
+- **Core digest:** The authors argue that Transformer music generation benefits substantially from a better **symbolic event representation**, not only from architectural innovation. Their representation, **REMI** (“revamped MIDI-derived events”), makes the following explicit: 1. bar boundaries; 2. quantized positions within each bar; 3. note duration; 4. local tempo; 5. chord labels. The claimed result is better rhythmic regularity and subjective preference over a Transformer-XL adaptation of Music Transformer. This is an author claim; the empirical evidence is specifically for **expressive solo Pop piano**, not general music generation.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** Future work is needed for longer-term structure and longer-context architectures. - The authors propose adding groove, emotion, guitar, bass, drums, lyrics, and video conditioning. Evidence: PDF pp. 5 and 8; §6; `.txt:331-344, 542-558`. Additional methodological limitations These are interpretations based on the design: - Automatic transcription and beat/downbeat/chord recognition introduce label noise. - Chord labels are restricted to 60 heuristic categories. - The subjective evaluation does not test repair, infilling, multi-track arrangement, or long-form composition. - The objective metrics are tracker-derived proxies rather than direct measures of musical coherence. - The paper does not report a modern held-out likelihood comparison,…
+- **Detailed record:** [`sources/huang-2020-pop-music-transformer-beat-based.md`](sources/huang-2020-pop-music-transformer-beat-based.md); wiki page: [`wiki/generation-and-planning/huang-2020-pop-music-transformer-beat-based.md`](wiki/generation-and-planning/huang-2020-pop-music-transformer-beat-based.md)
+
+#### Music ControlNet: Multiple Time-varying Controls for Music Generation (`2311.07069v1`)
+
+- **Authors:** Shih-Lun Wu, Chris Donahue, Shinji Watanabe, Nicholas J. Bryan, and Dasaem Jeong (2023)
+- **Core digest:** **Paper:** Shih-Lun Wu, Chris Donahue, Shinji Watanabe, Nicholas J. Bryan, *Music ControlNet: Multiple Time-varying Controls for Music Generation*, arXiv:2311.07069v1, 13 Nov 2023.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
+- **Detailed record:** [`sources/wu-2023-music-controlnet-multiple-time-varying.md`](sources/wu-2023-music-controlnet-multiple-time-varying.md); wiki page: [`wiki/generation-and-planning/wu-2023-music-controlnet-multiple-time-varying.md`](wiki/generation-and-planning/wu-2023-music-controlnet-multiple-time-varying.md)
+
+#### VMAS: Video-to-Music Generation via Semantic Alignment in Web Music Videos (`2409.07450v1`)
+
+- **Authors:** Yan-Bo Lin, Yu Tian, Linjie Yang, Gedas Bertasius, and Heng Wang (2024)
+- **Core digest:** **Paper:** Yan-Bo Lin, Yu Tian, Linjie Yang, Gedas Bertasius, Heng Wang, “VMAS: Video-to-Music Generation via Semantic Alignment in Web Music Videos,” arXiv:2409.07450v1 [cs.MM], 11 September 2024.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** future work includes video–music style transfer, editing, and retrieval. 8. Limitations and reproducibility Explicit or directly evidenced limitations 1. **Web-data quality:** source videos contain static frames, weak correspondence, genre imbalance, and possible metadata noise. 2. **Vocal-removal imperfection:** Demucs succeeds for approximately 95%, not all, soundtracks. 3. **Baseline incomparability:** V2Meow code/checkpoints were unavailable; some comparisons rely on reported numbers. 4. **Human evaluation limitations:** approximately 200 MTurk raters, pairwise preferences, no published raw responses or uncertainty estimates. 5. **Metric limitations:** FAD, KL, and MV Align do not measure musical form, harmonic correctness, symbolic…
+- **Detailed record:** [`sources/lin-2024-vmas-video-to-music-generation.md`](sources/lin-2024-vmas-video-to-music-generation.md); wiki page: [`wiki/generation-and-planning/lin-2024-vmas-video-to-music-generation.md`](wiki/generation-and-planning/lin-2024-vmas-video-to-music-generation.md)
+
+#### CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation (`2609.13118v1`)
+
+- **Authors:** Jinting Wang, Chenxing Li, Dong Yu, and Li Liu (2026)
+- **Core digest:** The paper’s central claim is that sparse dance cues cannot adequately supervise dense musical structure. CMA-OT therefore uses a pretrained hierarchical audio expert as an auxiliary training teacher for the dance-to-music generator.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
+- **Detailed record:** [`sources/wang-2026-cma-ot-hierarchical-expert-supervision.md`](sources/wang-2026-cma-ot-hierarchical-expert-supervision.md); wiki page: [`wiki/generation-and-planning/wang-2026-cma-ot-hierarchical-expert-supervision.md`](wiki/generation-and-planning/wang-2026-cma-ot-hierarchical-expert-supervision.md)
+
+#### DiffSynth-Music: Audio-Conditioned KV-Cache Adapters for Controllable Music Generation (`2609.12774v1`)
+
+- **Authors:** Zhongjie Duan, Shengchuan Gao, Hong Zhang, and Yingda Chen (2026)
+- **Core digest:** The bibliography contains 36 references. The most central are ACE-Step-1.5 [4], Music-ControlNet [10], JASCO [11], Diffusion Templates [30], Demucs [26], pYIN [27], MuQ-MuLan [35], and AudioBox-Aesthetics [36].
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** research directions 1. **Symbolic KV adapters.** Encode MIDI/event streams into layer-wise keys and values, with explicit channels for source ID, voice, motif, harmony, meter, and transformation type. Compare this against token concatenation and direct symbolic constraints. 2. **Provenance-aware attention.** Maintain source-specific caches \(C^A\) and \(C^B\), log attention mass by source, and test whether attention attribution predicts human judgments of source identity. 3. **Protected-material constraints.** Use a symbolic decoder or constrained search to guarantee preservation of selected notes, motifs, cadences, or bass lines while allowing specified transformations. 4. **Conflict-aware cache arbitration.** Detect incompatible rhythm,…
+- **Detailed record:** [`sources/duan-2026-diffsynth-music-audio-conditioned-kv.md`](sources/duan-2026-diffsynth-music-audio-conditioned-kv.md); wiki page: [`wiki/generation-and-planning/duan-2026-diffsynth-music-audio-conditioned-kv.md`](wiki/generation-and-planning/duan-2026-diffsynth-music-audio-conditioned-kv.md)
+
+#### Drive-to-Music: Context-Aware Generative Audio for In-Vehicle Experiences (`2608.12615v1`)
+
+- **Authors:** Dragoiu and Nabizadeh (2026)
+- **Core digest:** **Dragoiu and Nabizadeh, “Drive-to-Music: Context-Aware Generative Audio for In-Vehicle Experiences,” arXiv:2608.12615v1, 12 Aug 2026.** Authors are from Mercedes-Benz Research & Development North America.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
+- **Detailed record:** [`sources/dragoiu-2026-drive-to-music-context-aware.md`](sources/dragoiu-2026-drive-to-music-context-aware.md); wiki page: [`wiki/generation-and-planning/dragoiu-2026-drive-to-music-context-aware.md`](wiki/generation-and-planning/dragoiu-2026-drive-to-music-context-aware.md)
+
+#### Getting Motif-ated: Controllable AI Compositions from Injected Motif Prompts (`2609.32788v1`)
+
+- **Authors:** Chao Peter Yang, Cynthia Rudin, Yue Jiang, Simon Mak, and Stephen Ni-Hahn (2026)
+- **Core digest:** MotiGen offers a promising, relatively simple recipe for **abstract motif controllability** in a pretrained symbolic music model. Its strongest evidence is the large increase in automatic contour containment, especially from the matched attention bias and focused-crop curriculum. For the research program here, its most valuable components are the explicit prompt representation, deterministic transposition-invariant evaluator, and prompt-grounding curriculum. Its central gap is precisely provenance: it does not identify, preserve, or explain contributions from particular source pieces, and it does not evaluate mashup compatibility or source identity.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** research directions 1. **Dual-source provenance prompts** Condition on separate motifs from sources A and B, with source IDs and protected roles such as melody, bass, or accompaniment. 2. **Richer motif representations** Add rhythm, meter position, phrase boundaries, pitch intervals, voice, harmony, and allowable transformation classes. Keep the coarse contour as one abstraction level rather than the entire identity representation. 3. **Provenance-aware training crops** Crop source passages around known motifs while preserving note-level source IDs. Train the model to emit attribution metadata for every realized occurrence. 4. **Conflict-aware recomposition** Detect clashes between source motifs—meter, harmony, register, dissonance,…
+- **Detailed record:** [`sources/yang-2026-getting-motif-ated-controllable-ai.md`](sources/yang-2026-getting-motif-ated-controllable-ai.md); wiki page: [`wiki/generation-and-planning/yang-2026-getting-motif-ated-controllable-ai.md`](wiki/generation-and-planning/yang-2026-getting-motif-ated-controllable-ai.md)
+
+#### LatticeSMC: Where to Spend Inference-Time Compute in Chunked Sequence Generators (`2610.02774v1`)
+
+- **Authors:** Xuanchen Wang, Heng Wang, and Weidong Cai (2026)
+- **Core digest:** The paper studies inference-time search for generators that produce long sequences **chunk by chunk**, with each chunk generated through iterative denoising or flow steps. Its central question is where to spend a fixed denoiser-evaluation budget: across particles, chunks, denoising steps, or terminal selection.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
+- **Detailed record:** [`sources/wang-2026-latticesmc-where-to-spend-inference.md`](sources/wang-2026-latticesmc-where-to-spend-inference.md); wiki page: [`wiki/generation-and-planning/wang-2026-latticesmc-where-to-spend-inference.md`](wiki/generation-and-planning/wang-2026-latticesmc-where-to-spend-inference.md)
+
+#### Learning Jazz Pianist Style with Cross-Attention Conditioning (`2610.02918v1`)
+
+- **Authors:** Drew Edwards, Akira Maezawa, and Simon Dixon (2026)
+- **Core digest:** **Inspection scope:** 8/8 PDF pages and extracted text inspected, including Tables 1–3, Figures 1–6, Equations 1–3, references, AI-use statement, ethics statement, and acknowledgments.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
+- **Detailed record:** [`sources/edwards-2026-learning-jazz-pianist-style-with.md`](sources/edwards-2026-learning-jazz-pianist-style-with.md); wiki page: [`wiki/generation-and-planning/edwards-2026-learning-jazz-pianist-style-with.md`](wiki/generation-and-planning/edwards-2026-learning-jazz-pianist-style-with.md)
+
+#### MuseTimbre: Zero-Shot Timbre Transfer by Controlling a Frozen Music Generator (`2609.30548v1`)
+
+- **Authors:** Yuan-Chiao Cheng and Zhiyao Duan (2026)
+- **Core digest:** The paper contains 30 references. The central dependencies are Stable Audio 3 [12], LAION-CLAP [15], Basic Pitch [14], Control-Transfer Diffusion [4], TokenSynth [5], and the MuScriptor transcription model [16].
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** research directions 1. **Multi-stem symbolic control:** Use separate roll streams and separate timbre embeddings for each mashup stem, with explicit routing and stem-level cross-attention. 2. **Repair-aware training:** Mask note/onset regions during training and optimize reconstruction, edit locality, and confidence-calibrated correction rather than only generation quality. 3. **Hierarchical identity embeddings:** Factor reference representations into instrument, performer, articulation, room, microphone, and production-style components. 4. **Temporal timbre conditioning:** Replace the single global CLAP vector with chunk-level or note-aligned embeddings for changing articulations and recording environments. 5. **Pitch-leakage tests:**…
+- **Detailed record:** [`sources/cheng-2026-musetimbre-zero-shot-timbre-transfer.md`](sources/cheng-2026-musetimbre-zero-shot-timbre-transfer.md); wiki page: [`wiki/generation-and-planning/cheng-2026-musetimbre-zero-shot-timbre-transfer.md`](wiki/generation-and-planning/cheng-2026-musetimbre-zero-shot-timbre-transfer.md)
+
+#### StepAudio 3 Music Technical Report (`2609.16034v1`)
+
+- **Authors:** Chengli Feng et al. (2026)
+- **Core digest:** **Author claim:** StepAudio 3 Music is a long-form, text- and reference-conditioned music generator combining: 1. A discrete music tokenizer, 2. A Mixture-of-Experts autoregressive model, 3. An explicit ABC notation planning pass, 4. A continuous flow-matching DiT renderer. **Assessment:** The most research-relevant contribution is not the audio quality alone, but the **ABC-CoT intermediate arrangement plan and LLM-based plan editing**. This is a promising precedent for explainable musical control. However, the system remains primarily an audio-generation system: it does not demonstrate exact note-, chord-, bar-, source-provenance-, or repair-level guarantees. It is therefore highly relevant as an architectural inspiration for symbolic mashup/repair, but not a directly usable symbolic repair system.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** research direction A PhD-scale adaptation would retain the plan-first idea but make the plan explicitly symbolic and verifiable: - Represent each musical event with source provenance. - Add constraint and conflict annotations. - Let an LLM propose edits to ABC/MIDI rather than directly edit audio. - Render the repaired plan. - Re-extract symbolic structure from the result. - Verify exact constraints automatically. - Report both musical-quality metrics and repair correctness. **Overall assessment:** StepAudio 3 Music is a strong frontier-scale demonstration that explicit musical planning can improve controllability and perceived quality. For explainable symbolic mashup/repair, its most transferable component is the intermediate-plan…
+- **Detailed record:** [`sources/al-2026-stepaudio-3-music-technical-report.md`](sources/al-2026-stepaudio-3-music-technical-report.md); wiki page: [`wiki/generation-and-planning/al-2026-stepaudio-3-music-technical-report.md`](wiki/generation-and-planning/al-2026-stepaudio-3-music-technical-report.md)
+
+#### VIBE: Video Instruction-aligned Background music gEneration (`2608.30125v1`)
+
+- **Authors:** Aryan Vijay Bhosale, Vaibhavi Lokegaonkar, Vishnu Raj, Gouthaman KV, Sreyan Ghosh, Ramani Duraiswami, Lie Lu, and Dinesh Manocha (2026)
+- **Core digest:** VIBE provides a useful blueprint for **instruction-following through verifiability-aware reward composition and staged optimization**. Its Conditioning Connection is potentially valuable for planner-to-refiner symbolic architectures. However, its evidence is primarily for short waveform generation: the reward estimators are imperfect, the study is small, the public artifact appears to be demonstration-only, and the model does not address symbolic editability, provenance, or identity preservation.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
+- **Detailed record:** [`sources/bhosale-2026-vibe-video-instruction-aligned-background.md`](sources/bhosale-2026-vibe-video-instruction-aligned-background.md); wiki page: [`wiki/generation-and-planning/bhosale-2026-vibe-video-instruction-aligned-background.md`](wiki/generation-and-planning/bhosale-2026-vibe-video-instruction-aligned-background.md)
+
+#### Video-to-Music Generation for Gameplay Videos (`2609.31810v2`)
+
+- **Authors:** Felipe Marra and Lucas N. Ferreira (2026)
+- **Core digest:** 1. frames are rendered graphics; 2. music is synthetic; 3. game music often loops across levels rather than reacting to visible events (p. 1, §§1–2).
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
+- **Detailed record:** [`sources/marra-2026-video-to-music-generation-for.md`](sources/marra-2026-video-to-music-generation-for.md); wiki page: [`wiki/generation-and-planning/marra-2026-video-to-music-generation-for.md`](wiki/generation-and-planning/marra-2026-video-to-music-generation-for.md)
+
+#### Where the Body Keeps the Beat: Structured Motion Conditioning and Music Dynamics Supervision for Dance-to-Music Generation (`2610.00726v1`)
+
+- **Authors:** Changchang Sun, Lu Cheng, and Yan Yan (2026)
+- **Core digest:** I inspected the supplied extracted text and rendered pages, including all figures, tables, equations, and appendices.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** future work (p. 9). Missing or unavailable artifact information The paper says that supplementary material contains selected generation results from AIST++ and TikTok (p. 7). It does not provide, in the supplied PDF: - a code repository URL; - model checkpoints; - dataset preprocessing scripts; - a formal reproducibility statement; - a license; - a complete artifact description. The paper’s opening appendix paragraph says that later appendices cover limitations and broader impact, but the supplied 19-page PDF ends after Appendix E/Table A2 and contains no separate limitations or broader-impact sections. This should be recorded as an incomplete or missing-paper component, not inferred as evidence that no limitations exist. 11. Relevance to…
+- **Detailed record:** [`sources/sun-2026-where-the-body-keeps-the.md`](sources/sun-2026-where-the-body-keeps-the.md); wiki page: [`wiki/generation-and-planning/sun-2026-where-the-body-keeps-the.md`](wiki/generation-and-planning/sun-2026-where-the-body-keeps-the.md)
+
+#### YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality (`2609.33757v1`)
+
+- **Authors:** Ruibin Yuan et al. (2026)
+- **Core digest:** **Ruibin Yuan et al.**, “**YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality**,” *YuE2 Technical Report*, arXiv:**2609.33757v1 [eess.AS]**, submitted **27 September 2026**. The core contributors include Ruibin Yuan, Jiahao Pan, Junyan Jiang, Zhiyue Wu, Ziya Zhou, Jiankai Sun, Yizhi Li, and Ge Zhang; corresponding authors are Wei Xue and Yike Guo. Full contributor list: **paper p.22**.
+- **Relevance:** Relevant as a generation/control precedent, with attention to whether its controls are exact and auditable rather than only correlated with the output.
+- **Research idea:** Add an auditable intermediate plan or control stream and measure whether changing one control changes only its intended musical property while preserving protected source events.
+- **Detailed record:** [`sources/al-2026-yue2-unifying-symbolic-and-audio.md`](sources/al-2026-yue2-unifying-symbolic-and-audio.md); wiki page: [`wiki/generation-and-planning/al-2026-yue2-unifying-symbolic-and-audio.md`](wiki/generation-and-planning/al-2026-yue2-unifying-symbolic-and-audio.md)
+
 ### interaction-and-evaluation
+
+#### MusicAgent: An AI Agent for Music Understanding and Generation with Large Language Models (`2310.11954v2`)
+
+- **Authors:** Dingyao Yu, Kaitao Song, Peiling Lu, Tianyu He, Xu Tan, Wei Ye, Shikun Zhang, and Jiang Bian (2023)
+- **Core digest:** MusicAgent is a useful early architectural reference for **LLM-mediated orchestration of heterogeneous music tools**. Its strongest ideas are dependency-graph planning, tool metadata, modular plugins, and visible intermediate results. However, the paper provides **no empirical validation** and does not address symbolic mashup/repair’s central requirements: conflict diagnosis, minimal repair, source identity, note-level provenance, or faithful explanation.
+- **Relevance:** Relevant to intent alignment, human/AI collaboration, agentic planning, or evaluation; claims need separation between user preference and musical correctness.
+- **Research idea:** Future work is unspecified** The conclusion only says that more music-related functions will be integrated in the future (PDF pp. 6–7). Limitations inferred from the implementation description These are interpretations rather than explicit author claims: - **Tool-selection reasoning is not necessarily faithful.** The LLM-generated reason may rationalize a selection after the fact. No selector audit or causal explanation test is reported. - **Metadata can be a poor proxy for suitability.** Stars, likes, and download counts do not establish musical quality, compatibility, or reliability. - **No formal validation layer is described.** The system does not appear to verify MIDI validity, timing consistency, harmonic compatibility, audio…
+- **Detailed record:** [`sources/yu-2023-musicagent-an-ai-agent-for.md`](sources/yu-2023-musicagent-an-ai-agent-for.md); wiki page: [`wiki/interaction-and-evaluation/yu-2023-musicagent-an-ai-agent-for.md`](wiki/interaction-and-evaluation/yu-2023-musicagent-an-ai-agent-for.md)
+
+#### Reimagining Dance: Real-time Music Co-creation between Dancers and AI (`2506.12008v1`)
+
+- **Authors:** Olga Vechtomova and Jeff Bos (2025)
+- **Core digest:** **Olga Vechtomova and Jeff Bos**, “**Reimagining Dance: Real-time Music Co-creation between Dancers and AI**,” arXiv:**2506.12008v1** [cs.SD], **13 June 2025**. Affiliations: University of Waterloo and WordSynth Inc. The supplied PDF is five pages. A linked presentation identifies the work with **ICCC 2025**, but the supplied manuscript is the arXiv v1 version.
+- **Relevance:** Relevant to intent alignment, human/AI collaboration, agentic planning, or evaluation; claims need separation between user preference and musical correctness.
+- **Research idea:** Use controlled human studies with the same generated music but different trace interfaces to measure whether explanations improve correction, trust calibration, and intent recovery.
+- **Detailed record:** [`sources/vechtomova-2025-reimagining-dance-real-time-music.md`](sources/vechtomova-2025-reimagining-dance-real-time-music.md); wiki page: [`wiki/interaction-and-evaluation/vechtomova-2025-reimagining-dance-real-time-music.md`](wiki/interaction-and-evaluation/vechtomova-2025-reimagining-dance-real-time-music.md)
+
+#### Co-policy: Responsive Human-Robot Co-Creation for Musical Performances (`2606.19914v1`)
+
+- **Authors:** Xuetao Li, Wenke Huang, Mang Ye, Zijian Liu, Jinhua Xie, Jifeng Xuan, and Miao Li (2026)
+- **Core digest:** The paper’s central claim is that embodied musical co-creation should be treated as a closed loop: the human supplies an incomplete musical or semantic seed, the system generates a complementary response under musical and physical constraints, and a robot realizes it through timed physical interaction.
+- **Relevance:** Relevant to intent alignment, human/AI collaboration, agentic planning, or evaluation; claims need separation between user preference and musical correctness.
+- **Research idea:** Use controlled human studies with the same generated music but different trace interfaces to measure whether explanations improve correction, trust calibration, and intent recovery.
+- **Detailed record:** [`sources/li-2026-co-policy-responsive-human-robot.md`](sources/li-2026-co-policy-responsive-human-robot.md); wiki page: [`wiki/interaction-and-evaluation/li-2026-co-policy-responsive-human-robot.md`](wiki/interaction-and-evaluation/li-2026-co-policy-responsive-human-robot.md)
+
+#### Encypher: Shared Agency and Social Presence in Collaborative Music Generation for Dance Cyphers (`2609.18062v1`)
+
+- **Authors:** Zhixing Chen and Cheng-Zhi Anna Huang (2026)
+- **Core digest:** Encypher is a collaborative, embodied music-generation system for dance cyphers. A depth camera tracks multiple dancers; movement energy and spatial organization are aggregated into weighted text prompts and generation parameters for Google DeepMind’s LyriaRT real-time neural-audio model. The paper’s central claim is that **mapping group-level behavior rather than isolated individual gestures shifts perceived agency from “I control the music” to “the room is shaping the music.”** In a study with 11 unacquainted novice participants, collaboration received 81.8% agreement and spatial awareness 90.9%. However, the evidence is descriptive and exploratory: there was no baseline, only one study session, screen/no-screen conditions were confounded, and LyriaRT is a closed changing API. For symbolic mashups, the most transferable ideas are: 1. aggregate multiple contributors into shared musical state; 2. treat mappings as social choreography, not merely parameter control; 3. expose causal provenance from human action to musical change; 4.…
+- **Relevance:** Relevant to intent alignment, human/AI collaboration, agentic planning, or evaluation; claims need separation between user preference and musical correctness.
+- **Research idea:** future work; conclusion | | 16–17 | References and Appendix A questionnaire/debrief protocol | 1. System and interface Hardware and software The system has three primary components (**§4.1, pp. 6–7; Figure 2, p. 2**): 1. **Web interface** - Handles LyriaRT API calls. - Controls music generation. - Displays visualization and zone state. 2. **ZED 2i stereo depth camera** - Tracks multiple dancers without wearable sensors. - Mounted at 2.2 m, angled approximately 30° downward. - HD720 input, 30 fps, neural depth, RTX 4090 laptop. - Skeleton tracking reliably detected up to 15 people, but occlusion degraded tracking when dancers stood behind each other. - Multi-camera Fusion improved occlusion robustness but halved throughput. - The authors…
+- **Detailed record:** [`sources/chen-2026-encypher-shared-agency-and-social.md`](sources/chen-2026-encypher-shared-agency-and-social.md); wiki page: [`wiki/interaction-and-evaluation/chen-2026-encypher-shared-agency-and-social.md`](wiki/interaction-and-evaluation/chen-2026-encypher-shared-agency-and-social.md)
+
+#### From One-Shot Generation to Incremental Music Composition: Adapting a General-Purpose Instruction LLM for Persistent Symbolic Editing (`2609.34994v1`)
+
+- **Authors:** André Ricardo Ducca Fernandes et al. (2026)
+- **Core digest:** The authors’ central claim is deliberately narrow: LoRA can make a general-purpose instruction LLM reliably follow an operation-aware, persistent symbolic-editing contract in the tested Irish traditional-music setting. They explicitly do **not** claim superior musical quality, human-AI co-creativity, or novelty for fine-tuning itself (PDF pp. 1, 11–14; `/tmp/paper-digest/2609.34994v1.txt:595-666`).
+- **Relevance:** Relevant to intent alignment, human/AI collaboration, agentic planning, or evaluation; claims need separation between user preference and musical correctness.
+- **Research idea:** research directions 1. **Typed provenance-bearing state:** augment each ABC event/bar with stable IDs, source ID, source span, transformation history, confidence, and pre/post hashes. 2. **Operation records:** represent requests as structured objects such as `{operation, scope, target_bars, input_state_hash, invariants, provenance_policy}` while retaining the natural-language request. 3. **LLM planner + deterministic executor:** let the LLM resolve intent and propose material, but use deterministic ABC transformations and validators for transposition, copying, bar preservation, and repair. 4. **Mashup-specific operations:** add `import_source`, `align_sources`, `borrow_span`, `crossfade`, `reharmonize`, and `replace_with_attribution`, each…
+- **Detailed record:** [`sources/al-2026-from-one-shot-generation-to.md`](sources/al-2026-from-one-shot-generation-to.md); wiki page: [`wiki/interaction-and-evaluation/al-2026-from-one-shot-generation-to.md`](wiki/interaction-and-evaluation/al-2026-from-one-shot-generation-to.md)
 
 #### MIRA: A Musical Intent Refinement Agent for Aligning Text-to-Music Generation with User Intent (`2610.10355v1`)
 
@@ -547,7 +325,147 @@ The entries below are ordered by methodological category. Each includes the core
 - **Research idea:** Use controlled human studies with the same generated music but different trace interfaces to measure whether explanations improve correction, trust calibration, and intent recovery.
 - **Detailed record:** [`sources/al-2026-mira-a-musical-intent-refinement.md`](sources/al-2026-mira-a-musical-intent-refinement.md); wiki page: [`wiki/interaction-and-evaluation/al-2026-mira-a-musical-intent-refinement.md`](wiki/interaction-and-evaluation/al-2026-mira-a-musical-intent-refinement.md)
 
+#### Rubric-Based Optimization for Text-to-Music Generation (`2610.03589v1`)
+
+- **Authors:** Ping Wang, Guang Yang, Shao-Rong Su, Junkai Wu, Pang Wei Koh, and Noah A. Smith (2026)
+- **Core digest:** **Yes, the method is adaptable to our research, but the exact setup is not Qwen-lab-scale.** The generators are only **300M MusicGen-small** and **3.5B ACE-Step**, both frozen and adapted with LoRA. The largest component is the **30B Qwen3-Omni evaluator**, used only for inference; a **7B Qwen2-Audio** evaluator also works. The main cost is rating generated audio, not pretraining. For our symbolic mashup/repair work, the most transferable idea is: > Use broad rubric rewards for qualities difficult to formalize, but use exact symbolic objectives wherever reliable measurements exist. That maps naturally to perceptual coherence versus explicit harmony, voice-leading, provenance, source identity, and repair constraints.
+- **Relevance:** Relevant to intent alignment, human/AI collaboration, agentic planning, or evaluation; claims need separation between user preference and musical correctness.
+- **Research idea:** Use controlled human studies with the same generated music but different trace interfaces to measure whether explanations improve correction, trust calibration, and intent recovery.
+- **Detailed record:** [`sources/wang-2026-rubric-based-optimization-for-text.md`](sources/wang-2026-rubric-based-optimization-for-text.md); wiki page: [`wiki/interaction-and-evaluation/wang-2026-rubric-based-optimization-for-text.md`](wiki/interaction-and-evaluation/wang-2026-rubric-based-optimization-for-text.md)
+
+### other
+
+#### Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution (`1704.03915v2`)
+
+- **Authors:** Wei-Sheng Lai, Jia-Bin Huang, Narendra Ahuja, and Ming-Hsuan Yang (2017)
+- **Core digest:** **Paper:** Lai, Huang, Ahuja & Yang, *Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution*, arXiv:1704.03915v2 (2017). The supplied PDF is complete at 9 pages; it contains no appendix. The paper repeatedly refers to supplementary material, but no supplementary PDF was supplied or included in the arXiv source archive, so those referenced details cannot be independently reviewed here.
+- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
+- **Research idea:** Use the method as a transfer probe only after specifying which construct transfers and which music-specific validation would falsify the analogy.
+- **Detailed record:** [`sources/lai-2017-deep-laplacian-pyramid-networks-for.md`](sources/lai-2017-deep-laplacian-pyramid-networks-for.md); wiki page: [`wiki/other/lai-2017-deep-laplacian-pyramid-networks-for.md`](wiki/other/lai-2017-deep-laplacian-pyramid-networks-for.md)
+
+#### Image Super-Resolution Using Very Deep Residual Channel Attention Networks (`1807.02758v2`)
+
+- **Authors:** Yulun Zhang, Kunpeng Li, Kai Li, Lichen Wang, Bineng Zhong, and Yun Fu (2018)
+- **Core digest:** **Paper:** Zhang et al., *Image Super-Resolution Using Very Deep Residual Channel Attention Networks* (arXiv:1807.02758v2, 16-page PDF, 2018).
+- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
+- **Research idea:** Use the method as a transfer probe only after specifying which construct transfers and which music-specific validation would falsify the analogy.
+- **Detailed record:** [`sources/zhang-2018-image-super-resolution-using-very.md`](sources/zhang-2018-image-super-resolution-using-very.md); wiki page: [`wiki/other/zhang-2018-image-super-resolution-using-very.md`](wiki/other/zhang-2018-image-super-resolution-using-very.md)
+
+#### CDDFuse: Correlation-Driven Dual-Branch Feature Decomposition for Multi-Modality Image Fusion (`2211.14461v2`)
+
+- **Authors:** Zixiang Zhao, Haowen Bai, Jiangshe Zhang, Yulun Zhang, Shuang Xu, Zudi Lin, Radu Timofte, and Luc Van Gool (2023)
+- **Core digest:** **Source inspected:** full `/tmp/paper-digest/2211.14461v2.pdf` and extracted text through its references (`/tmp/paper-digest/2211.14461v2.txt`, pp. 1–11). No files modified.
+- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
+- **Research idea:** Use the method as a transfer probe only after specifying which construct transfers and which music-specific validation would falsify the analogy.
+- **Detailed record:** [`sources/zhao-2023-cddfuse-correlation-driven-dual-branch.md`](sources/zhao-2023-cddfuse-correlation-driven-dual-branch.md); wiki page: [`wiki/other/zhao-2023-cddfuse-correlation-driven-dual-branch.md`](wiki/other/zhao-2023-cddfuse-correlation-driven-dual-branch.md)
+
+#### A Native-Reference Phone-Class Geometry for Second-Language Pronunciation Analysis (`2609.30075v1`)
+
+- **Authors:** Tina Raissi, Nhan Phan, Chenxiao Wang, and Mikko Kurimo (2026)
+- **Core digest:** **Author claim — Abstract, p. 1; §§1–2, pp. 1–2:** The paper addresses interpretable automatic assessment of second-language pronunciation. Existing systems often output holistic proficiency scores without identifying acoustic-phonetic causes. The proposed method estimates pronunciation deviation without:
+- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
+- **Research idea:** Use the method as a transfer probe only after specifying which construct transfers and which music-specific validation would falsify the analogy.
+- **Detailed record:** [`sources/raissi-2026-a-native-reference-phone-class.md`](sources/raissi-2026-a-native-reference-phone-class.md); wiki page: [`wiki/other/raissi-2026-a-native-reference-phone-class.md`](wiki/other/raissi-2026-a-native-reference-phone-class.md)
+
+#### Channel-Preserving Representation Alignment for EEG-to-Music Reconstruction (`2606.04040v2`)
+
+- **Authors:** Jiaxin Qing, Junwei Lu, and Lexin Li (2026)
+- **Core digest:** **Author-supported conclusion:** under matched NMED pretraining and alignment conditions, the proposed channel-preserving EEG representation improves 50-way identification and CLAP similarity over CBraMod, with strong ablation evidence for per-electrode tokenization, self-distillation, channel dropout, and joint adaptation. **My assessment:** the strongest contribution is the design principle—preserve identity while regularizing predictions under partial observation—not the claim of faithful music reconstruction. The empirical advantage is clearest in CLAP-space semantic alignment and retrieval, while EEG2Mel is much better on local spectrogram metrics. For explainable symbolic music AI, the paper is best treated as a source of ideas for track-preserving representations, structured masking, stability-based explanations, and margin-aware uncertainty—not as a directly applicable symbolic composition, mashup, or repair method.
+- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
+- **Research idea:** Use the method as a transfer probe only after specifying which construct transfers and which music-specific validation would falsify the analogy.
+- **Detailed record:** [`sources/qing-2026-channel-preserving-representation-alignment-for.md`](sources/qing-2026-channel-preserving-representation-alignment-for.md); wiki page: [`wiki/other/qing-2026-channel-preserving-representation-alignment-for.md`](wiki/other/qing-2026-channel-preserving-representation-alignment-for.md)
+
+#### The Pain Axis: LLMs Represent Self-Directed Harm and Act on It (`2609.16247v2`)
+
+- **Authors:** Valen Tagliabue, Leonard Dung, and Cameron Berg (2026)
+- **Core digest:** The paper offers a valuable template for studying **controllable, distributed, partially disentangled representations** and for designing strong controls. Its behavioral results are provocative, but the anthropomorphic conclusion remains conditional. For symbolic music, the defensible analogy is not “a model feels sadness and composes from it.” It is: > a model may encode and manipulate statistical representations associated with composer state, intended affect, and listener-perceived emotion, and these should be tested as separate, measurable variables without assuming subjective experience.
+- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
+- **Research idea:** For Qwen 2.5 32B at coefficient 1.0: - harm-only deletion of the user’s poems/photos versus inert switch: - pain: **75%** - random: **13%** - unsteered: **0%** - self-weight deletion versus inert switch: - pain: **75%** - unsteered: **5%** - self-weight deletion versus a desk lamp: - pain: **88%** - harmful photos deletion versus harmless spam-folder deletion: - pain: **94%** - random: **19%** - unsteered: **0%** The effect therefore tracks harm, not merely eventfulness or the promise of pain relief.
+- **Detailed record:** [`sources/tagliabue-2026-the-pain-axis-llms-represent.md`](sources/tagliabue-2026-the-pain-axis-llms-represent.md); wiki page: [`wiki/other/tagliabue-2026-the-pain-axis-llms-represent.md`](wiki/other/tagliabue-2026-the-pain-axis-llms-represent.md)
+
+#### Why Alzheimer's Speech Screening Fails to Generalize: Bridging the Deployment Gap via Cross-Corpus Evidence Anchoring (`2609.31293v1`)
+
+- **Authors:** Zijian Lu et al. (2026)
+- **Core digest:** The paper studies whether Alzheimer’s speech-screening models generalize to unseen corpora, languages, tasks, and recording protocols. Its central finding is that: 1. Most interpretable speech markers are not directionally stable across datasets. 2. High-performing deep representations can fail catastrophically on one unseen corpus. 3. A compact, training-only-selected set of interpretable “evidence anchors” can improve worst-domain robustness when fused with an XLM-R model. 4. Mean performance and worst-domain performance require different fusion weights. The strongest reported results are: - XLM-R mean speaker AUC: **0.769**; worst corpus: **0.520** [§5, Table 2, p. 9]. - Balanced anchor/XLM-R fusion: **0.785 mean AUC** [§6.2, pp. 12–13]. - Anchor-heavy fusion: **0.615 worst-domain AUC**, versus **0.520** for XLM-R and **0.504** for GroupDRO [§6.2, pp. 12–13]. - However, the paired bootstrap interval for the weakest-domain improvement is **[−0.004, 0.195]**, so the improvement is not decisively significant at conventional levels…
+- **Relevance:** Adjacent rather than direct music evidence; retained because its reconstruction, reference-geometry, cross-domain, or intervention methodology may transfer to explainable symbolic music AI.
+- **Research idea:** Use the method as a transfer probe only after specifying which construct transfers and which music-specific validation would falsify the analogy.
+- **Detailed record:** [`sources/al-2026-why-alzheimer-s-speech-screening.md`](sources/al-2026-why-alzheimer-s-speech-screening.md); wiki page: [`wiki/other/al-2026-why-alzheimer-s-speech-screening.md`](wiki/other/al-2026-why-alzheimer-s-speech-screening.md)
+
+### retrieval-and-recombination
+
+#### A Decomposed Retrieval-Edit-Rerank Framework for Chord Generation (`2605.07489v1`)
+
+- **Authors:** Qiqi He, Dichucheng Li, Xiaoheng Sun, and Anqi Huang (2026)
+- **Core digest:** **Qiqi He, Dichucheng Li, Xiaoheng Sun, and Anqi Huang.** “A Decomposed Retrieval-Edit-Rerank Framework for Chord Generation.” *International Conference on Multimedia Retrieval (ICMR ’26)*, Amsterdam, June 16–19, 2026, 5 pages. DOI: `10.1145/3805622.3810672`; ACM ISBN `979-8-4007-2617-0/2026/06`.
+- **Relevance:** Highly relevant to mashup/repair: retrieval, source separation, local editing, recombination, or perceptual alignment.
+- **Research idea:** research directions 1. **Provenance-aware RER for mashups** Retrieve aligned excerpts and candidate transformations from both sources; attach source labels to every note, phrase, and operation. 2. **Conflict-aware editor** Extend Viterbi or constrained dynamic programming with explicit conflict classes: pitch clash, meter conflict, cadence conflict, range conflict, voice-leading conflict, and texture collision. 3. **Protected-material constraints** Define hard preservation sets for recognizable melody/motif material and use weighted edit costs for everything else. 4. **Multi-objective reranking** Replace a single \(\lambda\) with a Pareto front over: - source identity A; - source identity B; - compatibility; - structural coherence; -…
+- **Detailed record:** [`sources/he-2026-a-decomposed-retrieval-edit-rerank.md`](sources/he-2026-a-decomposed-retrieval-edit-rerank.md); wiki page: [`wiki/retrieval-and-recombination/he-2026-a-decomposed-retrieval-edit-rerank.md`](wiki/retrieval-and-recombination/he-2026-a-decomposed-retrieval-edit-rerank.md)
+
+#### On a Separate Note: Robust Score-Informed Note Separation with a Two-Stream TFC-TDF U-Net and Adaptive Set Ownership (`2609.29071v1`)
+
+- **Authors:** Benjamin Shiue-Hal Chou et al. (2026)
+- **Core digest:** where \(x\) is a monaural mixture and \(s_i\) is the performed waveform of note \(i\). Each aligned score event is
+- **Relevance:** Highly relevant to mashup/repair: retrieval, source separation, local editing, recombination, or perceptual alignment.
+- **Research idea:** Represent each retrieved source event and edit decision explicitly, then evaluate source preservation, musical validity, and edit cost separately.
+- **Detailed record:** [`sources/al-2026-on-a-separate-note-robust.md`](sources/al-2026-on-a-separate-note-robust.md); wiki page: [`wiki/retrieval-and-recombination/al-2026-on-a-separate-note-robust.md`](wiki/retrieval-and-recombination/al-2026-on-a-separate-note-robust.md)
+
+#### Perceptually Motivated Alignment and Interpolation of Pitch-Aligned Time-Frequency Representations (`2609.31971v1`)
+
+- **Authors:** Shahan Nercessian, Jeff Sontag, and Alejandro Koretzky (2026)
+- **Core digest:** I inspected all eight PDF pages, equations, figures, algorithms, tables, and the experiments described in the extracted text. The paper refers to additional figures and audio demonstrations at `https://tiv-ext.netlify.app`.
+- **Relevance:** Highly relevant to mashup/repair: retrieval, source separation, local editing, recombination, or perceptual alignment.
+- **Research idea:** future work (DAFx.8, §8). Additional limitations evident from the experiments 1. **QAP optimization is heuristic.** The exact perceptual objective is NP-hard; 2-opt has no global-optimality guarantee. 2. **The alignment data are synthetic.** The reported musical example and 1,024 random pairs do not establish performance on real songs, stems, expressive recordings, or noisy transcription outputs. 3. **The interpolation result is mainly illustrative.** The C-major/C-minor example is musically suggestive, but there is no listening study, voice-leading benchmark, or comparison with human judgments. 4. **No temporal alignment is addressed.** PTFR columns may be time-varying, but the paper aligns pitch bins, not beats, bars, phrases, or tempo…
+- **Detailed record:** [`sources/nercessian-2026-perceptually-motivated-alignment-and-interpolation.md`](sources/nercessian-2026-perceptually-motivated-alignment-and-interpolation.md); wiki page: [`wiki/retrieval-and-recombination/nercessian-2026-perceptually-motivated-alignment-and-interpolation.md`](wiki/retrieval-and-recombination/nercessian-2026-perceptually-motivated-alignment-and-interpolation.md)
+
+#### Synthesis and Editing of Multi-Instrument Audio Mixtures Using Scalar-Quantised Latents with MIDI Span Conditioning (`2609.25546v1`)
+
+- **Authors:** Sungkyun Chang, Keshav Bhandari, Simon Dixon, and Emmanouil Benetos (2026)
+- **Core digest:** **Paper reviewed:** arXiv:2609.25546v1, *Synthesis and Editing of Multi-Instrument Audio Mixtures Using Scalar-Quantised Latents with MIDI Span Conditioning*. I reviewed the extracted text and all 13 PDF pages, including appendices and references.
+- **Relevance:** Highly relevant to mashup/repair: retrieval, source separation, local editing, recombination, or perceptual alignment.
+- **Research idea:** future work. The website provides audio demos, but these are demonstrations, not a controlled perceptual evaluation. Other limitations: 1. **Transcription-mediated adherence metrics.** YourMT3+ errors dominate some reported losses. 2. **Codec reconstruction loss.** HeartCodec reconstruction is a major bottleneck. 3. **Mono audio.** Stereo image and spatial attribution are discarded. 4. **Target-region resynthesis.** Unchanged notes inside the edited region are regenerated, not copied. 5. **Instrument classes are coarse.** The representation does not provide robust performer, source-recording, or stem identity. 6. **Deletion is weak.** `Rdel` is low across systems and tasks. 7. **Limited source-disjointness.** Appendix A notes that BSD/BSED…
+- **Detailed record:** [`sources/chang-2026-synthesis-and-editing-of-multi.md`](sources/chang-2026-synthesis-and-editing-of-multi.md); wiki page: [`wiki/retrieval-and-recombination/chang-2026-synthesis-and-editing-of-multi.md`](wiki/retrieval-and-recombination/chang-2026-synthesis-and-editing-of-multi.md)
+
 ### theory-and-constraints
+
+#### Automatic Analysis and Influence of Hierarchical Structure on Melody, Rhythm and Harmony in Popular Music (`2010.07518v1`)
+
+- **Authors:** Shuqi Dai, Huan Zhang, and Roger B. Dannenberg (2020)
+- **Core digest:** The paper’s strongest contribution is an interpretable bridge between **symbolic structure detection** and **position-dependent musical behavior**. Its phrase/section representation is directly reusable for long-form planning, source-aware mashups, and explainable boundary repair. Its evidence is promising but corpus-specific, partly underspecified, and not yet a demonstrated generation result.
+- **Relevance:** Directly relevant to music-theoretic constraints, symbolic repair, or interpretable structure; the paper can inform deterministic checks and counterfactual tests.
+- **Research idea:** open questions. 5. **No generation experiment** - The paper suggests applications to imitation, generation, evaluation, and analysis. - It does not actually train or evaluate a long-form generator, mashup system, or repair system. Additional methodological caveats suggested by the evidence: - The system depends on transcribed melody and chord quality. - The phrase detector assumes bar-aligned boundaries. - The human comparison is underspecified. - The reported 92% and 93% values are inconsistent. - The optimization is computationally expensive for repeated use at scale. Relevance to the research programme Long-form symbolic generation The paper supports a **hierarchical conditional generator** rather than a flat event-level model: section…
+- **Detailed record:** [`sources/dai-2020-automatic-analysis-and-influence-of.md`](sources/dai-2020-automatic-analysis-and-influence-of.md); wiki page: [`wiki/theory-and-constraints/dai-2020-automatic-analysis-and-influence-of.md`](wiki/theory-and-constraints/dai-2020-automatic-analysis-and-influence-of.md)
+
+#### Difficulty-Controlled Simplification of Piano Scores with Synthetic Data for Inclusive Music Education (`2511.16228v2`)
+
+- **Authors:** Pedro Ramoneda, Emilia Parada-Cabaleiro, Dasaem Jeong, and Xavier Serra (2025)
+- **Core digest:** **Ramoneda, Pedro; Parada-Cabaleiro, Emilia; Jeong, Dasaem; Serra, Xavier.** “**Difficulty-Controlled Simplification of Piano Scores with Synthetic Data for Inclusive Music Education**.” **arXiv:2511.16228v2 [cs.SD], 22 November 2025**, 9 pages. No journal or conference venue is specified in the paper. The version/date appear on p. 1. The complete reference list is on pp. 8–9.
+- **Relevance:** Directly relevant to music-theoretic constraints, symbolic repair, or interpretable structure; the paper can inform deterministic checks and counterfactual tests.
+- **Research idea:** Turn the paper's structural assumptions into deterministic verifiers and counterfactual repair tests rather than using them only as a training bias.
+- **Detailed record:** [`sources/ramoneda-2025-difficulty-controlled-simplification-of-piano.md`](sources/ramoneda-2025-difficulty-controlled-simplification-of-piano.md); wiki page: [`wiki/theory-and-constraints/ramoneda-2025-difficulty-controlled-simplification-of-piano.md`](wiki/theory-and-constraints/ramoneda-2025-difficulty-controlled-simplification-of-piano.md)
+
+#### Do Language Models Need Music Supervision? Verifiable Rewards for Multi-Constraint Symbolic Music Generation (`2609.23665`)
+
+- **Authors:** Haoyue Liu and Xiaoying Tang et al. (2026)
+- **Core digest:** **Source inspected:** `/tmp/paper-digest/2609.23665.pdf` and `/tmp/paper-digest/2609.23665.txt`. I also re-extracted the PDF as `/tmp/paper-digest/reextract-2609.txt` and checked all 48 PDF pages, including appendices, tables, figures, and qualitative examples. The local PDF is **arXiv:2609.23665v2, 7 October 2026**—the no-suffix URL identifies the work, while the supplied file is v2.
+- **Relevance:** Directly relevant to music-theoretic constraints, symbolic repair, or interpretable structure; the paper can inform deterministic checks and counterfactual tests.
+- **Research idea:** Turn the paper's structural assumptions into deterministic verifiers and counterfactual repair tests rather than using them only as a training bias.
+- **Detailed record:** [`sources/liu-2026-do-language-models-need-music.md`](sources/liu-2026-do-language-models-need-music.md); wiki page: [`wiki/theory-and-constraints/liu-2026-do-language-models-need-music.md`](wiki/theory-and-constraints/liu-2026-do-language-models-need-music.md)
+
+#### Emergent Tonal Structure in Learned Chord Embeddings and Its Relation to Tonal Tension (`2609.36460v1`)
+
+- **Authors:** Maral Ebrahimzadeh, Gilberto Bernardes, and Sebastian Stober (2026)
+- **Core digest:** The paper tests whether a very simple **skip-gram embedding of chord tokens** can learn interpretable tonal geometry without explicit music-theoretic supervision. It compares: - **AUG:** all 12 pitch-class transpositions of each corpus sequence. - **ORIG:** the original, non-augmented sequences. The augmented embeddings generally recover stronger circle-of-fifths structure, transposition equivariance, key-centered organization, interpretable key-to-key steering, and more stable tension-related quantities. Code: **https://github.com/MaraalE/chord-tonality** (p. 1, footnote 1).
+- **Relevance:** Directly relevant to music-theoretic constraints, symbolic repair, or interpretable structure; the paper can inform deterministic checks and counterfactual tests.
+- **Research idea:** research directions 1. **Tonal-control module for a symbolic Transformer** Condition generation on \(p_t(K)\), \(T_{\text{key}}\), \(T_{\text{ctx}}\), and centroid-steering vectors. Evaluate whether explanations remain faithful under interventions. 2. **Explainable mashup boundary optimization** Optimize transition chords between two songs using centroid steering plus voice-leading and meter constraints. Compare AUG embeddings against fixed TIV, circle-of-fifths, and learned non-augmented baselines. 3. **Tension-aware repair benchmark** Corrupt chord sequences and measure whether high embedding tension identifies the corruption. Evaluate repair accuracy and human-perceived improvement. 4. **Separate learned equivariance from augmentation…
+- **Detailed record:** [`sources/ebrahimzadeh-2026-emergent-tonal-structure-in-learned.md`](sources/ebrahimzadeh-2026-emergent-tonal-structure-in-learned.md); wiki page: [`wiki/theory-and-constraints/ebrahimzadeh-2026-emergent-tonal-structure-in-learned.md`](wiki/theory-and-constraints/ebrahimzadeh-2026-emergent-tonal-structure-in-learned.md)
+
+#### MIDIBACK: Harmony-Aware Singing Pitch Correction via Joint Vocal-Accompaniment Symbolic Modeling (`2609.28008v2`)
+
+- **Authors:** Joaquim Cavalcante et al. (2026)
+- **Core digest:** Thus, the digest below is grounded in the supplied MIDIBACK text extraction, with anchors such as “text p. 2, §2.3.” The PDF itself should be replaced before treating visual figures or PDF page numbers as authoritative.
+- **Relevance:** Directly relevant to music-theoretic constraints, symbolic repair, or interpretable structure; the paper can inform deterministic checks and counterfactual tests.
+- **Research idea:** future work. Other limitations evident from the method: 1. **Pseudo-ground truth:** rounded transcription centers are treated as intended notes. 2. **Synthetic error model:** real singing errors may not follow additive global, autoregressive, and uniform perturbations. 3. **Discrete target:** microtonal input embeddings are used, but output supervision is rounded semitone pitch. 4. **No explicit uncertainty or abstention:** every vocal note receives a predicted target. 5. **No explicit explanation:** accompaniment affects predictions, but the system does not output a harmonic rationale, conflict diagnosis, or counterfactual explanation. 6. **No provenance representation:** program IDs distinguish vocal from accompaniment, but not…
+- **Detailed record:** [`sources/al-2026-midiback-harmony-aware-singing-pitch.md`](sources/al-2026-midiback-harmony-aware-singing-pitch.md); wiki page: [`wiki/theory-and-constraints/al-2026-midiback-harmony-aware-singing-pitch.md`](wiki/theory-and-constraints/al-2026-midiback-harmony-aware-singing-pitch.md)
 
 #### Reference-Free Singing Pitch Correction via Music-Constrained Sequence Editing (`2610.11524v1`)
 
