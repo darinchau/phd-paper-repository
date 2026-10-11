@@ -14,7 +14,7 @@ tags: []
 ---
 ## Summary
 
-The model first writes melody, chords, key, meter, tempo, sections, and voices, then realizes performance and production detail in audio.
+YuE2 factorizes generation into an inspectable symbolic score, semantic tokens, and acoustic realization. It demonstrates score-guided editing and source-identity retrieval, but its 3.58B-scale, partly licensed data regime is not modestly reproducible and the score is not itself a faithful explanation.
 
 ## Key Contributions
 
