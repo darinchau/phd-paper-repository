@@ -14,7 +14,7 @@ tags: []
 ---
 ## Summary
 
-The paper reports code and datasets at `https://github.com/valen-research/Pain-axis`. It also lists independent, not-yet-peer-reviewed replications of v1 (p. 30).
+The paper finds cross-model, linearly decodable activation patterns associated with curated pain-related language and causal effects on generation and artificial choices, but does not establish phenomenal pain, consciousness, welfare, or genuine self-directed motivation.
 
 ## Key Contributions
 
