@@ -14,7 +14,7 @@ tags: []
 ---
 ## Summary
 
-I inspected all eight PDF pages, equations, figures, algorithms, tables, and the experiments described in the extracted text. The paper refers to additional figures and audio demonstrations at `https://tiv-ext.netlify.app`.
+The paper provides an interpretable harmonic alignment/interpolation layer using invertible perceptual TIV transforms, pitch-axis assignment, and Circle-of-Fifths optimal transport; it is useful for mashup harmonic control but does not solve temporal, timbral, or source-separation alignment.
 
 ## Key Contributions
 
