@@ -14,7 +14,7 @@ tags: []
 ---
 ## Summary
 
-1. waveform reconstruction fidelity; 2. semantic/content preservation; and 3. autoregressive language-model predictability.
+MuSeC separates a frozen music-SSL semantic stream from residual acoustic RVQ tokens to improve reconstruction, content probes, and LM predictability. Its learned audio tokens are not symbolic notes or provenance explanations, so an explicit event layer remains necessary for mashups and repair.
 
 ## Key Contributions
 
