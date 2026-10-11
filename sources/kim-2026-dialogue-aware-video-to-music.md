@@ -12,7 +12,7 @@ extracted_date: 2026-10-11
 ---
 ## One-line Summary
 
-1. **OSSL-v2**, a durable, self-hosted film/video–music dataset. 2. A lightweight, frame-aligned dialogue adapter for existing video-to-music models. 3. Benchmarking of VidMuse, GVMGen, and Diff-V2M on common data.
+The paper releases OSSL-v2 (1,886 films and 34,343 clips) and adds a frame-wise acoustic-dialogue FiLM adapter to video-to-music models. Gains are metric- and backbone-dependent, so the method is a low-level dialogue-conditioning precedent rather than demonstrated narrative understanding.
 
 ## 1. Document Information
 
