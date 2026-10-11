@@ -14,46 +14,61 @@ tags: []
 ---
 ## Summary
 
-The paper tests whether a very simple **skip-gram embedding of chord tokens** can learn interpretable tonal geometry without explicit music-theoretic supervision. It compares:
+The paper tests whether simple skip-gram chord embeddings can learn interpretable tonal geometry from symbolic chord co-occurrences. Twelve-fold transposition augmentation strengthens circle-of-fifths organization, transposition equivariance, key-centered structure, tonal steering, and tension stability, while the study remains a small, theory-guided triad-level probing baseline.
 
 ## Key Contributions
 
 Central contribution
 
-The paper tests whether a very simple **skip-gram embedding of chord tokens** can learn interpretable tonal geometry without explicit music-theoretic supervision. It compares:
+#### Authors’ claim
 
-- **AUG:** all 12 pitch-class transpositions of each corpus sequence.
-- **ORIG:** the original, non-augmented sequences.
+The paper tests whether simple skip-gram chord embeddings, trained only from symbolic chord co-occurrences, develop:
 
-The augmented embeddings generally recover stronger circle-of-fifths structure, transposition equivariance, key-centered organization, interpretable key-to-key steering, and more stable tension-related quantities.
+1. Circle-of-fifths geometry.
+2. Transposition-equivariant structure.
+3. Key-centered regions.
+4. Interpretable movement between tonal regions.
+5. Tension-related quantities corresponding to TIV-based measures and human tension profiles.
 
-Code: **https://github.com/MaraalE/chord-tonality** (p. 1, footnote 1).
+The authors report that **12-fold transposition augmentation generally improves stability, tonal coherence, and interpretability**.
 
----
+#### Interpretation
 
-### Page-by-page evidence map
-
-- **p. 1:** Abstract, motivation, introduction, related work, code link.
-- **p. 2:** Related work; datasets; corpus preprocessing; Table 1; skip-gram setup.
-- **p. 3:** Circle-of-fifths analysis; Figure 1; Tables 2–3; transposition equivariance; start of key analysis.
-- **p. 4:** Table 4 key structure; controls; tonal-region steering; Table 5; start of tension analysis.
-- **p. 5:** Tension definitions, Eqs. 1–3; Table 6; TIV comparison setup.
-- **p. 6:** Table 7 TIV correspondence; human-tension experiment setup.
-- **p. 7:** Figure 2, Figure 3, Table 8; limitations; conclusion and future work.
-- **p. 8:** AI usage statement and references.
+This is primarily a **post-hoc interpretability and probing study**, not a model with an explicitly designed tonal latent space. The embeddings are ordinary 64-dimensional skip-gram vectors; tonal structure is demonstrated through external geometric tests, key templates, and tension probes.
 
 ---
 
-### Data and preprocessing
+### 1. Data and representation
 
-### Corpora (§3.1, p. 2)
+### Corpora
 
-1. **BPS-FH**
-   - Expert Roman-numeral annotations for the first movements of Beethoven’s 32 piano sonatas.
-   - Chord roots and qualities derived using an adapted released chord-symbol translation implementation.
+**BPS-FH**  
+- Expert Roman-numeral annotations for the first movements of Beethoven’s 32 piano sonatas.
+- Chord roots and qualities derived using an adapted released chord-symbol translation implementation.
+- Primary dataset.
 
-2. **Isophonics**
-   - Beatles chor
+**Isophonics**  
+- Beatles catalogue chord annotations.
+- Only the chord-label layer is used.
+- Secondary dataset.
+
+PDF p. 2, §3.1.
+
+### Tokenization and preprocessing
+
+The supported labels are reduced to a vocabulary of **24 root–quality tokens**:
+
+```text
+root_quality
+C_M
+A_m
+```
+
+The vocabulary contains all 12 pitch-class roots in major and minor quality.
+
+Processing:
+
+- Major, minor, and dominant-family labels—including sevenths and selected extensions—are mapped to their
 
 The complete evidence-grounded digest is in [`sources/ebrahimzadeh-2026-emergent-tonal-structure-in-learned.md`](../../sources/ebrahimzadeh-2026-emergent-tonal-structure-in-learned.md).
 
