@@ -1,13 +1,13 @@
 # PhD Paper Repository Index
 
-Catalog generated on 2026-09-29 from repository content.
+Catalog generated on 2026-10-11 from repository content.
 
 ## Coverage
 
-- Canonical PDFs: **12**
-- Source digests: **11**
-- Domain paper pages: **11**
-- Papers linked to an overview or concept: **11/11**
+- Canonical PDFs: **14**
+- Source digests: **13**
+- Domain paper pages: **13**
+- Papers linked to an overview or concept: **13/13**
 - Overviews: **2**
 - Concepts: **6**
 - Questions: **1**
@@ -18,8 +18,8 @@ Catalog generated on 2026-09-29 from repository content.
 |---|---:|---|
 | `data-and-representation` | 1 | [open](indexes/data-and-representation.md) |
 | `generation-and-planning` | 5 | [open](indexes/generation-and-planning.md) |
-| `theory-and-constraints` | 1 | [open](indexes/theory-and-constraints.md) |
-| `explainability-and-auditability` | 2 | [open](indexes/explainability-and-auditability.md) |
+| `theory-and-constraints` | 2 | [open](indexes/theory-and-constraints.md) |
+| `explainability-and-auditability` | 3 | [open](indexes/explainability-and-auditability.md) |
 | `retrieval-and-recombination` | 2 | [open](indexes/retrieval-and-recombination.md) |
 | `interaction-and-evaluation` | 0 | — |
 | `other` | 0 | — |
@@ -32,8 +32,10 @@ Catalog generated on 2026-09-29 from repository content.
 - [REMAST: Real-time Emotion-based Music Arrangement with Soft Transition](wiki/generation-and-planning/wang-2023-remast-real-time-emotion-based.md) — Zihao Wang, Le Ma, Chen Zhang, Bo Han, Yunfei Xu, Yikai Wang, Xinyi Chen, Haorong Hong, Wenbo Liu, Xinda Wu, and Kejun Zhang (2023)
 - [Hierarchical Reasoning Model](wiki/generation-and-planning/wang-2025-hierarchical-reasoning-model.md) — Guan Wang, Jin Li, Yuhao Sun, Xing Chen, Changling Liu, Yue Wu, Meng Lu, Sen Song, and Yasin Abbasi Yadkori (2025)
 - [NotaGen: Advancing Musicality in Symbolic Music Generation with Large Language Model Training Paradigms](wiki/generation-and-planning/wang-2025-notagen-advancing-musicality-in-symbolic.md) — Yashan Wang, Shangda Wu, Jianhuai Hu, Xingjian Du, Yueqi Peng, Yongxin Huang, Shuai Fan, Xiaobing Li, Feng Yu, and Maosong Sun (2025)
+- [A Modular System for Harmonic Structure Analysis of Music](wiki/theory-and-constraints/mcleod-2020-a-modular-system-for.md) — Andrew McLeod and Martin Rohrmeier (2020)
 - [Beyond Frequency: Dissonance Spectrum for Perceptually Motivated Music Understanding](wiki/theory-and-constraints/wang-2026-beyond-frequency-dissonance-spectrum-for.md) — Tianle Wang, Xinyi Tong, Liangke Zhao, Jishang Chen, Sirui Zhang, Haoxin Zhang, Xin Jin, Duo Xu, Xiaobing Li, and Song-Chun Zhu (2026)
 - [MI-MIDI: Mechanistic Interpretability of Text-to-MIDI Generation Models via Probing, Lenses and Steering](wiki/explainability-and-auditability/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of.md) — Jakub Poćwiardowski and Mateusz Modrzejewski (2026)
+- [Interpretable Music Harmonic Analysis Through Multilinear Mixture of Experts](wiki/explainability-and-auditability/triantafyllou-2026-interpretable-music-harmonic.md) — Thanasis Triantafyllou, Mihalis A. Nicolaou, and Yannis Panagakis (2026)
 - [Do Music Generation Models Encode Music Theory?](wiki/explainability-and-auditability/wei-2024-do-music-generation-models-encode.md) — Megan Wei, Michael Freeman, Chris Donahue, and Chen Sun (2024)
 - [AutoMashUpper: Automatic Creation of Multi-Song Music Mashups](wiki/retrieval-and-recombination/davies-2014-automashupper-automatic-creation-of-multi.md) — Matthew E. P. Davies, Philippe Hamel, Kazuyoshi Yoshii, and Masataka Goto (2014)
 - [An Automated Pop Song Mashup System](wiki/retrieval-and-recombination/wu-2026-an-automated-pop-song-mashup.md) — Xinyang Wu (2026)
