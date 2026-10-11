@@ -1,3 +1,12 @@
 # Data And Representation
 
+- [Rethinking Music Tokenization: A Semantic Codec toward High-Fidelity LLM Music Generation](../wiki/data-and-representation/al-2026-rethinking-music-tokenization-a-semantic.md) — Huakang Chen et al. (2026)
+- [MidiTok: A Python Package for MIDI File Tokenization](../wiki/data-and-representation/fradet-2023-miditok-a-python-package-for.md) — Nathan Fradet, Jean-Pierre Briot, Fabien Chhel, Amal El Fallah Seghrouchni, and Nicolas Gutowski (2023)
+- [Enabling Factorized Piano Music Modeling and Generation with the MAESTRO Dataset](../wiki/data-and-representation/hawthorne-2019-enabling-factorized-piano-music-modeling.md) — Curtis Hawthorne, Andriy Stasyuk, Adam Roberts, Ian Simon, Cheng-Zhi Anna Huang, Sander Dieleman, Erich Elsen, Jesse Engel, and Douglas Eck (2019)
+- [Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio](../wiki/data-and-representation/jung-2025-unified-cross-modal-translation-of.md) — Jongmin Jung, Dongmin Kim, Sihun Lee, Seola Cho, Hyungjoon So, Irmak Bukey, Chris Donahue, and Dasaem Jeong (2025)
+- [Dialogue-Aware Video-to-Music Generation Using Public Domain Film Collections](../wiki/data-and-representation/kim-2026-dialogue-aware-video-to-music.md) — Haven Kim, Zachary Novack, Julian McAuley, and Hao-Wen Dong (2026)
+- [From Words to Music: A Study of Subword Tokenization Techniques in Symbolic Music Generation](../wiki/data-and-representation/kumar-2023-from-words-to-music-a.md) — Adarsh Kumar and Pedro Sarmento (2023)
 - [MusPyExpress: Extending MusPy with Enhanced Expression Text Support](../wiki/data-and-representation/long-2025-muspyexpress-extending-muspy-with-enhanced.md) — Phillip Long, Hao-Wen Dong, Julian McAuley, and Zachary Novack (2025)
+- [One Timeline, Many Renderings: A Wolfram Language Paclet for Heterogeneous Musical Output](../wiki/data-and-representation/vitucci-2026-one-timeline-many-renderings-a.md) — Francesco Vitucci, Michele Lorusso, and Francesco Scagliola (2026)
+- [Exploring Inherent Properties of the Monophonic Melody of Songs](../wiki/data-and-representation/wang-2020-exploring-inherent-properties-of-the.md) — Zehao Wang, Shicheng Zhang, and Xiaoou Chen (2020)
+- [POP909: A Pop-song Dataset for Music Arrangement Generation](../wiki/data-and-representation/wang-2020-pop909-a-pop-song-dataset.md) — Ziyu Wang, Ke Chen, Junyan Jiang, Yiyi Zhang, Maoran Xu, Shuqi Dai, Xianbin Gu, and Gus Xia (2020)

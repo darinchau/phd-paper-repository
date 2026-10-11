@@ -1,0 +1,183 @@
+---
+title: "2026 Literature Map for Explainable Symbolic Music AI"
+authors: "PhD research repository"
+year: 2026
+doi: ""
+category: ""
+source_collection: "repository synthesis"
+source_format: "markdown"
+extracted_date: 2026-10-11
+---
+
+# 2026 Literature Map for Explainable Symbolic Music AI
+
+This overview connects the 55 user-supplied papers processed in the October 2026 batch. Each paper page links here, and this page links back to every paper page. The set is intentionally exhaustive: adjacent or low-relevance papers remain visible and are labeled rather than silently omitted.
+
+## Batch scope and evidence boundary
+
+- **Denominator:** 55 supplied arXiv PDFs, all downloaded locally and read through full-paper digests; the canonical PDFs are in `papers/`.
+- **Interpretation:** author claims, reported measurements, artifact checks, and repository inferences are not interchangeable. See each source record for page/section anchors.
+- **Known integrity blocker:** the supplied `2609.28008v2.pdf` visually contains the EEG paper `2606.04040v2`, while its hidden text contains MIDIBACK. Its source record preserves the MIDIBACK text digest but flags the PDF mismatch; replace the PDF before relying on figures or visual page numbers.
+- **Research focus:** the most relevant cluster is auditable symbolic generation/editing, source attribution, retrieval/recombination, symbolic representations, and verifiable theory constraints. Video/audio-only and non-music papers are retained as adjacent methods or negative evidence.
+
+## Papers by methodological category
+
+### data-and-representation
+
+- [[data-and-representation/hawthorne-2019-enabling-factorized-piano-music-modeling]] — **Enabling Factorized Piano Music Modeling and Generation with the MAESTRO Dataset** (1810.12247v5); \[ P(\text{audio}) = \mathbb{E}_{\text{notes}} \left[P(\text{audio}\mid\text{notes})\right] \tag{1} \]
+- [[data-and-representation/wang-2020-exploring-inherent-properties-of-the]] — **Exploring Inherent Properties of the Monophonic Melody of Songs** (2003.09287v1); 1. computationally tractable, 2. semantically meaningful, 3. related to human perception/composition, 4. interpretable, and 5. useful for controlling generation or evaluation.
+- [[data-and-representation/wang-2020-pop909-a-pop-song-dataset]] — **POP909: A Pop-song Dataset for Music Arrangement Generation** (2008.07142v1); 1. A style-consistent piano arrangement rather than arbitrary extracted tracks. 2. Precise alignment to a source representation: lead melody, audio, or full score. 3. External annotations such as beat, downbeat, key, and chord labels.
+- [[data-and-representation/kumar-2023-from-words-to-music-a]] — **From Words to Music: A Study of Subword Tokenization Techniques in Symbolic Music Generation** (2304.08953v2); 1. **Q1:** Can subword tokenization improve musical structure and quality in generated symbolic music? 2. **Q2:** Do improvements generalize between **BPE** and **Unigram** tokenization? — §1, pp. 1–2
+- [[data-and-representation/fradet-2023-miditok-a-python-package-for]] — **MidiTok: A Python Package for MIDI File Tokenization** (2310.17202v1); MidiTok is an open-source Python library that converts MIDI into token sequences suitable for Transformer-style symbolic-music models. Its central contribution is not a new model, dataset, or tokenization algorithm; it is a **unified, configurable implementation of many existing tokenization schemes**, plus preprocessing, BPE, augmentation, dataset utilities, and model-hub integration.
+- [[data-and-representation/jung-2025-unified-cross-modal-translation-of]] — **Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio** (2505.12863v1); “**Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio**.” arXiv:**2505.12863v1** [cs.SD], **19 May 2025**.
+- [[data-and-representation/kim-2026-dialogue-aware-video-to-music]] — **Dialogue-Aware Video-to-Music Generation Using Public Domain Film Collections** (2608.11576v1); 1. **OSSL-v2**, a durable, self-hosted film/video–music dataset. 2. A lightweight, frame-aligned dialogue adapter for existing video-to-music models. 3. Benchmarking of VidMuse, GVMGen, and Diff-V2M on common data.
+- [[data-and-representation/vitucci-2026-one-timeline-many-renderings-a]] — **One Timeline, Many Renderings: A Wolfram Language Paclet for Heterogeneous Musical Output** (2608.24683v1); I inspected all five PDF pages, the extracted text, Figures 1–2, and the references. **There are no tables, appendices, or quantitative result tables.**
+- [[data-and-representation/al-2026-rethinking-music-tokenization-a-semantic]] — **Rethinking Music Tokenization: A Semantic Codec toward High-Fidelity LLM Music Generation** (2609.21240v1); 1. waveform reconstruction fidelity; 2. semantic/content preservation; and 3. autoregressive language-model predictability.
+
+### generation-and-planning
+
+- [[generation-and-planning/dong-2017-musegan-multi-track-sequential-generative]] — **MuseGAN: Multi-track Sequential Generative Adversarial Networks for Symbolic Music Generation and Accompaniment** (1709.06298v2); They report that the systems can generate coherent four-bar phrases from scratch and can generate four additional tracks conditioned on one human-provided track.
+- [[generation-and-planning/huang-2020-pop-music-transformer-beat-based]] — **Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Piano Compositions** (2002.00212v3); The authors argue that Transformer music generation benefits substantially from a better **symbolic event representation**, not only from architectural innovation.
+- [[generation-and-planning/wu-2023-music-controlnet-multiple-time-varying]] — **Music ControlNet: Multiple Time-varying Controls for Music Generation** (2311.07069v1); The model generates Mel spectrograms with diffusion and renders them through a DiffWave vocoder. It uses global genre/mood conditioning plus any subset of the time-varying controls.
+- [[generation-and-planning/lin-2024-vmas-video-to-music-generation]] — **VMAS: Video-to-Music Generation via Semantic Alignment in Web Music Videos** (2409.07450v1); The supplied PDF is the v1 manuscript. The project page identifies the work as a **WACV 2025 Oral** paper and provides qualitative demo videos.
+- [[generation-and-planning/dragoiu-2026-drive-to-music-context-aware]] — **Drive-to-Music: Context-Aware Generative Audio for In-Vehicle Experiences** (2608.12615v1); All generative models are intended to run in the cloud. An in-vehicle service collects vehicle data, sends requests, receives generated music and media, and plays them back (§2, p. 1). Internet connectivity is therefore required.
+- [[generation-and-planning/bhosale-2026-vibe-video-instruction-aligned-background]] — **VIBE: Video Instruction-aligned Background music gEneration** (2608.30125v1); VIBE targets **text-plus-video-to-waveform background-music generation**. The authors argue that previous video-to-music systems have two weaknesses:
+- [[generation-and-planning/duan-2026-diffsynth-music-audio-conditioned-kv]] — **DiffSynth-Music: Audio-Conditioned KV-Cache Adapters for Controllable Music Generation** (2609.12774v1); The bibliography contains 36 references. The most central are ACE-Step-1.5 [4], Music-ControlNet [10], JASCO [11], Diffusion Templates [30], Demucs [26], pYIN [27], MuQ-MuLan [35], and AudioBox-Aesthetics [36].
+- [[generation-and-planning/wang-2026-cma-ot-hierarchical-expert-supervision]] — **CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation** (2609.13118v1); The paper’s central claim is that sparse dance cues cannot adequately supervise dense musical structure. CMA-OT therefore uses a pretrained hierarchical audio expert as an auxiliary training teacher for the dance-to-music generator.
+- [[generation-and-planning/al-2026-stepaudio-3-music-technical-report]] — **StepAudio 3 Music Technical Report** (2609.16034v1); 1. A discrete music tokenizer, 2. A Mixture-of-Experts autoregressive model, 3. An explicit ABC notation planning pass, 4. A continuous flow-matching DiT renderer.
+- [[generation-and-planning/cheng-2026-musetimbre-zero-shot-timbre-transfer]] — **MuseTimbre: Zero-Shot Timbre Transfer by Controlling a Frozen Music Generator** (2609.30548v1); Code: `https://github.com/barry-mir/muse-timbre` Audio/demo: `https://barry-mir.github.io/muse-timbre-demo/`
+- [[generation-and-planning/marra-2026-video-to-music-generation-for]] — **Video-to-Music Generation for Gameplay Videos** (2609.31810v2); 1. frames are rendered graphics; 2. music is synthetic; 3. game music often loops across levels rather than reacting to visible events (p. 1, §§1–2).
+- [[generation-and-planning/yang-2026-getting-motif-ated-controllable-ai]] — **Getting Motif-ated: Controllable AI Compositions from Injected Motif Prompts** (2609.32788v1); “**Getting Motif-ated: Controllable AI Compositions from Injected Motif Prompts**.” arXiv:**2609.32788v1**, `[cs.LG]`, 26 September 2026. Listed as a NeurIPS 2026 Creative AI Track paper. The PDF contains 18 pages: main paper pp. 1–6, references pp. 7–8, appendices pp. 8–11, and the NeurIPS checklist pp. 11–18.
+- [[generation-and-planning/al-2026-yue2-unifying-symbolic-and-audio]] — **YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality** (2609.33757v1); The model first writes melody, chords, key, meter, tempo, sections, and voices, then realizes performance and production detail in audio.
+- [[generation-and-planning/sun-2026-where-the-body-keeps-the]] — **Where the Body Keeps the Beat: Structured Motion Conditioning and Music Dynamics Supervision for Dance-to-Music Generation** (2610.00726v1); I inspected the supplied extracted text and rendered pages, including all figures, tables, equations, and appendices.
+- [[generation-and-planning/wang-2026-latticesmc-where-to-spend-inference]] — **LatticeSMC: Where to Spend Inference-Time Compute in Chunked Sequence Generators** (2610.02774v1); The paper studies inference-time search for generators that produce long sequences **chunk by chunk**, with each chunk generated through iterative denoising or flow steps. Its central question is where to spend a fixed denoiser-evaluation budget: across particles, chunks, denoising steps, or terminal selection.
+- [[generation-and-planning/edwards-2026-learning-jazz-pianist-style-with]] — **Learning Jazz Pianist Style with Cross-Attention Conditioning** (2610.02918v1); The paper cites Aria [4], PiJAMA [14], the Deep Pianist Identification benchmark [5], Flamingo [15], and Classification Accuracy Score [6] as its main methodological precedents.
+
+### theory-and-constraints
+
+- [[theory-and-constraints/dai-2020-automatic-analysis-and-influence-of]] — **Automatic Analysis and Influence of Hierarchical Structure on Melody, Rhythm and Harmony in Popular Music** (2010.07518v1); 1. **Low-level repeated phrases**, using similarity in chords, rhythm onsets, and melody. 2. **Higher-level sections**, inferred from the arrangement of detected phrases and separator-like non-melodic material. 3. Statistical relationships between hierarchical position and **harmony, melody, and rhythm**.
+- [[theory-and-constraints/ramoneda-2025-difficulty-controlled-simplification-of-piano]] — **Difficulty-Controlled Simplification of Piano Scores with Synthetic Data for Inclusive Music Education** (2511.16228v2); “**Difficulty-Controlled Simplification of Piano Scores with Synthetic Data for Inclusive Music Education**.” **arXiv:2511.16228v2 [cs.SD], 22 November 2025**, 9 pages. No journal or conference venue is specified in the paper. The version/date appear on p. 1. The complete reference list is on pp. 8–9.
+- [[theory-and-constraints/liu-2026-do-language-models-need-music]] — **Do Language Models Need Music Supervision? Verifiable Rewards for Multi-Constraint Symbolic Music Generation** (2609.23665); The paper introduces **MusicRLVR**, GRPO training using deterministic symbolic-music verifiers rather than human labels, a learned reward model, or music-domain SFT.
+- [[theory-and-constraints/al-2026-midiback-harmony-aware-singing-pitch]] — **MIDIBACK: Harmony-Aware Singing Pitch Correction via Joint Vocal-Accompaniment Symbolic Modeling** (2609.28008v2); Thus, the digest below is grounded in the supplied MIDIBACK text extraction, with anchors such as “text p. 2, §2.3.” The PDF itself should be replaced before treating visual figures or PDF page numbers as authoritative.
+- [[theory-and-constraints/ebrahimzadeh-2026-emergent-tonal-structure-in-learned]] — **Emergent Tonal Structure in Learned Chord Embeddings and Its Relation to Tonal Tension** (2609.36460v1); The paper tests whether a very simple **skip-gram embedding of chord tokens** can learn interpretable tonal geometry without explicit music-theoretic supervision. It compares:
+- [[theory-and-constraints/al-2026-reference-free-singing-pitch-correction]] — **Reference-Free Singing Pitch Correction via Music-Constrained Sequence Editing** (2610.11524v1); I read the supplied extracted text and rendered pages 1–5. The tables, equations, architecture diagram, and Figure 2 were visually checked against the extraction.
+
+### explainability-and-auditability
+
+- [[explainability-and-auditability/yu-2026-open-qwen-music-an-auditable]] — **Open-Qwen-Music: An Auditable Framework for LLM-Based Music Composition and Diffusion Rendering** (2609.31652v1); 1. **How can a modular semantic-composition/acoustic-rendering system be trained under explicit, independently reproducible interfaces?** 2. **How can component-level diagnostics and artifact provenance make a modular text-to-music system reproducible and inspectable?**
+- [[explainability-and-auditability/storan-2026-group-invariant-statistics-determine-embedding]] — **Group-Invariant Statistics Determine Embedding Geometry: Harmonic Analysis of Representations from Bach to the Night Sky** (2610.00647v1); The authors provide code at `https://github.com/liamstoran01/group_invariant_statistics.git` (p.31, Appendix H).
+- [[explainability-and-auditability/yu-2026-truemuse-a-benchmark-for-data]] — **TrueMuse: A Benchmark for Data Attribution in Text-to-Music Models** (2610.00835v1); It constructs attribute-specific text-to-music models by fine-tuning existing diffusion generators on known source clips. It then evaluates black-box retrieval methods that attempt to recover those source clips from generated audio.
+- [[explainability-and-auditability/fathi-2026-how-far-back-should-a]] — **How Far Back Should a Transformer Look? Repetition and Copying in Music Sequence Models** (2610.02837v1); I inspected `/tmp/paper-digest/2610.02837v1.pdf`, the extracted text, all page breaks, Tables I–IX, Figures 1–8, Equations (1)–(4), and the reproducibility/audit appendix.
+- [[explainability-and-auditability/al-2026-towards-ai-generated-music-plagiarism]] — **Towards AI-Generated Music Plagiarism Detection as a Version Identification Problem** (2610.09075v1); “**Towards AI-Generated Music Plagiarism Detection as a Version Identification Problem**.” arXiv:2610.09075v1 [cs.SD], **6 October 2026**, 5 pages.
+- [[explainability-and-auditability/al-2026-tracing-inputs-verifying-outputs-validating]] — **Tracing Inputs, Verifying Outputs: Validating Attribution in Music Generation** (2610.09637v1); “**Tracing Inputs, Verifying Outputs: Validating Attribution in Music Generation**.” arXiv:**2610.09637v1**, [cs.SD], 7 October 2026; PDF footer says “Preprint. October 8, 2026.” 15 pages. Neutune and KAIST; correspondence: Taejun Kim.
+
+### retrieval-and-recombination
+
+- [[retrieval-and-recombination/he-2026-a-decomposed-retrieval-edit-rerank]] — **A Decomposed Retrieval-Edit-Rerank Framework for Chord Generation** (2605.07489v1); 1. **Retrieval**: find stylistically plausible melody–chord examples. 2. **Editing**: project each retrieved chord progression into a music-theoretically feasible space. 3. **Reranking**: select among feasible candidates using a soft trade-off between retrieval similarity and editing cost.
+- [[retrieval-and-recombination/chang-2026-synthesis-and-editing-of-multi]] — **Synthesis and Editing of Multi-Instrument Audio Mixtures Using Scalar-Quantised Latents with MIDI Span Conditioning** (2609.25546v1); The authors introduce **SpanSynth-Edit**, a flow-matching model that synthesises or edits a selected region of a mono multi-instrument mixture from revised MIDI.
+- [[retrieval-and-recombination/al-2026-on-a-separate-note-robust]] — **On a Separate Note: Robust Score-Informed Note Separation with a Two-Stream TFC-TDF U-Net and Adaptive Set Ownership** (2609.29071v1); where \(x\) is a monaural mixture and \(s_i\) is the performed waveform of note \(i\). Each aligned score event is
+- [[retrieval-and-recombination/nercessian-2026-perceptually-motivated-alignment-and-interpolation]] — **Perceptually Motivated Alignment and Interpolation of Pitch-Aligned Time-Frequency Representations** (2609.31971v1); I inspected all eight PDF pages, equations, figures, algorithms, tables, and the experiments described in the extracted text. The paper refers to additional figures and audio demonstrations at `https://tiv-ext.netlify.app`.
+
+### interaction-and-evaluation
+
+- [[interaction-and-evaluation/yu-2023-musicagent-an-ai-agent-for]] — **MusicAgent: An AI Agent for Music Understanding and Generation with Large Language Models** (2310.11954v2); “**MusicAgent: An AI Agent for Music Understanding and Generation with Large Language Models**.” arXiv:**2310.11954v2**, [cs.CL], **25 October 2023**. Authors are affiliated with Peking University and Microsoft Research Asia. The paper identifies its code repository as:
+- [[interaction-and-evaluation/vechtomova-2025-reimagining-dance-real-time-music]] — **Reimagining Dance: Real-time Music Co-creation between Dancers and AI** (2506.12008v1); I reviewed all five PDF pages, the extracted text, Figures 1–3, and the linked supplementary plots referenced in the paper’s footnote.
+- [[interaction-and-evaluation/li-2026-co-policy-responsive-human-robot]] — **Co-policy: Responsive Human-Robot Co-Creation for Musical Performances** (2606.19914v1); The paper’s central claim is that embodied musical co-creation should be treated as a closed loop: the human supplies an incomplete musical or semantic seed, the system generates a complementary response under musical and physical constraints, and a robot realizes it through timed physical interaction.
+- [[interaction-and-evaluation/chen-2026-encypher-shared-agency-and-social]] — **Encypher: Shared Agency and Social Presence in Collaborative Music Generation for Dance Cyphers** (2609.18062v1); Encypher is a collaborative, embodied music-generation system for dance cyphers. A depth camera tracks multiple dancers; movement energy and spatial organization are aggregated into weighted text prompts and generation parameters for Google DeepMind’s LyriaRT real-time neural-audio model.
+- [[interaction-and-evaluation/al-2026-from-one-shot-generation-to]] — **From One-Shot Generation to Incremental Music Composition: Adapting a General-Purpose Instruction LLM for Persistent Symbolic Editing** (2609.34994v1); The authors’ central claim is deliberately narrow: LoRA can make a general-purpose instruction LLM reliably follow an operation-aware, persistent symbolic-editing contract in the tested Irish traditional-music setting. They explicitly do **not** claim superior musical quality, human-AI co-creativity, or novelty for fine-tuning itself (PDF pp. 1, 11–14; `/tmp/paper-digest/2609.34994v1.txt:595-666`).
+- [[interaction-and-evaluation/wang-2026-rubric-based-optimization-for-text]] — **Rubric-Based Optimization for Text-to-Music Generation** (2610.03589v1); > Use broad rubric rewards for qualities difficult to formalize, but use exact symbolic objectives wherever reliable measurements exist.
+- [[interaction-and-evaluation/al-2026-mira-a-musical-intent-refinement]] — **MIRA: A Musical Intent Refinement Agent for Aligning Text-to-Music Generation with User Intent** (2610.10355v1); Affiliations: Shandong University; University of Science and Technology of China; Central Conservatory of Music; Kunlun Tech Co. Ltd.; Shanghai Jiao Tong University.
+
+### other
+
+- [[other/lai-2017-deep-laplacian-pyramid-networks-for]] — **Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution** (1704.03915v2); Single-image super-resolution: reconstruct a high-resolution image from one low-resolution image. The authors target three problems in prior CNN methods:
+- [[other/zhang-2018-image-super-resolution-using-very]] — **Image Super-Resolution Using Very Deep Residual Channel Attention Networks** (1807.02758v2); Single-image super-resolution: reconstruct a high-resolution image from a low-resolution counterpart, an ill-posed inverse problem with multiple plausible solutions (Sections 1, 4.1).
+- [[other/zhao-2023-cddfuse-correlation-driven-dual-branch]] — **CDDFuse: Correlation-Driven Dual-Branch Feature Decomposition for Multi-Modality Image Fusion** (2211.14461v2); Multi-modality image fusion combines complementary infrared/visible or medical images while preserving modality-shared structure and modality-specific detail. The authors identify three problems with prior CNN/autoencoder approaches: poor controllability/interpretability, limited local receptive fields, and loss of high-frequency information during forward propagation (`...txt:63–78`).
+- [[other/qing-2026-channel-preserving-representation-alignment-for]] — **Channel-Preserving Representation Alignment for EEG-to-Music Reconstruction** (2606.04040v2); I used `pdftotext -layout` on the supplied PDF/text and visually inspected all 22 rendered PDF pages, including Figures 1–3 and Tables 1–8. No files were edited.
+- [[other/tagliabue-2026-the-pain-axis-llms-represent]] — **The Pain Axis: LLMs Represent Self-Directed Harm and Act on It** (2609.16247v2); The paper reports code and datasets at `https://github.com/valen-research/Pain-axis`. It also lists independent, not-yet-peer-reviewed replications of v1 (p. 30).
+- [[other/raissi-2026-a-native-reference-phone-class]] — **A Native-Reference Phone-Class Geometry for Second-Language Pronunciation Analysis** (2609.30075v1); The paper addresses interpretable automatic assessment of second-language pronunciation. Existing systems often output holistic proficiency scores without identifying acoustic-phonetic causes. The proposed method estimates pronunciation deviation without:
+- [[other/al-2026-why-alzheimer-s-speech-screening]] — **Why Alzheimer's Speech Screening Fails to Generalize: Bridging the Deployment Gap via Cross-Corpus Evidence Anchoring** (2609.31293v1); “**Why Alzheimer’s Speech Screening Fails to Generalize: Bridging the Deploym1ent Gap via Cross-Corpus Evidence Anchoring**” [p. 1]. The embedded PDF metadata spells this as “Deployment.”
+
+## Cross-paper synthesis
+
+### Representation and structure
+
+The batch moves from explicit symbolic event schemes (REMI, subword tokenization, MidiTok, POP909, MAESTRO) toward learned audio codecs and cross-modal latents. The strongest programme-relevant lesson is to keep a representation that can be inspected and edited separate from a renderer: learned semantic/audio tokens can improve generation but do not automatically expose notes, voices, source identity, or repair causes. Melody descriptors, hierarchical phrase/section analysis, chord embeddings, and group-invariant geometry offer complementary candidates for auditable features, but each needs construct-specific intervention tests.
+
+### Generation, control, and editing
+
+The control papers show a recurring pattern: add explicit controls, plans, retrieval candidates, or intermediate representations to a powerful generator. Music ControlNet, MotiGen, StepAudio 3 Music, incremental symbolic editing, MuseGAN, and the dance/video systems are useful interface precedents. For the current goal, the key distinction is whether the control is source-preserving and exact. Most audio systems preserve a condition statistically, not the original notes or provenance; RER, MIDIBACK, NoteSep, SpanSynth-Edit, and incremental editing are closer to executable repair/recombination.
+
+### Retrieval, recombination, and mashups
+
+RER explicitly separates retrieval, music-theoretic editing, and reranking, making the decision trace inspectable. POP909 and hierarchical structure analysis support aligned material and section-aware controls. SpanSynth-Edit and NoteSep suggest local edit regions and score-informed ownership, but audio similarity is not proof of exact source preservation. The immediate gap is a candidate-conditioned symbolic recomposer whose trace cites source events, conflict locations, protected material, alternatives, and counterfactual changes.
+
+### Explainability, attribution, and verification
+
+Open-Qwen-Music treats provenance and component diagnostics as first-class artifacts; TrueMuse and the attribution/plagiarism papers make data/source attribution measurable; MusicRLVR turns symbolic constraints into deterministic verifiers; group-invariant statistics and tonal-embedding papers connect representation geometry to interpretable symmetries. These precedents support a layered audit trail, but probing or a readable trace alone is not a faithful explanation. Faithfulness requires interventions, counterfactuals, and output changes attributable to the cited evidence.
+
+### Evaluation and human interaction
+
+Rubric-based optimization, MIRA, Co-policy, Encypher, Reimagining Dance, and MusicAgent emphasize intent, interaction, or evaluation. Their risks are evaluator bias, closed APIs, confounded interfaces, and descriptive user studies. The current research should keep symbolic metrics, source identity, listener judgements, and explanation utility as separate outcomes rather than a single weighted score.
+
+### Adjacent and low-relevance methods
+
+LapSRN, RCAN, CDDFuse, EEG reconstruction, pronunciation geometry, Alzheimer screening, and the Pain Axis are not direct music methods. They remain useful as transfer precedents for progressive reconstruction, channel-preserving representations, native-reference geometry, cross-corpus evidence anchoring, and intervention-based interpretability; none should be cited as direct evidence for symbolic music quality.
+
+## Related Papers
+
+- [[other/lai-2017-deep-laplacian-pyramid-networks-for]] — Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution (1704.03915v2)
+- [[generation-and-planning/dong-2017-musegan-multi-track-sequential-generative]] — MuseGAN: Multi-track Sequential Generative Adversarial Networks for Symbolic Music Generation and Accompaniment (1709.06298v2)
+- [[other/zhang-2018-image-super-resolution-using-very]] — Image Super-Resolution Using Very Deep Residual Channel Attention Networks (1807.02758v2)
+- [[data-and-representation/hawthorne-2019-enabling-factorized-piano-music-modeling]] — Enabling Factorized Piano Music Modeling and Generation with the MAESTRO Dataset (1810.12247v5)
+- [[generation-and-planning/huang-2020-pop-music-transformer-beat-based]] — Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Piano Compositions (2002.00212v3)
+- [[data-and-representation/wang-2020-exploring-inherent-properties-of-the]] — Exploring Inherent Properties of the Monophonic Melody of Songs (2003.09287v1)
+- [[data-and-representation/wang-2020-pop909-a-pop-song-dataset]] — POP909: A Pop-song Dataset for Music Arrangement Generation (2008.07142v1)
+- [[theory-and-constraints/dai-2020-automatic-analysis-and-influence-of]] — Automatic Analysis and Influence of Hierarchical Structure on Melody, Rhythm and Harmony in Popular Music (2010.07518v1)
+- [[other/zhao-2023-cddfuse-correlation-driven-dual-branch]] — CDDFuse: Correlation-Driven Dual-Branch Feature Decomposition for Multi-Modality Image Fusion (2211.14461v2)
+- [[data-and-representation/kumar-2023-from-words-to-music-a]] — From Words to Music: A Study of Subword Tokenization Techniques in Symbolic Music Generation (2304.08953v2)
+- [[interaction-and-evaluation/yu-2023-musicagent-an-ai-agent-for]] — MusicAgent: An AI Agent for Music Understanding and Generation with Large Language Models (2310.11954v2)
+- [[data-and-representation/fradet-2023-miditok-a-python-package-for]] — MidiTok: A Python Package for MIDI File Tokenization (2310.17202v1)
+- [[generation-and-planning/wu-2023-music-controlnet-multiple-time-varying]] — Music ControlNet: Multiple Time-varying Controls for Music Generation (2311.07069v1)
+- [[generation-and-planning/lin-2024-vmas-video-to-music-generation]] — VMAS: Video-to-Music Generation via Semantic Alignment in Web Music Videos (2409.07450v1)
+- [[data-and-representation/jung-2025-unified-cross-modal-translation-of]] — Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio (2505.12863v1)
+- [[interaction-and-evaluation/vechtomova-2025-reimagining-dance-real-time-music]] — Reimagining Dance: Real-time Music Co-creation between Dancers and AI (2506.12008v1)
+- [[theory-and-constraints/ramoneda-2025-difficulty-controlled-simplification-of-piano]] — Difficulty-Controlled Simplification of Piano Scores with Synthetic Data for Inclusive Music Education (2511.16228v2)
+- [[retrieval-and-recombination/he-2026-a-decomposed-retrieval-edit-rerank]] — A Decomposed Retrieval-Edit-Rerank Framework for Chord Generation (2605.07489v1)
+- [[other/qing-2026-channel-preserving-representation-alignment-for]] — Channel-Preserving Representation Alignment for EEG-to-Music Reconstruction (2606.04040v2)
+- [[interaction-and-evaluation/li-2026-co-policy-responsive-human-robot]] — Co-policy: Responsive Human-Robot Co-Creation for Musical Performances (2606.19914v1)
+- [[data-and-representation/kim-2026-dialogue-aware-video-to-music]] — Dialogue-Aware Video-to-Music Generation Using Public Domain Film Collections (2608.11576v1)
+- [[generation-and-planning/dragoiu-2026-drive-to-music-context-aware]] — Drive-to-Music: Context-Aware Generative Audio for In-Vehicle Experiences (2608.12615v1)
+- [[data-and-representation/vitucci-2026-one-timeline-many-renderings-a]] — One Timeline, Many Renderings: A Wolfram Language Paclet for Heterogeneous Musical Output (2608.24683v1)
+- [[generation-and-planning/bhosale-2026-vibe-video-instruction-aligned-background]] — VIBE: Video Instruction-aligned Background music gEneration (2608.30125v1)
+- [[generation-and-planning/duan-2026-diffsynth-music-audio-conditioned-kv]] — DiffSynth-Music: Audio-Conditioned KV-Cache Adapters for Controllable Music Generation (2609.12774v1)
+- [[generation-and-planning/wang-2026-cma-ot-hierarchical-expert-supervision]] — CMA-OT: Hierarchical Expert Supervision for Dance-to-Music Generation (2609.13118v1)
+- [[generation-and-planning/al-2026-stepaudio-3-music-technical-report]] — StepAudio 3 Music Technical Report (2609.16034v1)
+- [[other/tagliabue-2026-the-pain-axis-llms-represent]] — The Pain Axis: LLMs Represent Self-Directed Harm and Act on It (2609.16247v2)
+- [[interaction-and-evaluation/chen-2026-encypher-shared-agency-and-social]] — Encypher: Shared Agency and Social Presence in Collaborative Music Generation for Dance Cyphers (2609.18062v1)
+- [[data-and-representation/al-2026-rethinking-music-tokenization-a-semantic]] — Rethinking Music Tokenization: A Semantic Codec toward High-Fidelity LLM Music Generation (2609.21240v1)
+- [[theory-and-constraints/liu-2026-do-language-models-need-music]] — Do Language Models Need Music Supervision? Verifiable Rewards for Multi-Constraint Symbolic Music Generation (2609.23665)
+- [[retrieval-and-recombination/chang-2026-synthesis-and-editing-of-multi]] — Synthesis and Editing of Multi-Instrument Audio Mixtures Using Scalar-Quantised Latents with MIDI Span Conditioning (2609.25546v1)
+- [[theory-and-constraints/al-2026-midiback-harmony-aware-singing-pitch]] — MIDIBACK: Harmony-Aware Singing Pitch Correction via Joint Vocal-Accompaniment Symbolic Modeling (2609.28008v2)
+- [[retrieval-and-recombination/al-2026-on-a-separate-note-robust]] — On a Separate Note: Robust Score-Informed Note Separation with a Two-Stream TFC-TDF U-Net and Adaptive Set Ownership (2609.29071v1)
+- [[other/raissi-2026-a-native-reference-phone-class]] — A Native-Reference Phone-Class Geometry for Second-Language Pronunciation Analysis (2609.30075v1)
+- [[generation-and-planning/cheng-2026-musetimbre-zero-shot-timbre-transfer]] — MuseTimbre: Zero-Shot Timbre Transfer by Controlling a Frozen Music Generator (2609.30548v1)
+- [[other/al-2026-why-alzheimer-s-speech-screening]] — Why Alzheimer's Speech Screening Fails to Generalize: Bridging the Deployment Gap via Cross-Corpus Evidence Anchoring (2609.31293v1)
+- [[explainability-and-auditability/yu-2026-open-qwen-music-an-auditable]] — Open-Qwen-Music: An Auditable Framework for LLM-Based Music Composition and Diffusion Rendering (2609.31652v1)
+- [[generation-and-planning/marra-2026-video-to-music-generation-for]] — Video-to-Music Generation for Gameplay Videos (2609.31810v2)
+- [[retrieval-and-recombination/nercessian-2026-perceptually-motivated-alignment-and-interpolation]] — Perceptually Motivated Alignment and Interpolation of Pitch-Aligned Time-Frequency Representations (2609.31971v1)
+- [[generation-and-planning/yang-2026-getting-motif-ated-controllable-ai]] — Getting Motif-ated: Controllable AI Compositions from Injected Motif Prompts (2609.32788v1)
+- [[generation-and-planning/al-2026-yue2-unifying-symbolic-and-audio]] — YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality (2609.33757v1)
+- [[interaction-and-evaluation/al-2026-from-one-shot-generation-to]] — From One-Shot Generation to Incremental Music Composition: Adapting a General-Purpose Instruction LLM for Persistent Symbolic Editing (2609.34994v1)
+- [[theory-and-constraints/ebrahimzadeh-2026-emergent-tonal-structure-in-learned]] — Emergent Tonal Structure in Learned Chord Embeddings and Its Relation to Tonal Tension (2609.36460v1)
+- [[explainability-and-auditability/storan-2026-group-invariant-statistics-determine-embedding]] — Group-Invariant Statistics Determine Embedding Geometry: Harmonic Analysis of Representations from Bach to the Night Sky (2610.00647v1)
+- [[generation-and-planning/sun-2026-where-the-body-keeps-the]] — Where the Body Keeps the Beat: Structured Motion Conditioning and Music Dynamics Supervision for Dance-to-Music Generation (2610.00726v1)
+- [[explainability-and-auditability/yu-2026-truemuse-a-benchmark-for-data]] — TrueMuse: A Benchmark for Data Attribution in Text-to-Music Models (2610.00835v1)
+- [[generation-and-planning/wang-2026-latticesmc-where-to-spend-inference]] — LatticeSMC: Where to Spend Inference-Time Compute in Chunked Sequence Generators (2610.02774v1)
+- [[explainability-and-auditability/fathi-2026-how-far-back-should-a]] — How Far Back Should a Transformer Look? Repetition and Copying in Music Sequence Models (2610.02837v1)
+- [[generation-and-planning/edwards-2026-learning-jazz-pianist-style-with]] — Learning Jazz Pianist Style with Cross-Attention Conditioning (2610.02918v1)
+- [[interaction-and-evaluation/wang-2026-rubric-based-optimization-for-text]] — Rubric-Based Optimization for Text-to-Music Generation (2610.03589v1)
+- [[explainability-and-auditability/al-2026-towards-ai-generated-music-plagiarism]] — Towards AI-Generated Music Plagiarism Detection as a Version Identification Problem (2610.09075v1)
+- [[explainability-and-auditability/al-2026-tracing-inputs-verifying-outputs-validating]] — Tracing Inputs, Verifying Outputs: Validating Attribution in Music Generation (2610.09637v1)
+- [[interaction-and-evaluation/al-2026-mira-a-musical-intent-refinement]] — MIRA: A Musical Intent Refinement Agent for Aligning Text-to-Music Generation with User Intent (2610.10355v1)
+- [[theory-and-constraints/al-2026-reference-free-singing-pitch-correction]] — Reference-Free Singing Pitch Correction via Music-Constrained Sequence Editing (2610.11524v1)
