@@ -12,7 +12,7 @@ extracted_date: 2026-10-11
 ---
 ## One-line Summary
 
-The bibliography contains 36 references. The most central are ACE-Step-1.5 [4], Music-ControlNet [10], JASCO [11], Diffusion Templates [30], Demucs [26], pYIN [27], MuQ-MuLan [35], and AudioBox-Aesthetics [36].
+DiffSynth-Music adds reusable layer-wise KV-cache adapters for beats, vocals, accompaniment, prosody, and reference audio. It demonstrates strong single-control adherence, but does not evaluate joint controls or provide symbolic reasoning or provenance.
 
 ## 1. Document Information
 

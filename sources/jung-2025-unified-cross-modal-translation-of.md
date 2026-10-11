@@ -12,7 +12,7 @@ extracted_date: 2026-10-11
 ---
 ## One-line Summary
 
-“**Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio**.” arXiv:**2505.12863v1** [cs.SD], **19 May 2025**.
+The paper unifies score images, symbolic notation, MIDI, and performance audio in token-level translation, showing that explicit symbolic intermediates improve note accuracy while introducing error propagation and remaining separate from provenance-preserving mashup or repair.
 
 ## 1. Document Information
 
