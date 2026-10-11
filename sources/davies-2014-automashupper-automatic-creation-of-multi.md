@@ -4,7 +4,7 @@ authors: Matthew E. P. Davies, Philippe Hamel, Kazuyoshi Yoshii, and Masataka Go
 year: 2014
 doi: 10.1109/TASLP.2014.2347135
 category: retrieval-and-recombination
-pdf_path: "C:/Users/User/Documents/Repository/phd-research/phd-paper-repository/papers/davies-2014-automashupper-automatic-creation-of-multi.pdf"
+pdf_path: "C:/Users/User/Documents/Repository/phd-research/projects/phd-paper-repository/papers/davies-2014-automashupper-automatic-creation-of-multi.pdf"
 pdf_filename: davies-2014-automashupper-automatic-creation-of-multi.pdf
 source_collection: ieee-xplore
 source_format: pdf

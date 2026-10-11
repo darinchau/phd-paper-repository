@@ -5,7 +5,7 @@ year: 2026
 doi: null
 source: wu-2026-an-automated-pop-song-mashup.md
 category: retrieval-and-recombination
-pdf_path: "C:/Users/User/Documents/Repository/phd-research/phd-paper-repository/papers/wu-2026-an-automated-pop-song-mashup.pdf"
+pdf_path: "C:/Users/User/Documents/Repository/phd-research/projects/phd-paper-repository/papers/wu-2026-an-automated-pop-song-mashup.pdf"
 pdf_filename: wu-2026-an-automated-pop-song-mashup.pdf
 source_collection: hkust-thesis-library
 source_format: pdf

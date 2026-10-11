@@ -4,7 +4,7 @@ authors: Phillip Long, Hao-Wen Dong, Julian McAuley, and Zachary Novack
 year: 2025
 doi: 10.48550/arXiv.2608.21678
 category: data-and-representation
-pdf_path: "C:/Users/User/Documents/Repository/phd-paper-digestion/phd-paper-repository/papers/long-2025-muspyexpress-extending-muspy-with-enhanced.pdf"
+pdf_path: "C:/Users/User/Documents/Repository/phd-research/projects/phd-paper-repository/papers/long-2025-muspyexpress-extending-muspy-with-enhanced.pdf"
 pdf_filename: long-2025-muspyexpress-extending-muspy-with-enhanced.pdf
 source_collection: arxiv
 source_format: pdf

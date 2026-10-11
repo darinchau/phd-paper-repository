@@ -4,7 +4,7 @@ authors: Zhiwei Lin, Jun Chen, Boshi Tang, Weihao Wu, Jing Yang, Yaolong Ju, Fan
 year: 2026
 doi: 10.48550/arXiv.2608.05222
 category: generation-and-planning
-pdf_path: "C:/Users/User/Documents/Repository/phd-paper-digestion/phd-paper-repository/papers/lin-2026-diff-symbo-text-controlled-long.pdf"
+pdf_path: "C:/Users/User/Documents/Repository/phd-research/projects/phd-paper-repository/papers/lin-2026-diff-symbo-text-controlled-long.pdf"
 pdf_filename: lin-2026-diff-symbo-text-controlled-long.pdf
 source_collection: arxiv
 source_format: pdf

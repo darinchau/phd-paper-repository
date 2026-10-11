@@ -4,7 +4,7 @@ authors: Tianle Wang, Xinyi Tong, Liangke Zhao, Jishang Chen, Sirui Zhang, Haoxi
 year: 2026
 doi: 10.48550/arXiv.2608.25621
 category: theory-and-constraints
-pdf_path: "C:/Users/User/Documents/Repository/phd-paper-digestion/phd-paper-repository/papers/wang-2026-beyond-frequency-dissonance-spectrum-for.pdf"
+pdf_path: "C:/Users/User/Documents/Repository/phd-research/projects/phd-paper-repository/papers/wang-2026-beyond-frequency-dissonance-spectrum-for.pdf"
 pdf_filename: wang-2026-beyond-frequency-dissonance-spectrum-for.pdf
 source_collection: arxiv
 source_format: pdf

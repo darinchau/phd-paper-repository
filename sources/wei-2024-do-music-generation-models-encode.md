@@ -4,7 +4,7 @@ authors: Megan Wei, Michael Freeman, Chris Donahue, and Chen Sun
 year: 2024
 doi: 10.48550/arXiv.2410.00872
 category: explainability-and-auditability
-pdf_path: "C:/Users/User/Documents/Repository/phd-paper-digestion/phd-paper-repository/papers/wei-2024-do-music-generation-models-encode.pdf"
+pdf_path: "C:/Users/User/Documents/Repository/phd-research/projects/phd-paper-repository/papers/wei-2024-do-music-generation-models-encode.pdf"
 pdf_filename: wei-2024-do-music-generation-models-encode.pdf
 source_collection: arxiv
 source_format: pdf

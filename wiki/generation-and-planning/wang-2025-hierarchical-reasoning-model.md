@@ -5,7 +5,7 @@ year: 2025
 doi: 10.48550/arXiv.2506.21734
 source: wang-2025-hierarchical-reasoning-model.md
 category: generation-and-planning
-pdf_path: "C:/Users/User/Documents/Repository/phd-research/phd-paper-repository/papers/wang-2025-hierarchical-reasoning-model.pdf"
+pdf_path: "C:/Users/User/Documents/Repository/phd-research/projects/phd-paper-repository/papers/wang-2025-hierarchical-reasoning-model.pdf"
 pdf_filename: wang-2025-hierarchical-reasoning-model.pdf
 source_collection: arxiv
 source_format: pdf

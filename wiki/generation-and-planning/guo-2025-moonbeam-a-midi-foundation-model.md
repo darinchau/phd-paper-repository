@@ -5,7 +5,7 @@ year: 2025
 doi: 10.48550/arXiv.2505.15559
 source: guo-2025-moonbeam-a-midi-foundation-model.md
 category: generation-and-planning
-pdf_path: "C:/Users/User/Documents/Repository/phd-research/phd-paper-repository/papers/guo-2025-moonbeam-a-midi-foundation-model.pdf"
+pdf_path: "C:/Users/User/Documents/Repository/phd-research/projects/phd-paper-repository/papers/guo-2025-moonbeam-a-midi-foundation-model.pdf"
 pdf_filename: guo-2025-moonbeam-a-midi-foundation-model.pdf
 source_collection: arxiv
 source_format: pdf

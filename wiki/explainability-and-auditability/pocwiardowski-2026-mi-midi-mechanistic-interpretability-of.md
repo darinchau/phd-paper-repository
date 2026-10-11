@@ -4,7 +4,7 @@ authors: Jakub Poćwiardowski and Mateusz Modrzejewski
 year: 2026
 doi: 10.48550/arXiv.2608.06638
 category: explainability-and-auditability
-pdf_path: "C:/Users/User/Documents/Repository/phd-paper-digestion/phd-paper-repository/papers/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of.pdf"
+pdf_path: "C:/Users/User/Documents/Repository/phd-research/projects/phd-paper-repository/papers/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of.pdf"
 pdf_filename: pocwiardowski-2026-mi-midi-mechanistic-interpretability-of.pdf
 source_collection: arxiv
 source_format: pdf
