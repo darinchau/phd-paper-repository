@@ -21,6 +21,7 @@ At the start of every session in this folder, before acting on any ingest, searc
 1. Re-read this file.
 2. Re-read `index.md`, `logs/README.md`, and any applicable operational decisions under `agenda/llm-wiki-ops/` when they are present.
 3. Do not rely on memory from a previous session for anything that moves.
+4. If working on a research step tracked in the parent repository's `registry/`, read `REGISTRY.md` for how to record digest paths in your step card.
 
 ---
 
