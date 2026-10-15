@@ -37,3 +37,4 @@ The linked source digest preserves the paper-reported results and their evidence
 ## Related Papers
 
 - [[overviews/2026-symbolic-music-literature-map]] — primary synthesis anchor for this batch; the overview places this paper beside related representation, generation, evaluation, and auditability work.
+- [[interaction-and-evaluation/batlle-roca-2026-on-the-human-and-computer]] — perceptual counterpart: MATCHA grounds MiRA-style audio similarity metrics against expert attribute-level judgments, supporting this paper's argument that no single scalar distance captures musical similarity; neither paper benchmarks symbolic detection.
