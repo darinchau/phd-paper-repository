@@ -25,6 +25,8 @@ An auditable creative editing pipeline decomposes generation or transformation i
 
 A visible matrix or latent score answers **what the system selected and with what confidence**. It does not automatically answer **why the choice is musically appropriate**, whether the trace is causally faithful to the model, or whether a musician can use it effectively.
 
+The distinction also has a vision-domain counterpart. ArtiAgent ([[other/park-2026-see-and-fix-the-flaws]]) closes a full detect→caption→inpaint→verify repair loop with named stages and a fixed bbox intermediate — clean workflow transparency — but its verify stage is the same VLM that guided the repair, so the loop's success criterion is self-referential rather than externally faithful, and its repair outcomes are reported qualitatively only. A loop whose own guide declares convergence demonstrates stage decomposition, not explanation quality.
+
 Three stronger levels should be distinguished:
 
 - **Workflow transparency:** the stages and data flow are visible.
@@ -61,3 +63,4 @@ The crucial test is counterfactual: if the stated reason changes while irrelevan
 - [[retrieval-and-recombination/wu-2026-an-automated-pop-song-mashup]] — primary evidence anchor.
 - [[overviews/automated-music-mashup-systems]] — application-level system map.
 - [[questions/when-do-interpretable-music-editing-traces-become-faithful-explanations]] — open research question and tentative validation criteria.
+- [[other/park-2026-see-and-fix-the-flaws]] — vision-domain detect→explain→repair pipeline whose self-verification loop marks the workflow-transparency ceiling without external faithfulness checks.
