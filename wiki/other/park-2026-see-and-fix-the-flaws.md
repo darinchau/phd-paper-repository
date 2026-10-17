@@ -36,7 +36,7 @@ Read the linked source digest for the full pipeline, injection hyperparameters (
 
 ## Results
 
-The source digest preserves all Table 3 numbers and their evidence boundaries (best ArtiBench detection accuracy 0.630; localization mIoU stays ≤ 0.14 for every method; LEGION's SynthScars entries are train/test contaminated). Nothing on this page is an independent reproduction; the SLOP line separately verified that the released repo contains only the synthesis pipeline — the 100K set, fine-tuned checkpoints, evaluation code, and the correction pipeline are not released.
+The source digest preserves all Table 3 numbers and their evidence boundaries (best ArtiBench detection accuracy 0.630; localization mIoU stays ≤ 0.14 for every method; LEGION's SynthScars entries are train/test contaminated). Nothing on this page is an independent reproduction; the SLOP line separately verified that the released repo contains only the synthesis pipeline — the 100K set, fine-tuned checkpoints, evaluation code, and the correction pipeline are not released. **Independent reproduction (SLOP 4b, 2026-10-17):** the released synthesis arm was run end-to-end on 12 COCO images under declared substitutions (no GPT-4o key): 12/12 GSAM + 12/12 FLUX, 27 artifacts across addition/removal/distortion (plus a 2-image fusion probe), 24/27 target-region changes above a same-area control, LPIPS band retention 23/27, 28.1 GB peak, no OOM. The ArtiBench parquet is complete and 500/500, but its `images/` mirror has 197/1000 truncated PNGs and the schema carries no generative-model/source label. The correction loop and Table 3/4/5 remain unreproducible from the release. Details: `experiments/slop-artiagent-reproduction-20261017/RESULT.md` in the parent repository.
 
 ## Related Papers
 
