@@ -1,15 +1,15 @@
 # PhD Paper Repository Index
 
-Catalog generated on 2026-10-14 from repository content.
+Catalog generated on 2026-10-16 from repository content.
 
 ## Coverage
 
-- Canonical PDFs: **70**
-- Source digests: **69**
-- Domain paper pages: **69**
-- Papers linked to an overview or concept: **69/69**
+- Canonical PDFs: **73**
+- Source digests: **72**
+- Domain paper pages: **72**
+- Papers linked to an overview or concept: **72/72**
 - Overviews: **3**
-- Concepts: **6**
+- Concepts: **7**
 - Questions: **1**
 
 ## Domain Categories
@@ -17,9 +17,9 @@ Catalog generated on 2026-10-14 from repository content.
 | Category | Papers | Index |
 |---|---:|---|
 | `data-and-representation` | 10 | [open](indexes/data-and-representation.md) |
-| `generation-and-planning` | 21 | [open](indexes/generation-and-planning.md) |
+| `generation-and-planning` | 23 | [open](indexes/generation-and-planning.md) |
 | `theory-and-constraints` | 8 | [open](indexes/theory-and-constraints.md) |
-| `explainability-and-auditability` | 9 | [open](indexes/explainability-and-auditability.md) |
+| `explainability-and-auditability` | 10 | [open](indexes/explainability-and-auditability.md) |
 | `retrieval-and-recombination` | 6 | [open](indexes/retrieval-and-recombination.md) |
 | `interaction-and-evaluation` | 8 | [open](indexes/interaction-and-evaluation.md) |
 | `other` | 7 | [open](indexes/other.md) |
@@ -39,6 +39,7 @@ Catalog generated on 2026-10-14 from repository content.
 - [StepAudio 3 Music Technical Report](wiki/generation-and-planning/al-2026-stepaudio-3-music-technical-report.md) — Chengli Feng et al. (2026)
 - [YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality](wiki/generation-and-planning/al-2026-yue2-unifying-symbolic-and-audio.md) — Ruibin Yuan et al. (2026)
 - [VIBE: Video Instruction-aligned Background music gEneration](wiki/generation-and-planning/bhosale-2026-vibe-video-instruction-aligned-background.md) — Aryan Vijay Bhosale, Vaibhavi Lokegaonkar, Vishnu Raj, Gouthaman KV, Sreyan Ghosh, Ramani Duraiswami, Lie Lu, and Dinesh Manocha (2026)
+- [SyMuPe: Affective and Controllable Symbolic Music Performance](wiki/generation-and-planning/borovik-2025-symupe-affective-and-controllable.md) — Ilya Borovik, Dmitrii Gavrilev, Vladimir Viro (2025)
 - [MuseTimbre: Zero-Shot Timbre Transfer by Controlling a Frozen Music Generator](wiki/generation-and-planning/cheng-2026-musetimbre-zero-shot-timbre-transfer.md) — Yuan-Chiao Cheng and Zhiyao Duan (2026)
 - [MuseGAN: Multi-track Sequential Generative Adversarial Networks for Symbolic Music Generation and Accompaniment](wiki/generation-and-planning/dong-2017-musegan-multi-track-sequential-generative.md) — Hao-Wen Dong, Wen-Yi Hsiao, Li-Chia Yang, and Yi-Hsuan Yang (2017)
 - [Drive-to-Music: Context-Aware Generative Audio for In-Vehicle Experiences](wiki/generation-and-planning/dragoiu-2026-drive-to-music-context-aware.md) — Dragoiu and Nabizadeh (2026)
@@ -57,6 +58,7 @@ Catalog generated on 2026-10-14 from repository content.
 - [LatticeSMC: Where to Spend Inference-Time Compute in Chunked Sequence Generators](wiki/generation-and-planning/wang-2026-latticesmc-where-to-spend-inference.md) — Xuanchen Wang, Heng Wang, and Weidong Cai (2026)
 - [Music ControlNet: Multiple Time-varying Controls for Music Generation](wiki/generation-and-planning/wu-2023-music-controlnet-multiple-time-varying.md) — Shih-Lun Wu, Chris Donahue, Shinji Watanabe, Nicholas J. Bryan, and Dasaem Jeong (2023)
 - [Getting Motif-ated: Controllable AI Compositions from Injected Motif Prompts](wiki/generation-and-planning/yang-2026-getting-motif-ated-controllable-ai.md) — Chao Peter Yang, Cynthia Rudin, Yue Jiang, Simon Mak, and Stephen Ni-Hahn (2026)
+- [Disentangling Score Content and Performance Style for Joint Piano Rendering and Transcription](wiki/generation-and-planning/zeng-2025-disentangling-score-content-and-performance.md) — Wei Zeng, Junchuan Zhao, Ye Wang (2025)
 - [MIDIBACK: Harmony-Aware Singing Pitch Correction via Joint Vocal-Accompaniment Symbolic Modeling](wiki/theory-and-constraints/al-2026-midiback-harmony-aware-singing-pitch.md) — Joaquim Cavalcante et al. (2026)
 - [Reference-Free Singing Pitch Correction via Music-Constrained Sequence Editing](wiki/theory-and-constraints/al-2026-reference-free-singing-pitch-correction.md) — Biao Dong et al. (2026)
 - [Automatic Analysis and Influence of Hierarchical Structure on Melody, Rhythm and Harmony in Popular Music](wiki/theory-and-constraints/dai-2020-automatic-analysis-and-influence-of.md) — Shuqi Dai, Huan Zhang, and Roger B. Dannenberg (2020)
@@ -67,6 +69,7 @@ Catalog generated on 2026-10-14 from repository content.
 - [Beyond Frequency: Dissonance Spectrum for Perceptually Motivated Music Understanding](wiki/theory-and-constraints/wang-2026-beyond-frequency-dissonance-spectrum-for.md) — Tianle Wang, Xinyi Tong, Liangke Zhao, Jishang Chen, Sirui Zhang, Haoxin Zhang, Xin Jin, Duo Xu, Xiaobing Li, and Song-Chun Zhu (2026)
 - [Towards AI-Generated Music Plagiarism Detection as a Version Identification Problem](wiki/explainability-and-auditability/al-2026-towards-ai-generated-music-plagiarism.md) — Fotis Koutsikos et al. (2026)
 - [Tracing Inputs, Verifying Outputs: Validating Attribution in Music Generation](wiki/explainability-and-auditability/al-2026-tracing-inputs-verifying-outputs-validating.md) — Taejun Kim et al. (2026)
+- [Dual-Contrastive Sparse Autoencoders Reveal Features of Musical Interpretation](wiki/explainability-and-auditability/chen-2026-dual-contrastive-sparse-autoencoders.md) — Jan Chen, Manuel Cherep, Pattie Maes, Nikhil Singh (2026)
 - [How Far Back Should a Transformer Look? Repetition and Copying in Music Sequence Models](wiki/explainability-and-auditability/fathi-2026-how-far-back-should-a.md) — Amir Fathi (2026)
 - [MI-MIDI: Mechanistic Interpretability of Text-to-MIDI Generation Models via Probing, Lenses and Steering](wiki/explainability-and-auditability/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of.md) — Jakub Poćwiardowski and Mateusz Modrzejewski (2026)
 - [Group-Invariant Statistics Determine Embedding Geometry: Harmonic Analysis of Representations from Bach to the Night Sky](wiki/explainability-and-auditability/storan-2026-group-invariant-statistics-determine-embedding.md) — Liam Storan, Andreas Tolias, and Nina Miolane (2026)
@@ -107,4 +110,5 @@ Catalog generated on 2026-10-14 from repository content.
 - **Concept:** [Hierarchical Latent Reasoning](wiki/concepts/hierarchical-latent-reasoning.md)
 - **Concept:** [Music-Domain Inductive Biases](wiki/concepts/music-domain-inductive-biases.md)
 - **Concept:** [Music-Theory Probing](wiki/concepts/music-theory-probing.md)
+- **Concept:** [Work Identity versus Performance Variation](wiki/concepts/work-identity-versus-performance-variation.md)
 - **Question:** [When Do Interpretable Music-Editing Traces Become Faithful Explanations?](wiki/questions/when-do-interpretable-music-editing-traces-become-faithful-explanations.md)

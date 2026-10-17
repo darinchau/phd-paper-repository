@@ -3,6 +3,7 @@
 - [StepAudio 3 Music Technical Report](../wiki/generation-and-planning/al-2026-stepaudio-3-music-technical-report.md) — Chengli Feng et al. (2026)
 - [YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality](../wiki/generation-and-planning/al-2026-yue2-unifying-symbolic-and-audio.md) — Ruibin Yuan et al. (2026)
 - [VIBE: Video Instruction-aligned Background music gEneration](../wiki/generation-and-planning/bhosale-2026-vibe-video-instruction-aligned-background.md) — Aryan Vijay Bhosale, Vaibhavi Lokegaonkar, Vishnu Raj, Gouthaman KV, Sreyan Ghosh, Ramani Duraiswami, Lie Lu, and Dinesh Manocha (2026)
+- [SyMuPe: Affective and Controllable Symbolic Music Performance](../wiki/generation-and-planning/borovik-2025-symupe-affective-and-controllable.md) — Ilya Borovik, Dmitrii Gavrilev, Vladimir Viro (2025)
 - [MuseTimbre: Zero-Shot Timbre Transfer by Controlling a Frozen Music Generator](../wiki/generation-and-planning/cheng-2026-musetimbre-zero-shot-timbre-transfer.md) — Yuan-Chiao Cheng and Zhiyao Duan (2026)
 - [MuseGAN: Multi-track Sequential Generative Adversarial Networks for Symbolic Music Generation and Accompaniment](../wiki/generation-and-planning/dong-2017-musegan-multi-track-sequential-generative.md) — Hao-Wen Dong, Wen-Yi Hsiao, Li-Chia Yang, and Yi-Hsuan Yang (2017)
 - [Drive-to-Music: Context-Aware Generative Audio for In-Vehicle Experiences](../wiki/generation-and-planning/dragoiu-2026-drive-to-music-context-aware.md) — Dragoiu and Nabizadeh (2026)
@@ -21,3 +22,4 @@
 - [LatticeSMC: Where to Spend Inference-Time Compute in Chunked Sequence Generators](../wiki/generation-and-planning/wang-2026-latticesmc-where-to-spend-inference.md) — Xuanchen Wang, Heng Wang, and Weidong Cai (2026)
 - [Music ControlNet: Multiple Time-varying Controls for Music Generation](../wiki/generation-and-planning/wu-2023-music-controlnet-multiple-time-varying.md) — Shih-Lun Wu, Chris Donahue, Shinji Watanabe, Nicholas J. Bryan, and Dasaem Jeong (2023)
 - [Getting Motif-ated: Controllable AI Compositions from Injected Motif Prompts](../wiki/generation-and-planning/yang-2026-getting-motif-ated-controllable-ai.md) — Chao Peter Yang, Cynthia Rudin, Yue Jiang, Simon Mak, and Stephen Ni-Hahn (2026)
+- [Disentangling Score Content and Performance Style for Joint Piano Rendering and Transcription](../wiki/generation-and-planning/zeng-2025-disentangling-score-content-and-performance.md) — Wei Zeng, Junchuan Zhao, Ye Wang (2025)

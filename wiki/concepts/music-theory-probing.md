@@ -37,9 +37,13 @@ The study supplies the intervention evidence absent from SynTheory: piano/violin
 
 For steering, reverse the direction as well as changing its magnitude. MI-MIDI separates antisymmetric response from symmetric drift and uses a note-count stability guard. Its specificity score concerns reversal symmetry of a selected proxy; it does not establish disentanglement from all other musical attributes. Its linked demo uses different source-layer/injection configurations from the main selected results, so the showcase cannot serve as an independent reproduction of those tables. [MI-MIDI PDF pp. 9–12 and pinned demo mapping on the paper page]
 
+[[explainability-and-auditability/chen-2026-dual-contrastive-sparse-autoencoders|DC-SAE]] carries the same ladder to the audio side with corpus structure instead of synthetic control: work-identity probes on held-out recordings establish recoverability, and its rank-1 feature-direction steering — beating a matched-random control in 70% of aligned-pair contexts while the raw residual reference reaches 73.8% — is the intervention step, with absolute margins small and the MERT selection-scoring circularity acknowledged. Musician-utility remains untested there as well. [DC-SAE PDF pp. 3–4, App. K]
+
 ## Related Pages
 
 - [[explainability-and-auditability/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of]] — symbolic probes, lenses, patching, and bidirectional steering.
+- [[explainability-and-auditability/chen-2026-dual-contrastive-sparse-autoencoders]] — audio-side probing plus single-feature steering on MusicGen, structured by work identity.
+- [[concepts/work-identity-versus-performance-variation]] — the factorization question that DC-SAE's branches instantiate.
 
 - [[explainability-and-auditability/wei-2024-do-music-generation-models-encode]] — primary evidence, full results, and implementation discrepancies.
 - [[concepts/music-domain-inductive-biases]] — structural priors and the different evidence needed for constraints or faithful explanations.
