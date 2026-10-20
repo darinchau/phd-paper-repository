@@ -45,6 +45,8 @@ Two interventions touch the coarse codes directly. Fixing the three coarsest lev
 
 A structural caveat bounds the analogy: the tokenizers have **zero encoder blocks**, so a coarse code is a downsampled learned residual rather than a representation of a named unit, and the paper defines "concept" as exactly "the information carried by the coarse levels of the hierarchy" and stops there. A music analogue would need named objects (section, phrase function, cadence plan) at the slow level, and this paper's probes give no evidence that a code ladder discovers such objects on its own.
 
+[[data-and-representation/huang-2025-musetok-symbolic-music-tokenization-for|MuseTok]] is the existing symbolic-music residual code ladder: a bar-wise RQ-VAE over REMI+ piano with D=8 or 16 non-shared codebooks per bar. Unlike NCM, every level has the same length (one code per bar), generation is serial over the flattened stack, and the decoder is trained only on the full-depth sum. Its level reading (first codebook transposition-invariant, deeper codebooks carrying absolute pitch, attributes "not fully disentangled") comes from code-frequency and embedding-cosine plots on the unreleased D=8 model, so it is correlational. The released D=16 checkpoint makes the causal version testable: freeze, swap or resample levels and score what changes in the decoded music. [MuseTok Sec. 4.5, Figs. 2–3]
+
 ## Transfer Contract for Symbolic Music
 
 An HRM-inspired music system would need more than replacing grid tokens with notes:
@@ -71,5 +73,6 @@ NCM **strengthens** the case for a fixed, learned resolution ladder as a cheap a
 - [[generation-and-planning/wang-2025-notagen-advancing-musicality-in-symbolic]] — representation hierarchy and long-form ABC continuation used as a contrast.
 - [[overviews/symbolic-music-foundation-models]] — the current evidence base for symbolic pretraining and controllable generation.
 - [[concepts/music-domain-inductive-biases]] — conditions under which a music-shaped architectural choice becomes a validated mechanism.
+- [[data-and-representation/huang-2025-musetok-symbolic-music-tokenization-for]] — bar-wise residual code ladder for symbolic piano; correlational level analysis; released D=16 checkpoint.
 - [[other/kumbong-2026-ncm-next-concept-modeling-fast]] — resolution ladder over learned discrete codes; coarse-code fixing, mixing, and perturbation probes; evidence limits.
 - [[concepts/auditable-creative-editing-pipelines]] — criteria for inspectable state, local intervention, and outcome linkage.

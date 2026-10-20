@@ -4,10 +4,10 @@ Catalog generated on 2026-10-20 from repository content.
 
 ## Coverage
 
-- Canonical PDFs: **75**
-- Source digests: **74**
-- Domain paper pages: **74**
-- Papers linked to an overview or concept: **74/74**
+- Canonical PDFs: **76**
+- Source digests: **75**
+- Domain paper pages: **75**
+- Papers linked to an overview or concept: **75/75**
 - Overviews: **3**
 - Concepts: **7**
 - Questions: **1**
@@ -16,7 +16,7 @@ Catalog generated on 2026-10-20 from repository content.
 
 | Category | Papers | Index |
 |---|---:|---|
-| `data-and-representation` | 10 | [open](indexes/data-and-representation.md) |
+| `data-and-representation` | 11 | [open](indexes/data-and-representation.md) |
 | `generation-and-planning` | 23 | [open](indexes/generation-and-planning.md) |
 | `theory-and-constraints` | 8 | [open](indexes/theory-and-constraints.md) |
 | `explainability-and-auditability` | 10 | [open](indexes/explainability-and-auditability.md) |
@@ -29,6 +29,7 @@ Catalog generated on 2026-10-20 from repository content.
 - [Rethinking Music Tokenization: A Semantic Codec toward High-Fidelity LLM Music Generation](wiki/data-and-representation/al-2026-rethinking-music-tokenization-a-semantic.md) — Huakang Chen et al. (2026)
 - [MidiTok: A Python Package for MIDI File Tokenization](wiki/data-and-representation/fradet-2023-miditok-a-python-package-for.md) — Nathan Fradet, Jean-Pierre Briot, Fabien Chhel, Amal El Fallah Seghrouchni, and Nicolas Gutowski (2023)
 - [Enabling Factorized Piano Music Modeling and Generation with the MAESTRO Dataset](wiki/data-and-representation/hawthorne-2019-enabling-factorized-piano-music-modeling.md) — Curtis Hawthorne, Andriy Stasyuk, Adam Roberts, Ian Simon, Cheng-Zhi Anna Huang, Sander Dieleman, Erich Elsen, Jesse Engel, and Douglas Eck (2019)
+- [MuseTok: Symbolic Music Tokenization for Generation and Semantic Understanding](wiki/data-and-representation/huang-2025-musetok-symbolic-music-tokenization-for.md) — Jingyue Huang, Zachary Novack, Phillip Long, Yupeng Hou, Ke Chen, Taylor Berg-Kirkpatrick, and Julian McAuley (2025)
 - [Unified Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio](wiki/data-and-representation/jung-2025-unified-cross-modal-translation-of.md) — Jongmin Jung, Dongmin Kim, Sihun Lee, Seola Cho, Hyungjoon So, Irmak Bukey, Chris Donahue, and Dasaem Jeong (2025)
 - [Dialogue-Aware Video-to-Music Generation Using Public Domain Film Collections](wiki/data-and-representation/kim-2026-dialogue-aware-video-to-music.md) — Haven Kim, Zachary Novack, Julian McAuley, and Hao-Wen Dong (2026)
 - [From Words to Music: A Study of Subword Tokenization Techniques in Symbolic Music Generation](wiki/data-and-representation/kumar-2023-from-words-to-music-a.md) — Adarsh Kumar and Pedro Sarmento (2023)

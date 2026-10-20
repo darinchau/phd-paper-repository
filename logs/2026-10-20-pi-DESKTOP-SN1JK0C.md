@@ -36,3 +36,23 @@ Repository check on 2026-10-20, recorded in the source record with explicit prov
 - `audit_synthesis_orphans.py`: 0/74 orphans.
 - `build_indexes.py --date 2026-10-20` run after ingestion; `index.md` and `indexes/other.md` regenerated.
 - Evidence limitations preserved in the source record: several conditional quality rows are borrowed from Hu et al.; timing for conditional baselines without released checkpoints was measured on randomly initialized weights (same architecture and sampling config, timing only); wall-clock is one H100, batch 16, 1,024 sequences; the OWT "competitive" claim is time-matched, not quality-matched (NCM Gen. PPL 83.12 vs DUO 77.69 and FLM 62.23); diversity is unigram entropy only; the Sudoku trajectory grid (p. 40) and the scaling curve's per-point values are figure-only and treated as qualitative.
+
+# Digest: MuseTok (Huang et al., arXiv 2510.16273)
+
+## Files
+
+- `papers/huang-2025-musetok-symbolic-music-tokenization-for.pdf` (SHA-256 `0f81f960…830fee962`) and `papers/huang-2025-musetok-symbolic-music-tokenization-for.tar.gz` (arXiv LaTeX source, SHA-256 `c8da3b59…c4263f8`) + `sources/huang-2025-musetok-symbolic-music-tokenization-for.md` + `wiki/data-and-representation/huang-2025-musetok-symbolic-music-tokenization-for.md`.
+- `wiki/concepts/hierarchical-latent-reasoning.md`: one MuseTok paragraph before "Transfer Contract for Symbolic Music" contrasting it with NCM (equal-length levels, serial generation, full-depth-only decoder, correlational level reading) + Related Pages entry.
+- `wiki/overviews/2026-symbolic-music-literature-map.md`: one entry and one Related Papers line.
+
+Category decision: `data-and-representation`. The primary contribution is a symbolic tokenizer; generation and understanding are downstream uses.
+
+## Supersede check
+
+No contradictions. Deltas: (1) **adds** the first symbolic-music residual code ladder with released weights, so the NCM-style coarse-code probes can be run on music; (2) **narrows** the reading of MuseTok's "early = transposition-invariant, deep = absolute pitch" claim: correlational, on the unreleased D=8 model, embedding-level not decoded-music-level; (3) **unchanged**: no named musical objects at any level, consistent with the transfer contract.
+
+## Repo-side verification
+
+`Yuer867/MuseTok` at commit `7b71d16` (no licence file, last push 2026-01-19) has training, generation and evaluation code. The Google Drive `ckpt.zip` (SHA-256 `4d910671…94f8db31`) holds the D=16/K=2048 tokenizer (94.1M parameters, verified from state dict) and the generator. The tokenizer was loaded and run on CPU locally. Weights and venv are outside the paper repository (`phd-research/scratch/musetok/`).
+
+The synthesis gap noted for NCM (a tokenization-fidelity concept anchor) now has its second paper; creating it is left for a follow-up so this digest stays scoped.
