@@ -1,13 +1,13 @@
 # PhD Paper Repository Index
 
-Catalog generated on 2026-10-17 from repository content.
+Catalog generated on 2026-10-20 from repository content.
 
 ## Coverage
 
-- Canonical PDFs: **74**
-- Source digests: **73**
-- Domain paper pages: **73**
-- Papers linked to an overview or concept: **73/73**
+- Canonical PDFs: **75**
+- Source digests: **74**
+- Domain paper pages: **74**
+- Papers linked to an overview or concept: **74/74**
 - Overviews: **3**
 - Concepts: **7**
 - Questions: **1**
@@ -22,7 +22,7 @@ Catalog generated on 2026-10-17 from repository content.
 | `explainability-and-auditability` | 10 | [open](indexes/explainability-and-auditability.md) |
 | `retrieval-and-recombination` | 6 | [open](indexes/retrieval-and-recombination.md) |
 | `interaction-and-evaluation` | 8 | [open](indexes/interaction-and-evaluation.md) |
-| `other` | 8 | [open](indexes/other.md) |
+| `other` | 9 | [open](indexes/other.md) |
 
 ## Papers
 
@@ -92,6 +92,7 @@ Catalog generated on 2026-10-17 from repository content.
 - [Rubric-Based Optimization for Text-to-Music Generation](wiki/interaction-and-evaluation/wang-2026-rubric-based-optimization-for-text.md) — Ping Wang, Guang Yang, Shao-Rong Su, Junkai Wu, Pang Wei Koh, and Noah A. Smith (2026)
 - [MusicAgent: An AI Agent for Music Understanding and Generation with Large Language Models](wiki/interaction-and-evaluation/yu-2023-musicagent-an-ai-agent-for.md) — Dingyao Yu, Kaitao Song, Peiling Lu, Tianyu He, Xu Tan, Wei Ye, Shikun Zhang, and Jiang Bian (2023)
 - [Why Alzheimer's Speech Screening Fails to Generalize: Bridging the Deployment Gap via Cross-Corpus Evidence Anchoring](wiki/other/al-2026-why-alzheimer-s-speech-screening.md) — Zijian Lu et al. (2026)
+- [NCM Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation](wiki/other/kumbong-2026-ncm-next-concept-modeling-fast.md) — Hermann Kumbong, Ishan S. Khare, Iddah Mlauzi, Andrew Woen, Charles Ding, E. Kelly Buchanan, Simran Arora, Azalia Mirhoseini, and Christopher Ré (2026)
 - [Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution](wiki/other/lai-2017-deep-laplacian-pyramid-networks-for.md) — Wei-Sheng Lai, Jia-Bin Huang, Narendra Ahuja, and Ming-Hsuan Yang (2017)
 - [See and Fix the Flaws: Enabling VLMs and Diffusion Models to Comprehend Visual Artifacts via Agentic Data Synthesis](wiki/other/park-2026-see-and-fix-the-flaws.md) — Jaehyun Park, Minyoung Ahn, Minkyu Kim, Jonghyun Lee, Jae-Gil Lee, Dongmin Park (2026)
 - [Channel-Preserving Representation Alignment for EEG-to-Music Reconstruction](wiki/other/qing-2026-channel-preserving-representation-alignment-for.md) — Jiaxin Qing, Junwei Lu, and Lexin Li (2026)

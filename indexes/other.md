@@ -1,6 +1,7 @@
 # Other
 
 - [Why Alzheimer's Speech Screening Fails to Generalize: Bridging the Deployment Gap via Cross-Corpus Evidence Anchoring](../wiki/other/al-2026-why-alzheimer-s-speech-screening.md) — Zijian Lu et al. (2026)
+- [NCM Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation](../wiki/other/kumbong-2026-ncm-next-concept-modeling-fast.md) — Hermann Kumbong, Ishan S. Khare, Iddah Mlauzi, Andrew Woen, Charles Ding, E. Kelly Buchanan, Simran Arora, Azalia Mirhoseini, and Christopher Ré (2026)
 - [Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution](../wiki/other/lai-2017-deep-laplacian-pyramid-networks-for.md) — Wei-Sheng Lai, Jia-Bin Huang, Narendra Ahuja, and Ming-Hsuan Yang (2017)
 - [See and Fix the Flaws: Enabling VLMs and Diffusion Models to Comprehend Visual Artifacts via Agentic Data Synthesis](../wiki/other/park-2026-see-and-fix-the-flaws.md) — Jaehyun Park, Minyoung Ahn, Minkyu Kim, Jonghyun Lee, Jae-Gil Lee, Dongmin Park (2026)
 - [Channel-Preserving Representation Alignment for EEG-to-Music Reconstruction](../wiki/other/qing-2026-channel-preserving-representation-alignment-for.md) — Jiaxin Qing, Junwei Lu, and Lexin Li (2026)
