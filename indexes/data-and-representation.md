@@ -1,6 +1,9 @@
 # Data And Representation
 
 - [Rethinking Music Tokenization: A Semantic Codec toward High-Fidelity LLM Music Generation](../wiki/data-and-representation/al-2026-rethinking-music-tokenization-a-semantic.md) — Huakang Chen et al. (2026)
+- [Aria-MIDI: A Dataset of Piano MIDI Files for Symbolic Music Modeling](../wiki/data-and-representation/bradshaw-2025-aria-midi-a-dataset-of.md) — Louis Bradshaw and Simon Colton (2025)
+- [Scaling Self-Supervised Representation Learning for Symbolic Piano Performance](../wiki/data-and-representation/bradshaw-2025-scaling-self-supervised-representation.md) — Louis Bradshaw, Honglu Fan, Alexander Spangher, Stella Biderman, and Simon Colton (2025)
+- [YourMT3+: Multi-instrument Music Transcription with Enhanced Transformer Architectures and Cross-dataset Stem Augmentation](../wiki/data-and-representation/chang-2024-yourmt3-multi-instrument-music-transcription.md) — Sungkyun Chang, Emmanouil Benetos, Holger Kirchhoff, and Simon Dixon (2024)
 - [MidiTok: A Python Package for MIDI File Tokenization](../wiki/data-and-representation/fradet-2023-miditok-a-python-package-for.md) — Nathan Fradet, Jean-Pierre Briot, Fabien Chhel, Amal El Fallah Seghrouchni, and Nicolas Gutowski (2023)
 - [Enabling Factorized Piano Music Modeling and Generation with the MAESTRO Dataset](../wiki/data-and-representation/hawthorne-2019-enabling-factorized-piano-music-modeling.md) — Curtis Hawthorne, Andriy Stasyuk, Adam Roberts, Ian Simon, Cheng-Zhi Anna Huang, Sander Dieleman, Erich Elsen, Jesse Engel, and Douglas Eck (2019)
 - [MuseTok: Symbolic Music Tokenization for Generation and Semantic Understanding](../wiki/data-and-representation/huang-2025-musetok-symbolic-music-tokenization-for.md) — Jingyue Huang, Zachary Novack, Phillip Long, Yupeng Hou, Ke Chen, Taylor Berg-Kirkpatrick, and Julian McAuley (2025)
