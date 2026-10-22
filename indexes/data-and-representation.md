@@ -1,6 +1,8 @@
 # Data And Representation
 
 - [Rethinking Music Tokenization: A Semantic Codec toward High-Fidelity LLM Music Generation](../wiki/data-and-representation/al-2026-rethinking-music-tokenization-a-semantic.md) — Huakang Chen et al. (2026)
+- [Look, Listen and Learn](../wiki/data-and-representation/arandjelovic-2017-look-listen-and-learn.md) — Relja Arandjelović, Andrew Zisserman (2017)
+- [SoundNet: Learning Sound Representations from Unlabeled Video](../wiki/data-and-representation/aytar-2016-soundnet-learning-sound-representations-from.md) — Yusuf Aytar, Carl Vondrick, Antonio Torralba (2016)
 - [Aria-MIDI: A Dataset of Piano MIDI Files for Symbolic Music Modeling](../wiki/data-and-representation/bradshaw-2025-aria-midi-a-dataset-of.md) — Louis Bradshaw and Simon Colton (2025)
 - [Scaling Self-Supervised Representation Learning for Symbolic Piano Performance](../wiki/data-and-representation/bradshaw-2025-scaling-self-supervised-representation.md) — Louis Bradshaw, Honglu Fan, Alexander Spangher, Stella Biderman, and Simon Colton (2025)
 - [YourMT3+: Multi-instrument Music Transcription with Enhanced Transformer Architectures and Cross-dataset Stem Augmentation](../wiki/data-and-representation/chang-2024-yourmt3-multi-instrument-music-transcription.md) — Sungkyun Chang, Emmanouil Benetos, Holger Kirchhoff, and Simon Dixon (2024)
@@ -14,3 +16,4 @@
 - [One Timeline, Many Renderings: A Wolfram Language Paclet for Heterogeneous Musical Output](../wiki/data-and-representation/vitucci-2026-one-timeline-many-renderings-a.md) — Francesco Vitucci, Michele Lorusso, and Francesco Scagliola (2026)
 - [Exploring Inherent Properties of the Monophonic Melody of Songs](../wiki/data-and-representation/wang-2020-exploring-inherent-properties-of-the.md) — Zehao Wang, Shicheng Zhang, and Xiaoou Chen (2020)
 - [POP909: A Pop-song Dataset for Music Arrangement Generation](../wiki/data-and-representation/wang-2020-pop909-a-pop-song-dataset.md) — Ziyu Wang, Ke Chen, Junyan Jiang, Yiyi Zhang, Maoran Xu, Shuqi Dai, Xianbin Gu, and Gus Xia (2020)
+- [A Foundation Model for Music Informatics](../wiki/data-and-representation/won-2024-a-foundation-model-for-music.md) — Minz Won, Yun-Ning Hung, Duc Le (2024)

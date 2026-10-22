@@ -2,6 +2,7 @@
 
 Daily ingestion and maintenance narratives, newest first.
 
+- [2026-10-22 — AGT 1 novelty check and cross-modal digests](2026-10-22-pi-DESKTOP-SN1JK0C.md)
 - [2026-10-21 — Audio–symbolic transfer batch (10 arXiv papers)](2026-10-21-pi-DESKTOP-SN1JK0C.md)
 - [2026-10-20 — NCM (Kumbong et al., arXiv 2610.14162) ingestion](2026-10-20-pi-DESKTOP-SN1JK0C.md)
 - [2026-10-17 — ArtiAgent (Park et al., CVPR 2026) ingestion](2026-10-17-pi-DESKTOP-SN1JK0C.md)

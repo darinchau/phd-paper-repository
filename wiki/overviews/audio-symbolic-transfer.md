@@ -75,6 +75,16 @@ The table is a hypothesis, not a measured decomposition. The closest measured re
 4. **No note-level cross-modal benchmark.** CLaMP 3 and PianoBind evaluate global retrieval; descriptor injection evaluates segment retrieval. None evaluates whether a system can point to the notes that make two recordings the same work.
 5. **No score-level recovery.** Audio-to-score transcription (metre, spelling, voices, notation) is out of scope in every paper here; Aria explicitly discards metre/key, SymPAC quantises to a beat grid, and FGG assumes a supplied chord/rhythm mask.
 
+## Cross-Modal Evidence Outside This Batch
+
+A companion synthesis ([[overviews/cross-modal-supervision-transfer]]) covers the general cross-modal literature and five music systems added on 2026-10-22. Three points sharpen the picture:
+
+- **The general principle is conditional.** A second modality helps when it carries information the first lacks; when it is redundant, gains vanish, and one branch can dominate so that multimodal training loses to unimodal training ([[other/wu-2022-characterizing-and-overcoming-the-greedy]]).
+- **The strongest music result runs in the reverse direction.** MIDI-REPA aligns AMT-derived piano rolls into a text-to-music DiT and ranks first on the ATTM benchmark at 14.2 A100-equivalent GPU-hours; a noisy Basic Pitch teacher is worse than no alignment ([[generation-and-planning/yu-2026-midi-repa-improving-text-to-music]]). This shows symbolic supervision improving audio generation, not audio supervision improving a symbolic representation.
+- **Audio→symbolic systems exist at task level, not at representation level.** Audio-to-symbolic arrangement ([[generation-and-planning/wang-2022-audio-to-symbolic-arrangement-via-cross-modal]]) and cross-modal bootstrapping ([[generation-and-planning/zhao-2026-learning-music-style-for-piano]]) use audio to produce symbolic output, and SMART ([[generation-and-planning/jonason-2025-smart-tuning-a-symbolic-music]]) uses an audio reward to tune a symbolic generator. None measures what the symbolic model internalised, and none provides note-level attribution.
+
+Consequence: the "no matched-corpus transfer experiment" and "no note-level benchmark" gaps below still stand. The defensible version of the premise is narrower than "what does audio teach symbolic models": it is **what audio adds that MIDI lacks, measured on a perceptual target**.
+
 ## Implications for the Mashup/Repair Programme
 
 - **Audio-derived data is a performance prior, not a score prior.** It is well suited to learning expressive rendering, timbre, and performer style; it is poorly suited to learning notation-level voice leading, spelling, or cadence unless those are added as explicit labels.
@@ -121,6 +131,12 @@ The two interests named by the owner — "getting past piano" and "what actually
 
 ## Related Pages
 
+- [[overviews/cross-modal-supervision-transfer]] — general evidence on when a second modality improves the first.
+- [[generation-and-planning/yu-2026-midi-repa-improving-text-to-music]] — symbolic supervision of audio generation.
+- [[generation-and-planning/jonason-2025-smart-tuning-a-symbolic-music]] — audio reward for symbolic generation.
+- [[generation-and-planning/wang-2022-audio-to-symbolic-arrangement-via-cross-modal]] — audio-to-symbolic arrangement.
+- [[generation-and-planning/zhao-2026-learning-music-style-for-piano]] — audio style for symbolic arrangement.
+- [[data-and-representation/won-2024-a-foundation-model-for-music]] — audio-only foundation model and teacher candidate.
 - [[concepts/transcription-as-supervision]] — the label chain and its failure modes.
 - [[concepts/audio-symbolic-modality-gap]] — why alignment is hard even with pairs.
 - [[concepts/music-theory-probing]] — probe design and construct validity.

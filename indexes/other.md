@@ -1,11 +1,16 @@
 # Other
 
 - [Why Alzheimer's Speech Screening Fails to Generalize: Bridging the Deployment Gap via Cross-Corpus Evidence Anchoring](../wiki/other/al-2026-why-alzheimer-s-speech-screening.md) — Zijian Lu et al. (2026)
+- [Modality Distillation with Multiple Stream Networks for Action Recognition](../wiki/other/garcia-2018-modality-distillation-with-multiple-stream.md) — Nuno C. Garcia, Pietro Morerio, Vittorio Murino (2018)
+- [Learning with Side Information through Modality Hallucination](../wiki/other/hoffman-2016-learning-with-side-information-through.md) — Judy Hoffman, Saurabh Gupta, Trevor Darrell (2016)
+- [What Makes Multi-modal Learning Better than Single (Provably)](../wiki/other/huang-2021-what-makes-multi-modal-learning-better.md) — Yu Huang, Chenzhuang Du, Zihui Xue, Xuanyao Chen, Hang Zhao, Longbo Huang (2021)
 - [NCM Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation](../wiki/other/kumbong-2026-ncm-next-concept-modeling-fast.md) — Hermann Kumbong, Ishan S. Khare, Iddah Mlauzi, Andrew Woen, Charles Ding, E. Kelly Buchanan, Simran Arora, Azalia Mirhoseini, and Christopher Ré (2026)
 - [Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution](../wiki/other/lai-2017-deep-laplacian-pyramid-networks-for.md) — Wei-Sheng Lai, Jia-Bin Huang, Narendra Ahuja, and Ming-Hsuan Yang (2017)
+- [Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models](../wiki/other/lin-2023-multimodality-helps-unimodality-cross-modal.md) — Zhiqiu Lin, Samuel Yu, Zhiyi Kuang, Deepak Pathak, Deva Ramanan (2023)
 - [See and Fix the Flaws: Enabling VLMs and Diffusion Models to Comprehend Visual Artifacts via Agentic Data Synthesis](../wiki/other/park-2026-see-and-fix-the-flaws.md) — Jaehyun Park, Minyoung Ahn, Minkyu Kim, Jonghyun Lee, Jae-Gil Lee, Dongmin Park (2026)
 - [Channel-Preserving Representation Alignment for EEG-to-Music Reconstruction](../wiki/other/qing-2026-channel-preserving-representation-alignment-for.md) — Jiaxin Qing, Junwei Lu, and Lexin Li (2026)
 - [A Native-Reference Phone-Class Geometry for Second-Language Pronunciation Analysis](../wiki/other/raissi-2026-a-native-reference-phone-class.md) — Tina Raissi, Nhan Phan, Chenxiao Wang, and Mikko Kurimo (2026)
 - [The Pain Axis: LLMs Represent Self-Directed Harm and Act on It](../wiki/other/tagliabue-2026-the-pain-axis-llms-represent.md) — Valen Tagliabue, Leonard Dung, and Cameron Berg (2026)
+- [Characterizing and Overcoming the Greedy Nature of Learning in Multi-modal Deep Neural Networks](../wiki/other/wu-2022-characterizing-and-overcoming-the-greedy.md) — Nan Wu, Stanisław Jastrzębski, Kyunghyun Cho, Krzysztof J. Geras (2022)
 - [Image Super-Resolution Using Very Deep Residual Channel Attention Networks](../wiki/other/zhang-2018-image-super-resolution-using-very.md) — Yulun Zhang, Kunpeng Li, Kai Li, Lichen Wang, Bineng Zhong, and Yun Fu (2018)
 - [CDDFuse: Correlation-Driven Dual-Branch Feature Decomposition for Multi-Modality Image Fusion](../wiki/other/zhao-2023-cddfuse-correlation-driven-dual-branch.md) — Zixiang Zhao, Haowen Bai, Jiangshe Zhang, Yulun Zhang, Shuang Xu, Zudi Lin, Radu Timofte, and Luc Van Gool (2023)

@@ -1,14 +1,14 @@
 # PhD Paper Repository Index
 
-Catalog generated on 2026-10-21 from repository content.
+Catalog generated on 2026-10-22 from repository content.
 
 ## Coverage
 
-- Canonical PDFs: **86**
-- Source digests: **85**
-- Domain paper pages: **85**
-- Papers linked to an overview or concept: **85/85**
-- Overviews: **4**
+- Canonical PDFs: **98**
+- Source digests: **97**
+- Domain paper pages: **97**
+- Papers linked to an overview or concept: **97/97**
+- Overviews: **5**
 - Concepts: **9**
 - Questions: **1**
 
@@ -16,17 +16,19 @@ Catalog generated on 2026-10-21 from repository content.
 
 | Category | Papers | Index |
 |---|---:|---|
-| `data-and-representation` | 14 | [open](indexes/data-and-representation.md) |
-| `generation-and-planning` | 26 | [open](indexes/generation-and-planning.md) |
+| `data-and-representation` | 17 | [open](indexes/data-and-representation.md) |
+| `generation-and-planning` | 30 | [open](indexes/generation-and-planning.md) |
 | `theory-and-constraints` | 8 | [open](indexes/theory-and-constraints.md) |
 | `explainability-and-auditability` | 11 | [open](indexes/explainability-and-auditability.md) |
 | `retrieval-and-recombination` | 9 | [open](indexes/retrieval-and-recombination.md) |
 | `interaction-and-evaluation` | 8 | [open](indexes/interaction-and-evaluation.md) |
-| `other` | 9 | [open](indexes/other.md) |
+| `other` | 14 | [open](indexes/other.md) |
 
 ## Papers
 
 - [Rethinking Music Tokenization: A Semantic Codec toward High-Fidelity LLM Music Generation](wiki/data-and-representation/al-2026-rethinking-music-tokenization-a-semantic.md) — Huakang Chen et al. (2026)
+- [Look, Listen and Learn](wiki/data-and-representation/arandjelovic-2017-look-listen-and-learn.md) — Relja Arandjelović, Andrew Zisserman (2017)
+- [SoundNet: Learning Sound Representations from Unlabeled Video](wiki/data-and-representation/aytar-2016-soundnet-learning-sound-representations-from.md) — Yusuf Aytar, Carl Vondrick, Antonio Torralba (2016)
 - [Aria-MIDI: A Dataset of Piano MIDI Files for Symbolic Music Modeling](wiki/data-and-representation/bradshaw-2025-aria-midi-a-dataset-of.md) — Louis Bradshaw and Simon Colton (2025)
 - [Scaling Self-Supervised Representation Learning for Symbolic Piano Performance](wiki/data-and-representation/bradshaw-2025-scaling-self-supervised-representation.md) — Louis Bradshaw, Honglu Fan, Alexander Spangher, Stella Biderman, and Simon Colton (2025)
 - [YourMT3+: Multi-instrument Music Transcription with Enhanced Transformer Architectures and Cross-dataset Stem Augmentation](wiki/data-and-representation/chang-2024-yourmt3-multi-instrument-music-transcription.md) — Sungkyun Chang, Emmanouil Benetos, Holger Kirchhoff, and Simon Dixon (2024)
@@ -40,6 +42,7 @@ Catalog generated on 2026-10-21 from repository content.
 - [One Timeline, Many Renderings: A Wolfram Language Paclet for Heterogeneous Musical Output](wiki/data-and-representation/vitucci-2026-one-timeline-many-renderings-a.md) — Francesco Vitucci, Michele Lorusso, and Francesco Scagliola (2026)
 - [Exploring Inherent Properties of the Monophonic Melody of Songs](wiki/data-and-representation/wang-2020-exploring-inherent-properties-of-the.md) — Zehao Wang, Shicheng Zhang, and Xiaoou Chen (2020)
 - [POP909: A Pop-song Dataset for Music Arrangement Generation](wiki/data-and-representation/wang-2020-pop909-a-pop-song-dataset.md) — Ziyu Wang, Ke Chen, Junyan Jiang, Yiyi Zhang, Maoran Xu, Shuqi Dai, Xianbin Gu, and Gus Xia (2020)
+- [A Foundation Model for Music Informatics](wiki/data-and-representation/won-2024-a-foundation-model-for-music.md) — Minz Won, Yun-Ning Hung, Duc Le (2024)
 - [StepAudio 3 Music Technical Report](wiki/generation-and-planning/al-2026-stepaudio-3-music-technical-report.md) — Chengli Feng et al. (2026)
 - [YuE2: Unifying Symbolic and Audio Music Generation at Frontier Quality](wiki/generation-and-planning/al-2026-yue2-unifying-symbolic-and-audio.md) — Ruibin Yuan et al. (2026)
 - [VIBE: Video Instruction-aligned Background music gEneration](wiki/generation-and-planning/bhosale-2026-vibe-video-instruction-aligned-background.md) — Aryan Vijay Bhosale, Vaibhavi Lokegaonkar, Vishnu Raj, Gouthaman KV, Sreyan Ghosh, Ramani Duraiswami, Lie Lu, and Dinesh Manocha (2026)
@@ -53,10 +56,12 @@ Catalog generated on 2026-10-21 from repository content.
 - [Moonbeam: A MIDI Foundation Model Using Both Absolute and Relative Music Attributes](wiki/generation-and-planning/guo-2025-moonbeam-a-midi-foundation-model.md) — Zixun Guo and Simon Dixon (2025)
 - [Multi-instrument Music Synthesis with Spectrogram Diffusion](wiki/generation-and-planning/hawthorne-2022-multi-instrument-music-synthesis-with.md) — Curtis Hawthorne, Ian Simon, Adam Roberts, Neil Zeghidour, Josh Gardner, Ethan Manilow, and Jesse Engel (2022)
 - [Pop Music Transformer: Beat-based Modeling and Generation of Expressive Pop Piano Compositions](wiki/generation-and-planning/huang-2020-pop-music-transformer-beat-based.md) — Yu-Siang Huang and Yi-Hsuan Yang (2020)
+- [SMART: Tuning a symbolic music generation system with an audio domain aesthetic reward](wiki/generation-and-planning/jonason-2025-smart-tuning-a-symbolic-music.md) — Nicolas Jonason, Luca Casini, Bob L. T. Sturm (2025)
 - [VMAS: Video-to-Music Generation via Semantic Alignment in Web Music Videos](wiki/generation-and-planning/lin-2024-vmas-video-to-music-generation.md) — Yan-Bo Lin, Yu Tian, Linjie Yang, Gedas Bertasius, and Heng Wang (2024)
 - [Diff-Symbo: Text-Controlled Long-Duration Symbolic Music Generation Using Autoregressive Latent Diffusion Model](wiki/generation-and-planning/lin-2026-diff-symbo-text-controlled-long.md) — Zhiwei Lin, Jun Chen, Boshi Tang, Weihao Wu, Jing Yang, Yaolong Ju, Fan Fan, and Zhiyong Wu (2026)
 - [Video-to-Music Generation for Gameplay Videos](wiki/generation-and-planning/marra-2026-video-to-music-generation-for.md) — Felipe Marra and Lucas N. Ferreira (2026)
 - [Where the Body Keeps the Beat: Structured Motion Conditioning and Music Dynamics Supervision for Dance-to-Music Generation](wiki/generation-and-planning/sun-2026-where-the-body-keeps-the.md) — Changchang Sun, Lu Cheng, and Yan Yan (2026)
+- [Audio-to-symbolic Arrangement via Cross-modal Music Representation Learning](wiki/generation-and-planning/wang-2022-audio-to-symbolic-arrangement-via-cross-modal.md) — Ziyu Wang, Dejing Xu, Gus Xia, Ying Shan (2022)
 - [REMAST: Real-time Emotion-based Music Arrangement with Soft Transition](wiki/generation-and-planning/wang-2023-remast-real-time-emotion-based.md) — Zihao Wang, Le Ma, Chen Zhang, Bo Han, Yunfei Xu, Yikai Wang, Xinyi Chen, Haorong Hong, Wenbo Liu, Xinda Wu, and Kejun Zhang (2023)
 - [Hierarchical Reasoning Model](wiki/generation-and-planning/wang-2025-hierarchical-reasoning-model.md) — Guan Wang, Jin Li, Yuhao Sun, Xing Chen, Changling Liu, Yue Wu, Meng Lu, Sen Song, and Yasin Abbasi Yadkori (2025)
 - [NotaGen: Advancing Musicality in Symbolic Music Generation with Large Language Model Training Paradigms](wiki/generation-and-planning/wang-2025-notagen-advancing-musicality-in-symbolic.md) — Yashan Wang, Shangda Wu, Jianhuai Hu, Xingjian Du, Yueqi Peng, Yongxin Huang, Shuai Fan, Xiaobing Li, Feng Yu, and Maosong Sun (2025)
@@ -64,7 +69,9 @@ Catalog generated on 2026-10-21 from repository content.
 - [LatticeSMC: Where to Spend Inference-Time Compute in Chunked Sequence Generators](wiki/generation-and-planning/wang-2026-latticesmc-where-to-spend-inference.md) — Xuanchen Wang, Heng Wang, and Weidong Cai (2026)
 - [Music ControlNet: Multiple Time-varying Controls for Music Generation](wiki/generation-and-planning/wu-2023-music-controlnet-multiple-time-varying.md) — Shih-Lun Wu, Chris Donahue, Shinji Watanabe, Nicholas J. Bryan, and Dasaem Jeong (2023)
 - [Getting Motif-ated: Controllable AI Compositions from Injected Motif Prompts](wiki/generation-and-planning/yang-2026-getting-motif-ated-controllable-ai.md) — Chao Peter Yang, Cynthia Rudin, Yue Jiang, Simon Mak, and Stephen Ni-Hahn (2026)
+- [MIDI-REPA: Improving Text-to-Music Generation with Symbolic Representation Alignment](wiki/generation-and-planning/yu-2026-midi-repa-improving-text-to-music.md) — Song-Ze Yu, Fang-Duo Tsai, Yi-Hsuan Yang (2026)
 - [Disentangling Score Content and Performance Style for Joint Piano Rendering and Transcription](wiki/generation-and-planning/zeng-2025-disentangling-score-content-and-performance.md) — Wei Zeng, Junchuan Zhao, Ye Wang (2025)
+- [Learning Music Style for Piano Arrangement Through Cross-Modal Bootstrapping](wiki/generation-and-planning/zhao-2026-learning-music-style-for-piano.md) — Jingwei Zhao, Gus Xia, Ziyu Wang, Ye Wang (2026)
 - [Efficient Fine-Grained Guidance for Diffusion Model Based Symbolic Music Generation](wiki/generation-and-planning/zhu-2025-efficient-fine-grained-guidance-for.md) — Tingyu Zhu, Haoyu Liu, Ziyu Wang, Zhimin Jiang, and Zeyu Zheng (2025)
 - [MIDIBACK: Harmony-Aware Singing Pitch Correction via Joint Vocal-Accompaniment Symbolic Modeling](wiki/theory-and-constraints/al-2026-midiback-harmony-aware-singing-pitch.md) — Joaquim Cavalcante et al. (2026)
 - [Reference-Free Singing Pitch Correction via Music-Constrained Sequence Editing](wiki/theory-and-constraints/al-2026-reference-free-singing-pitch-correction.md) — Biao Dong et al. (2026)
@@ -103,12 +110,17 @@ Catalog generated on 2026-10-21 from repository content.
 - [Rubric-Based Optimization for Text-to-Music Generation](wiki/interaction-and-evaluation/wang-2026-rubric-based-optimization-for-text.md) — Ping Wang, Guang Yang, Shao-Rong Su, Junkai Wu, Pang Wei Koh, and Noah A. Smith (2026)
 - [MusicAgent: An AI Agent for Music Understanding and Generation with Large Language Models](wiki/interaction-and-evaluation/yu-2023-musicagent-an-ai-agent-for.md) — Dingyao Yu, Kaitao Song, Peiling Lu, Tianyu He, Xu Tan, Wei Ye, Shikun Zhang, and Jiang Bian (2023)
 - [Why Alzheimer's Speech Screening Fails to Generalize: Bridging the Deployment Gap via Cross-Corpus Evidence Anchoring](wiki/other/al-2026-why-alzheimer-s-speech-screening.md) — Zijian Lu et al. (2026)
+- [Modality Distillation with Multiple Stream Networks for Action Recognition](wiki/other/garcia-2018-modality-distillation-with-multiple-stream.md) — Nuno C. Garcia, Pietro Morerio, Vittorio Murino (2018)
+- [Learning with Side Information through Modality Hallucination](wiki/other/hoffman-2016-learning-with-side-information-through.md) — Judy Hoffman, Saurabh Gupta, Trevor Darrell (2016)
+- [What Makes Multi-modal Learning Better than Single (Provably)](wiki/other/huang-2021-what-makes-multi-modal-learning-better.md) — Yu Huang, Chenzhuang Du, Zihui Xue, Xuanyao Chen, Hang Zhao, Longbo Huang (2021)
 - [NCM Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation](wiki/other/kumbong-2026-ncm-next-concept-modeling-fast.md) — Hermann Kumbong, Ishan S. Khare, Iddah Mlauzi, Andrew Woen, Charles Ding, E. Kelly Buchanan, Simran Arora, Azalia Mirhoseini, and Christopher Ré (2026)
 - [Deep Laplacian Pyramid Networks for Fast and Accurate Super-Resolution](wiki/other/lai-2017-deep-laplacian-pyramid-networks-for.md) — Wei-Sheng Lai, Jia-Bin Huang, Narendra Ahuja, and Ming-Hsuan Yang (2017)
+- [Multimodality Helps Unimodality: Cross-Modal Few-Shot Learning with Multimodal Models](wiki/other/lin-2023-multimodality-helps-unimodality-cross-modal.md) — Zhiqiu Lin, Samuel Yu, Zhiyi Kuang, Deepak Pathak, Deva Ramanan (2023)
 - [See and Fix the Flaws: Enabling VLMs and Diffusion Models to Comprehend Visual Artifacts via Agentic Data Synthesis](wiki/other/park-2026-see-and-fix-the-flaws.md) — Jaehyun Park, Minyoung Ahn, Minkyu Kim, Jonghyun Lee, Jae-Gil Lee, Dongmin Park (2026)
 - [Channel-Preserving Representation Alignment for EEG-to-Music Reconstruction](wiki/other/qing-2026-channel-preserving-representation-alignment-for.md) — Jiaxin Qing, Junwei Lu, and Lexin Li (2026)
 - [A Native-Reference Phone-Class Geometry for Second-Language Pronunciation Analysis](wiki/other/raissi-2026-a-native-reference-phone-class.md) — Tina Raissi, Nhan Phan, Chenxiao Wang, and Mikko Kurimo (2026)
 - [The Pain Axis: LLMs Represent Self-Directed Harm and Act on It](wiki/other/tagliabue-2026-the-pain-axis-llms-represent.md) — Valen Tagliabue, Leonard Dung, and Cameron Berg (2026)
+- [Characterizing and Overcoming the Greedy Nature of Learning in Multi-modal Deep Neural Networks](wiki/other/wu-2022-characterizing-and-overcoming-the-greedy.md) — Nan Wu, Stanisław Jastrzębski, Kyunghyun Cho, Krzysztof J. Geras (2022)
 - [Image Super-Resolution Using Very Deep Residual Channel Attention Networks](wiki/other/zhang-2018-image-super-resolution-using-very.md) — Yulun Zhang, Kunpeng Li, Kai Li, Lichen Wang, Bineng Zhong, and Yun Fu (2018)
 - [CDDFuse: Correlation-Driven Dual-Branch Feature Decomposition for Multi-Modality Image Fusion](wiki/other/zhao-2023-cddfuse-correlation-driven-dual-branch.md) — Zixiang Zhao, Haowen Bai, Jiangshe Zhang, Yulun Zhang, Shuang Xu, Zudi Lin, Radu Timofte, and Luc Van Gool (2023)
 
@@ -117,6 +129,7 @@ Catalog generated on 2026-10-21 from repository content.
 - **Overview:** [2026 Literature Map for Explainable Symbolic Music AI](wiki/overviews/2026-symbolic-music-literature-map.md)
 - **Overview:** [Audio–Symbolic Music Transfer](wiki/overviews/audio-symbolic-transfer.md)
 - **Overview:** [Automated Music Mashup Systems](wiki/overviews/automated-music-mashup-systems.md)
+- **Overview:** [Cross Modal Supervision Transfer](wiki/overviews/cross-modal-supervision-transfer.md)
 - **Overview:** [Symbolic Music Foundation Models](wiki/overviews/symbolic-music-foundation-models.md)
 - **Concept:** [The Audio–Symbolic Modality Gap](wiki/concepts/audio-symbolic-modality-gap.md)
 - **Concept:** [Auditable Creative Editing Pipelines](wiki/concepts/auditable-creative-editing-pipelines.md)
