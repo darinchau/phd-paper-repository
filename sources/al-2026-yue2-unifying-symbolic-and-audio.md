@@ -448,3 +448,36 @@ The evidence limitations, artifact status, and future-work claims are preserved 
 ## 7. Glossary
 
 - **Primary category:** `generation-and-planning`. Domain-specific terms are defined in the embedded digest and cross-paper synthesis.
+
+## 8. 2026-10-30 re-check addendum
+
+Re-read of the full 56-page PDF against the embedded digest above. The digest's numbers hold; this addendum records what the first pass under-weighted, plus the artifact state, because the paper is now a released model rather than a preprint claim.
+
+### 8.1 Evaluation designs worth borrowing
+
+The paper's most transferable contribution is not the leaderboard but four matched-control designs.
+
+1. **Plan-swap controls (is the plan actually used?).** Each generated score is compared with its own realization, with the audio made from the *other* score under the same prompt and lyrics, and with audio made without any score. Melody sequence similarity 0.9464 / 0.2160 / 0.2055; the correct score–audio pairing is identified in 188/188 evaluable pairs. Section 5.1, Table 3, Appendix D.1.
+2. **Adherence and preservation as two axes.** Score edits are followed at 84.17% (melody pitch), 79.54% (chord), 73.43% (rhythm onset), 90.58/100 (key) and 95.68% Acc2 (tempo), while agreement with unedited melody/harmony stays at 90.16–94.34%. Section 5.2, Table 4, Appendix D.2.
+3. **Work-identity retrieval for covers.** CLEWS/Discogs-VINet mAP 0.647/0.288 with the full score, 0.598/0.179 without chord symbols, 0.006/0.004 without any score — while style alignment and rated musicality rise monotonically in the same order (MuLan 0.382 → 0.417 → 0.474; SongBench musicality 5.104 → 5.490 → 5.691). Identity and style adaptation trade off at the chord-label level. Section 5.3, Table 5, Appendix D.3.
+4. **Expert preference for the explicit plan.** Same checkpoint, prompts, candidates and decoder: 49.3% vs 34.6% of 212 retained expert judgements for overall quality (p = 0.0070, standard errors clustered by evaluator and song); musicality 45.0% vs 29.4%; melody 44.0% vs 29.5%; chord progression 39.0% vs 21.0%. Figure 8, Appendix D.4.
+
+### 8.2 Evidence boundaries added on re-check
+
+- **No explainability claim.** The words "explain", "interpretability" and "transparency" do not appear in the report. The score is framed as control and editability; it is never framed as a reason for a musical decision.
+- **No copying or memorization audit**, despite a 346,000-hour corpus, a claim of CC0-plus-licensed data, and a released checkpoint.
+- **Harmony is chord symbols only** (root-and-triad labels). Voicing, voice-leading and bass motion are never measured; bass notes are transposed in key edits but not evaluated.
+- **Adherence is measured through the same representation family that builds the scores** (SheetSage2, expert-corrected), and the harmony-removal arm changes serialization (the paper discloses this). Neither is resolved.
+- **Best-of-8 selects on SongBench Musicality and then reports a Global Average that contains Musicality** (6.73 → 6.96). The selection-free AudioBox production-quality score supports the ordering, but the headline best-of-8 mean is partly selected on the reported metric.
+- **Representation ceiling for our purposes:** the plan is a lead sheet (melody voice(s), chord symbols, key, metre, tempo, sections). It cannot express inner voices or texture, which is the level at which mashup conflicts occur.
+
+### 8.3 Artifact state (verified 2026-10-30)
+
+- `m-a-p/YuE2-3B` on Hugging Face: public, `license: cc-by-nc-4.0`, 24,107 downloads, model card states 48 kHz stereo on a 24 GB GPU without quantization and separate planning and synthesis APIs (so score-only generation is a supported path).
+- Companion artifacts: `m-a-p/YuE2-Vae`, `m-a-p/MERT-v2-30s`, `m-a-p/MERT-v2-FullSong`, `m-a-p/SheetSage2`, dataset `m-a-p/WildSongBench`. SheetSage2 has its own report, arXiv:2610.05336.
+- Corpus sizes (Appendix C, Table 12): MERT2 700,000 h pretraining, SheetSage2-AR 28,400 h, YuE2 346,000 h.
+
+### 8.4 Programme implications
+
+Recorded separately, with ranked options and gates: [`agent-notes/research-programme/2026-10-30-yue2-implications.md`](../../../agent-notes/research-programme/2026-10-30-yue2-implications.md). In one line: the editable score is now a product feature, so our claim must be verified faithfulness, audited provenance, and measured repair locality — and the paper's matched controls plus its unaudited public score generator are both directly usable.
+

@@ -30,6 +30,13 @@ Read the linked source digest for the paper's full method, equations, implementa
 
 The linked source digest preserves the paper-reported results and their evidence boundaries; this page does not claim an independent reproduction.
 
+## Implications (2026-10-30 re-check)
+
+- **Commoditized interface, open audit.** An editable score between prompt and audio is now a released frontier feature (CC BY-NC 4.0, 24 GB). The paper makes no faithfulness claim and runs no copying audit, so those remain our claims; see the [programme note](../../../agent-notes/research-programme/2026-10-30-yue2-implications.md).
+- **Reusable evaluation designs.** Plan-swap matched controls, adherence-versus-preservation as two separate axes, and work-identity retrieval (CLEWS/Discogs-VINet) are each directly transferable to our repair, faithfulness, and identity work.
+- **Identity carries in harmony.** Dropping chord symbols lowers cover work-identity retrieval but raises style alignment and rated musicality — an external, quantitative version of our material-filter result, at chord-label level only (no voicing, no bass metrics).
+- **Corpus ceiling stands.** The plan is a lead sheet (melody, chord symbols, key, metre, tempo, sections), so transcription-based expansion cannot supply the inner-voice texture that limits our polyphonic signature corpora.
+
 ## Related Papers
 
 - [[overviews/2026-symbolic-music-literature-map]] — primary synthesis anchor for this batch; the overview places this paper beside related representation, generation, evaluation, and auditability work.
