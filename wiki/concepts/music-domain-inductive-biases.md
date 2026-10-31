@@ -39,6 +39,10 @@ Moonbeam's complete design reaches perplexity `2.423`, versus `2.512` with stand
 
 [[explainability-and-auditability/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of|MI-MIDI]] provides complementary causal intervention tests in two symbolic generators. Register and polyphony respond bidirectionally, while the apparent architecture effect remains confounded by tokenizer, scale, and training differences. This strengthens the counterfactual validation route below without establishing musician-facing explanation utility. [MI-MIDI PDF pp. 9–12]
 
+[[generation-and-planning/wu-2023-generating-chord-progression-from-melody|AutoHarmonizer]] is a clean case of level 1 plus a level-2 conditioning choice: beat strength, key signature and a 1,462-symbol chord vocabulary are explicit inputs, and the model is free to place a chord change on any sixteenth-note frame. The domain bias is therefore in the representation and in what is *not* constrained — no voice-leading, cadence or functional-harmony predicate is enforced — which is exactly why the Γ control changes harmonic density without guaranteeing that any resulting progression is functionally well formed. [AutoHarmonizer PDF pp. 4–8]
+
+[[explainability-and-auditability/silberschein-2026-harmonic-representations-in-symbolic|Silberschein et al.]] give the learned-bias counterpart: in Aria, mode is linearly decodable earlier than key (82.1% around layers 8–9 against 65.5% by layer 15), and a relative-grouped probe scores higher than the full key probe. That ordering looks like a tonal-category-before-tonal-centre hierarchy, but it is a property of one model on one corpus, not a theory constraint; the authors' own quality checks are metric-based. [Silberschein et al. PDF pp. 4–6]
+
 ## Four Levels That Should Not Be Collapsed
 
 1. **Music-shaped representation:** notes, voices, bars, onset, duration, pitch, instrument, and velocity are explicit rather than hidden inside arbitrary tokens.
@@ -79,3 +83,5 @@ For classical symbolic generation, the next step is not to replace learned biase
 - [[generation-and-planning/guo-2025-moonbeam-a-midi-foundation-model]] — continuous attribute embeddings and dimension-specific relative attention.
 - [[generation-and-planning/wang-2023-remast-real-time-emotion-based]] — feedback-conditioned emotion arrangement and explicit theory-derived features.
 - [[concepts/auditable-creative-editing-pipelines]] — separates inspectable workflow state from faithful semantic explanation.
+- [[generation-and-planning/wu-2023-generating-chord-progression-from-melody]] — explicit beat/key/chord vocabulary as a representation-level bias, with no functional-harmony constraint.
+- [[explainability-and-auditability/silberschein-2026-harmonic-representations-in-symbolic]] — learned mode-before-key hierarchy as empirical bias, not a theory constraint.

@@ -13,6 +13,7 @@
 - [Dialogue-Aware Video-to-Music Generation Using Public Domain Film Collections](../wiki/data-and-representation/kim-2026-dialogue-aware-video-to-music.md) — Haven Kim, Zachary Novack, Julian McAuley, and Hao-Wen Dong (2026)
 - [From Words to Music: A Study of Subword Tokenization Techniques in Symbolic Music Generation](../wiki/data-and-representation/kumar-2023-from-words-to-music-a.md) — Adarsh Kumar and Pedro Sarmento (2023)
 - [MusPyExpress: Extending MusPy with Enhanced Expression Text Support](../wiki/data-and-representation/long-2025-muspyexpress-extending-muspy-with-enhanced.md) — Phillip Long, Hao-Wen Dong, Julian McAuley, and Zachary Novack (2025)
+- [MSVAE: Rethinking Musical Semantics in Continuous Latent Spaces](../wiki/data-and-representation/ma-2026-msvae-rethinking-musical-semantics-in.md) — Guobin Ma et al. (2026)
 - [One Timeline, Many Renderings: A Wolfram Language Paclet for Heterogeneous Musical Output](../wiki/data-and-representation/vitucci-2026-one-timeline-many-renderings-a.md) — Francesco Vitucci, Michele Lorusso, and Francesco Scagliola (2026)
 - [Exploring Inherent Properties of the Monophonic Melody of Songs](../wiki/data-and-representation/wang-2020-exploring-inherent-properties-of-the.md) — Zehao Wang, Shicheng Zhang, and Xiaoou Chen (2020)
 - [POP909: A Pop-song Dataset for Music Arrangement Generation](../wiki/data-and-representation/wang-2020-pop909-a-pop-song-dataset.md) — Ziyu Wang, Ke Chen, Junyan Jiang, Yiyi Zhang, Maoran Xu, Shuqi Dai, Xianbin Gu, and Gus Xia (2020)

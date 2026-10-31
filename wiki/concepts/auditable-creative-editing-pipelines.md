@@ -43,6 +43,8 @@ The listener evidence also marks the boundary of that transparency. The fixed sc
 
 The evidence stops short of the third level. OpenL3 and dual-encoder similarities are not mapped to chords or phrase roles; assignment confidence is not calibrated against edit need; the U-Net remains opaque; and no study measures whether explanations improve user understanding, trust calibration, or repair efficiency.
 
+Three October 2026 readings sharpen the middle level. [[explainability-and-auditability/lei-2023-audio-cross-verification-using-dual]] makes the decision itself a comparison of two named hypotheses with two returned alignments, which is more than a score but still short of a faithful reason: the alignment says *where* query and reference diverge, not *why* the divergence is musically or factually the relevant one, and its evaluation is read speech with no reference-free case. [[generation-and-planning/wu-2023-generating-chord-progression-from-melody]] exposes a single interpretable harmonic-density control (Γ) whose effect is monotone and measurable, but gives no per-frame rationale for a chord, so the operator can set density without being able to audit any individual choice. [[generation-and-planning/hung-2019-musical-composition-style-transfer-via]] shows the symbolic-intermediate advantage in its clearest form: the arrangement decision is a multi-track pianoroll that can be inspected before audio is rendered, although the paper reports no objective pitch-preservation metric for those rolls. [DA-LRT PDF pp. 2–4; AutoHarmonizer PDF pp. 4–6; Hung et al. PDF pp. 4–6]
+
 ## Design Pattern for Theory-Grounded Music AI
 
 For symbolic or classical music, the same architecture could expose:
@@ -64,3 +66,6 @@ The crucial test is counterfactual: if the stated reason changes while irrelevan
 - [[overviews/automated-music-mashup-systems]] — application-level system map.
 - [[questions/when-do-interpretable-music-editing-traces-become-faithful-explanations]] — open research question and tentative validation criteria.
 - [[other/park-2026-see-and-fix-the-flaws]] — vision-domain detect→explain→repair pipeline whose self-verification loop marks the workflow-transparency ceiling without external faithfulness checks.
+- [[explainability-and-auditability/lei-2023-audio-cross-verification-using-dual]] — two-hypothesis decision with returned alignments; auditability without musical rationale.
+- [[generation-and-planning/wu-2023-generating-chord-progression-from-melody]] — interpretable harmonic-density control with no per-chord reason.
+- [[generation-and-planning/hung-2019-musical-composition-style-transfer-via]] — symbolic pianoroll intermediate makes an arrangement decision inspectable before rendering.

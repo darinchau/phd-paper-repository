@@ -39,6 +39,12 @@ For steering, reverse the direction as well as changing its magnitude. MI-MIDI s
 
 [[explainability-and-auditability/chen-2026-dual-contrastive-sparse-autoencoders|DC-SAE]] carries the same ladder to the audio side with corpus structure instead of synthetic control: work-identity probes on held-out recordings establish recoverability, and its rank-1 feature-direction steering — beating a matched-random control in 70% of aligned-pair contexts while the raw residual reference reaches 73.8% — is the intervention step, with absolute margins small and the MERT selection-scoring circularity acknowledged. Musician-utility remains untested there as well. [DC-SAE PDF pp. 3–4, App. K]
 
+## Symbolic Harmony: Localisation and Steering Together
+
+[[explainability-and-auditability/silberschein-2026-harmonic-representations-in-symbolic|Silberschein et al. (2026)]] run the same ladder on tonal harmony in Aria, a LLaMA-based symbolic transformer, and are unusual in making all three evidence types converge on one claim. A single-pitch counterfactual (V → v) drops tonic resolutions in major-source chorales from 87.5% to 51.4%; layer-wise activation patching places the causal effect from layer 6 onward; linear probes recover mode at 82.1% around layers 8–9 (chance 50%) but key identity only from layer 10, reaching 65.5% by layer 15 (chance 5.6%); and probe-derived directions added at inference turn tonic resolutions into relative-minor (32% to vi at α = 0.15) or parallel-minor (57% to i at α = 0.1) ones. Structural errors stay at or below 2.9% and out-of-range notes at 0%. [Silberschein et al. PDF pp. 3–6, Figs. 2–5, Table 1]
+
+Two limits keep this below the third claim. The outcome metric is the first generated pitch class, not the harmony of the whole continuation; quality is measured with FMD, Roman-numeral entropy and structural-error rates rather than listeners; and α is tuned per condition. The representational finding is stronger than the control result: a relative-grouped probe (9 classes by shared key signature) reaches 83.4% against 65.5% for the full 18-class key probe and 65.3% for a parallel-grouped probe, and the confusion matrices show relative-pair errors dominating. The model's geometry, not just its accuracy, mirrors the music-theory distinction. [Silberschein et al. PDF pp. 5–7, Figs. 6–7]
+
 ## Related Pages
 
 - [[explainability-and-auditability/pocwiardowski-2026-mi-midi-mechanistic-interpretability-of]] — symbolic probes, lenses, patching, and bidirectional steering.
@@ -46,5 +52,6 @@ For steering, reverse the direction as well as changing its magnitude. MI-MIDI s
 - [[concepts/work-identity-versus-performance-variation]] — the factorization question that DC-SAE's branches instantiate.
 
 - [[explainability-and-auditability/wei-2024-do-music-generation-models-encode]] — primary evidence, full results, and implementation discrepancies.
+- [[explainability-and-auditability/silberschein-2026-harmonic-representations-in-symbolic]] — symbolic-harmony case where patching, probing and steering agree on middle-to-late layers.
 - [[concepts/music-domain-inductive-biases]] — structural priors and the different evidence needed for constraints or faithful explanations.
 - [[concepts/auditable-creative-editing-pipelines]] — moves from reconstructable state to intervention-tested decision explanations.

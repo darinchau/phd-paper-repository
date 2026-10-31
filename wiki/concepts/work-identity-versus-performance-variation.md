@@ -20,6 +20,8 @@ Three observations generalize across both:
 
 [[generation-and-planning/borovik-2025-symupe-affective-and-controllable]] (PianoFlow) treats the same expressive dimension without factorizing it: it conditions rendering on emotion/text embeddings while preserving the score by construction (the score is the input), leaving the work/interpretation boundary implicit in the data rather than explicit in the architecture.
 
+An earlier, arrangement-side member of the family is [[generation-and-planning/hung-2019-musical-composition-style-transfer-via]] (Hung et al. 2019), which factors a recording into a pitch code and a timbre code so that re-orchestration means swapping the timbre code. Its split is *composition versus instrumentation*, not *work versus performance*: timing, dynamics and articulation are not modelled. The evidence is thinner than in the two papers above — a downstream instrument-activity probe (UnetED average AUC 0.829) rather than a work-ID probe, no objective pitch-preservation metric for the rearranged pianorolls, and a 40-participant preference study rather than a controlled factor swap. Its lasting methodological point is the U-Net skip connection: forcing the decoder to take pitch from another path is what pressures the latent to be timbre-only, a structural route to factorization that does not rely on adversarial losses alone. [Hung et al. PDF pp. 4–6, Tables 1–2]
+
 For source attribution and mashup research, this concept marks what a "source" is: a work-level factor, a performance-level factor, or a recording artifact. [[explainability-and-auditability/storan-2026-group-invariant-statistics-determine-embedding]] shows how embedding geometry encodes such invariances more generally, and [[concepts/expression-aware-symbolic-representations]] keeps the written-instruction layer distinct from realized performance features.
 
 ## Related Pages
@@ -29,3 +31,4 @@ For source attribution and mashup research, this concept marks what a "source" i
 - [[generation-and-planning/borovik-2025-symupe-affective-and-controllable]] — expressive rendering with text/emotion control, no factorization claim.
 - [[concepts/music-theory-probing]] — evidence ladder (recoverable / causal / useful) for factorization claims.
 - [[concepts/expression-aware-symbolic-representations]] — written expression instructions vs realized performance features.
+- [[generation-and-planning/hung-2019-musical-composition-style-transfer-via]] — early pitch/timbre factorization for arrangement, with an explicit symbolic intermediate.
